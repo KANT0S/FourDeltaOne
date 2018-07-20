@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{81A35AF9-A105-4FE2-86CE-2FF88F1DF2B6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>gamedll</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;GAMEDLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <ExceptionHandling>false</ExceptionHandling>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>aci3.h</PrecompiledHeaderFile>
+      <Optimization>Disabled</Optimization>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)\dependencies\include;$(SolutionDir)\dependencies\include\ntndk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <EntryPointSymbol>ciMain</EntryPointSymbol>
+      <ModuleDefinitionFile>gamedll.def</ModuleDefinitionFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(TargetDir)$(TargetName).map</MapFileName>
+      <AdditionalDependencies>shlwapi.lib;ws2_32.lib;wcrt.lib;vmprotectsdk32.lib;setupapi.lib;ntdll.lib;tomcrypt.lib;tommath.lib;aci2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\dependencies\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OptimizeReferences>false</OptimizeReferences>
+      <AdditionalOptions>/safeseh:no %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>if "%COMPUTERNAME%" == "FALLARBOR" (
+copy /y "$(TargetPath)" "S:\Games\Steam\steamapps\common\zero gear\Server\aCI2.dll"
+copy /y "$(TargetPath)" "T:\games\call of duty black ops\aCI2.dll"
+copy /y "$(TargetPath)" "R:\games\mw3\aCI2.dll"
+copy /y "$(TargetPath)" "Q:\Games\Warfare2\aCI2.dll"
+)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="base64.cpp" />
+    <ClCompile Include="bitbuffer.cpp" />
+    <ClCompile Include="detections.cpp" />
+    <ClCompile Include="hooking.cpp" />
+    <ClCompile Include="init.cpp" />
+    <ClCompile Include="legacyci.cpp" />
+    <ClCompile Include="lib\memcpy.cpp" />
+    <ClCompile Include="lib\qhash.cpp" />
+    <ClCompile Include="lib\qlist.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="moduleutils.cpp" />
+    <ClCompile Include="mactoken.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="strcrypt.cpp" />
+    <ClCompile Include="strutils.cpp" />
+    <ClCompile Include="syscalls.cpp" />
+    <ClCompile Include="systemapi.cpp" />
+    <ClCompile Include="systoken.cpp" />
+    <ClCompile Include="sysutils.cpp" />
+    <ClCompile Include="template.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aci3.h" />
+    <ClInclude Include="bitbuffer.h" />
+    <ClInclude Include="detection.h" />
+    <ClInclude Include="detections.h" />
+    <ClInclude Include="hooking.h" />
+    <ClInclude Include="init.h" />
+    <ClInclude Include="lib\qlibc.h" />
+    <ClInclude Include="moduleutils.h" />
+    <ClInclude Include="strcrypt.h" />
+    <ClInclude Include="strutils.h" />
+    <ClInclude Include="systemapi.h" />
+    <ClInclude Include="sysutils.h" />
+    <ClInclude Include="tdiinfo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gamedll.def" />
+    <MASM Include="lib\llmul.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="lib\llshl.asm">
+      <FileType>Document</FileType>
+    </MASM>
+    <MASM Include="lib\ullshr.asm">
+      <FileType>Document</FileType>
+    </MASM>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

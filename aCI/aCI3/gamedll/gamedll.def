@@ -1,0 +1,4 @@
+LIBRARY GAMEDLL
+EXPORTS
+	a=ciInit
+	b=ciSendStatus

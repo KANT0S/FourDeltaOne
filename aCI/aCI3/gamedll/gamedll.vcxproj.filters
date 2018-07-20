@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Initialization">
+      <UniqueIdentifier>{a7e300f4-8048-4665-af5b-88db98f7e44d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Detections">
+      <UniqueIdentifier>{2cda0ac1-638a-48b6-97f4-b85c2564c1c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries">
+      <UniqueIdentifier>{5a6a1fd3-0022-4b0f-b47a-b11d327a62bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries\qlibc">
+      <UniqueIdentifier>{8cefdee9-9a13-4665-ab9a-cf0fa41bb0c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Libraries\crt">
+      <UniqueIdentifier>{0fe5fbd2-d4ed-4fcf-8cb0-460520f7b360}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="systemapi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="init.cpp">
+      <Filter>Source Files\Initialization</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Initialization</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files\Initialization</Filter>
+    </ClCompile>
+    <ClCompile Include="syscalls.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="strcrypt.cpp">
+      <Filter>Source Files\Initialization</Filter>
+    </ClCompile>
+    <ClCompile Include="moduleutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="strutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mactoken.cpp">
+      <Filter>Source Files\Detections</Filter>
+    </ClCompile>
+    <ClCompile Include="sysutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\qhash.cpp">
+      <Filter>Source Files\Libraries\qlibc</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\memcpy.cpp">
+      <Filter>Source Files\Libraries\crt</Filter>
+    </ClCompile>
+    <ClCompile Include="bitbuffer.cpp">
+      <Filter>Source Files\Libraries</Filter>
+    </ClCompile>
+    <ClCompile Include="detections.cpp">
+      <Filter>Source Files\Detections</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\qlist.cpp">
+      <Filter>Source Files\Libraries\qlibc</Filter>
+    </ClCompile>
+    <ClCompile Include="systoken.cpp">
+      <Filter>Source Files\Detections</Filter>
+    </ClCompile>
+    <ClCompile Include="hooking.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base64.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="template.cpp">
+      <Filter>Source Files\Detections</Filter>
+    </ClCompile>
+    <ClCompile Include="legacyci.cpp">
+      <Filter>Source Files\Detections</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aci3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="init.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="systemapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="strcrypt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="moduleutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="strutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="detection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sysutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tdiinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\qlibc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bitbuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="detections.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hooking.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gamedll.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="lib\ullshr.asm">
+      <Filter>Source Files\Libraries\crt</Filter>
+    </MASM>
+    <MASM Include="lib\llmul.asm">
+      <Filter>Source Files\Libraries\crt</Filter>
+    </MASM>
+    <MASM Include="lib\llshl.asm">
+      <Filter>Source Files\Libraries\crt</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>
