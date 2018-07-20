@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Capture|Win32">
+      <Configuration>Capture</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{17F0C96D-58ED-4039-8352-6CDBDC915B71}</ProjectGuid>
+    <RootNamespace>clientdll</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Capture|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Capture|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Capture|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Capture|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Capture|Win32'">true</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Capture|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Capture|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Capture|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Command>pushd "$(SolutionDir)\..\deps\tools"
+call "$(SolutionDir)\..\deps\tools\svnrev.cmd"
+popd</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>X:\svn\aiw\terminal\libnp\include;$(SolutionDir)\..\deps\include\osw\;$(SolutionDir)\..\deps\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;CLIENTDLL_EXPORTS;_WINDLL</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdInc.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>credui.lib;libcurl.lib;wldap32.lib;ws2_32.lib;winmm.lib;shlwapi.lib;tinyxml.lib;libnp.lib;tomcrypt.lib;tommath.lib;mono.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>X:\svn\aiw\terminal\libnp\project\vc9\normal;$(SolutionDir)\..\deps\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>if "%COMPUTERNAME%" == "FALLARBOR" (
+copy /y "$(TargetPath)" "R:\Games\MW3\iw5m.dll"
+)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Capture|Win32'">
+    <PreBuildEvent>
+      <Command>pushd "$(SolutionDir)\..\deps\tools"
+rem call "$(SolutionDir)\..\deps\tools\svnrev.cmd"
+popd
+</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\..\..\terminal\libnp\include;$(SolutionDir)\..\deps\include\osw\;$(SolutionDir)\..\deps\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;CLIENTDLL_EXPORTS;_WINDLL;STEAM_PROXY</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>zlib.lib;ssleay32.lib;libeay32.lib;credui.lib;libcurl.lib;wldap32.lib;ws2_32.lib;winmm.lib;shlwapi.lib;libnp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\..\..\..\terminal\libnp\project\vc9\normal;$(SolutionDir)\..\deps\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /y "$(TargetPath)" "R:\Games\MW3\iw5m.dll"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DLCInstaller.cpp" />
+    <ClCompile Include="dw\bdBitBuffer.cpp" />
+    <ClCompile Include="dw\bdByteBuffer.cpp" />
+    <ClCompile Include="dw\dwauth.cpp" />
+    <ClCompile Include="dw\dwcrypto.cpp" />
+    <ClCompile Include="dw\dwentry.cpp" />
+    <ClCompile Include="dw\dwhandler.cpp" />
+    <ClCompile Include="dw\dwMessage.cpp" />
+    <ClCompile Include="dw\dwstorage.cpp" />
+    <ClCompile Include="dw\dwtitleutils.cpp" />
+    <ClCompile Include="GSServer.cpp" />
+    <ClCompile Include="IRC.cpp" />
+    <ClCompile Include="PatchIW5AssetReallocation.cpp" />
+    <ClCompile Include="PatchIW5ClientDvar.cpp" />
+    <ClCompile Include="PatchIW5DediSay.cpp" />
+	<ClCompile Include="PatchIW5DSCommandHandling.cpp" />
+    <ClCompile Include="PatchIW5DSExperiments.cpp" />
+    <ClCompile Include="PatchIW5DSTestClients.cpp" />
+    <ClCompile Include="PatchIW5EliteScores.cpp" />
+    <ClCompile Include="PatchIW5Screenshots.cpp" />
+    <ClCompile Include="steam_api.cpp" />
+    <ClCompile Include="SteamApps004.cpp" />
+    <ClCompile Include="SteamBase.cpp" />
+    <ClCompile Include="SteamFriends009.cpp" />
+    <ClCompile Include="SteamGameServer010.cpp" />
+    <ClCompile Include="SteamMasterServerUpdater001.cpp" />
+    <ClCompile Include="SteamMatchmaking008.cpp" />
+    <ClCompile Include="SteamMatchmakingServers002.cpp" />
+    <ClCompile Include="SteamNetworking005.cpp" />
+    <ClCompile Include="SteamProxy.cpp" />
+    <ClCompile Include="SteamRemoteStorage002.cpp" />
+    <ClCompile Include="SteamUser016.cpp" />
+    <ClCompile Include="SteamUserStats010.cpp" />
+    <ClCompile Include="SteamUtils005.cpp" />
+    <ClCompile Include="anticode.cpp" />
+    <ClCompile Include="Auth.cpp" />
+    <ClCompile Include="diskinfo.cpp" />
+    <ClCompile Include="Hooking.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="StdInc.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="AuthCI.cpp" />
+    <ClCompile Include="IW5.cpp" />
+    <ClCompile Include="PatchIW5.cpp" />
+    <ClCompile Include="PatchIW5AssetRestrict.cpp" />
+    <ClCompile Include="PatchIW5ConsoleDvar.cpp" />
+    <ClCompile Include="PatchIW5CSVDump.cpp" />
+    <ClCompile Include="PatchIW5DS.cpp" />
+    <ClCompile Include="PatchIW5DWHax.cpp" />
+    <ClCompile Include="PatchIW5SDDump.cpp" />
+    <ClCompile Include="GameInterface.cpp" />
+    <ClCompile Include="Scriptability.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dw\bdBitBuffer.h" />
+    <ClInclude Include="dw\bdByteBuffer.h" />
+    <ClInclude Include="dw\dw.h" />
+    <ClInclude Include="dw\dwMessage.h" />
+    <ClInclude Include="dw\StdInc.h" />
+    <ClInclude Include="diskinfo.h" />
+    <ClInclude Include="GSClient.h" />
+    <ClInclude Include="GSServer.h" />
+    <ClInclude Include="Hooking.h" />
+    <ClInclude Include="IRC.h" />
+    <ClInclude Include="IW5.h" />
+    <ClInclude Include="stdinc.h" />
+    <ClInclude Include="SteamApps004.h" />
+    <ClInclude Include="SteamBase.h" />
+    <ClInclude Include="SteamFriends009.h" />
+    <ClInclude Include="SteamGameServer010.h" />
+    <ClInclude Include="SteamMasterServerUpdater001.h" />
+    <ClInclude Include="SteamMatchmaking008.h" />
+    <ClInclude Include="SteamMatchmakingServers002.h" />
+    <ClInclude Include="SteamNetworking005.h" />
+    <ClInclude Include="SteamRemoteStorage002.h" />
+    <ClInclude Include="SteamUser016.h" />
+    <ClInclude Include="SteamUserStats010.h" />
+    <ClInclude Include="SteamUtils005.h" />
+    <ClInclude Include="Utils.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>
