@@ -1,0 +1,13 @@
+Hello, world!
+
+I am a file required for the IW4M extension DLL!
+
+If you find me, you've likely been snooping in places you don't belong.
+
+Please be aware that IW4Mx is only to be used on fourdeltaone.net servers,
+or any official successor project declared by NTAuthority.
+
+You will receive a complete counter-attack towards various exploitable
+bugs in the extension DLL if you do not heed this warning.
+
+Thanks, and have fun!

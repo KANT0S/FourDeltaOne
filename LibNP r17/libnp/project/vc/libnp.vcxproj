@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Normal|Win32">
+      <Configuration>Normal</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AB4C1B86-3307-4901-9A54-C5959FC86673}</ProjectGuid>
+    <RootNamespace>libnp</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Normal|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Normal|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.51106.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Normal|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Normal|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\dependencies\include\;$(ProjectDir)\..\..\include\private\;$(ProjectDir)\..\..\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;LIBNP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;winmm.lib;libprotobuf-lite.lib;libstrophe.lib;libexpatMT.lib;tomcrypt.lib;tommath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)\..\..\dependencies\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(TargetDir)$(TargetName).map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /y "$(TargetPath)" "$(SolutionDir)\release\libnp.dll"
+if "$(COMPUTERNAME)" == "FALLARBOR" (
+copy /y "$(TargetPath)" "S:\Games\Steam\steamapps\common\zero gear\Server\libnp.dll"
+copy /y "$(TargetPath)" "T:\Games\call of duty black ops\libnp.dll"
+copy /y "$(TargetPath)" "R:\Games\MW3\libnp.dll"
+copy /y "$(TargetPath)" "X:\iw4m\clientdll\dependencies\runtime\libnp.dll"
+copy /y "$(SolutionDir)\..\..\include\*.h" "X:\iw4m\clientdll\dependencies\include\np"
+copy /y "$(SolutionDir)\Normal\libnp.lib" "X:\iw4m\clientdll\dependencies\lib"
+copy /y "$(SolutionDir)\..\..\include\*.h" "X:\iw4m-branch\clientdll\dependencies\include\np"
+copy /y "$(SolutionDir)\Normal\libnp.lib" "X:\iw4m-branch\clientdll\dependencies\lib"
+)
+else
+(
+copy /y "$(TargetPath)" "C:\Users\Sushi\Desktop\dedi\libnp.dll"
+copy /y "$(TargetPath)" "C:\Users\Sushi\Desktop\aIW Client\libnp.dll"
+copy /y "$(TargetPath)" "C:\Users\Sushi\Desktop\fourDeltaOne\iw4m\clientdll\dependencies\runtime\libnp.dll"
+copy /y "$(SolutionDir)\..\..\include\*.h" "C:\Users\Sushi\Desktop\fourDeltaOne\iw4m\clientdll\dependencies\include\np"
+copy /y "$(SolutionDir)\Normal\libnp.lib" "C:\Users\Sushi\Desktop\fourDeltaOne\iw4m\clientdll\dependencies\lib"
+)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\API.cpp" />
+    <ClCompile Include="..\..\src\CI.cpp" />
+    <ClCompile Include="..\..\dependencies\src\MemoryModule.c" />
+    <ClCompile Include="..\..\src\MessageDefinition.cpp" />
+    <ClCompile Include="..\..\src\NPAsync.cpp" />
+    <ClCompile Include="..\..\src\NPAuthenticate.cpp" />
+    <ClCompile Include="..\..\src\NPFriends.cpp" />
+    <ClCompile Include="..\..\src\NPMessaging.cpp" />
+    <ClCompile Include="..\..\src\NPProfiles.cpp" />
+    <ClCompile Include="..\..\src\NPServers.cpp" />
+    <ClCompile Include="..\..\src\NPStorage.cpp" />
+    <ClCompile Include="..\..\src\RPC.cpp" />
+    <ClCompile Include="..\..\src\RPCAsync.cpp" />
+    <ClCompile Include="..\..\src\Utils.cpp" />
+    <ClCompile Include="..\..\src\auth.pb.cc" />
+    <ClCompile Include="..\..\src\friends.pb.cc" />
+    <ClCompile Include="..\..\src\hello.pb.cc" />
+    <ClCompile Include="..\..\src\servers.pb.cc" />
+    <ClCompile Include="..\..\src\storage.pb.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\libnp.h" />
+    <ClInclude Include="..\..\include\NPAsync.h" />
+    <ClInclude Include="..\..\include\NPAuthenticate.h" />
+    <ClInclude Include="..\..\include\NPFriends.h" />
+    <ClInclude Include="..\..\include\NPServers.h" />
+    <ClInclude Include="..\..\include\NPStorage.h" />
+    <ClInclude Include="..\..\include\NPTypeDefs.h" />
+    <ClInclude Include="..\..\include\Friends.h" />
+    <ClInclude Include="..\..\include\private\MessageDefinition.h" />
+    <ClInclude Include="..\..\include\private\NPAsyncImpl.h" />
+    <ClInclude Include="..\..\include\private\RPC.h" />
+    <ClInclude Include="..\..\include\private\RPCAsync.h" />
+    <ClInclude Include="..\..\include\private\StdInc.h" />
+    <ClInclude Include="..\..\include\private\Utils.h" />
+    <ClInclude Include="..\..\src\auth.pb.h" />
+    <ClInclude Include="..\..\src\friends.pb.h" />
+    <ClInclude Include="..\..\src\hello.pb.h" />
+    <ClInclude Include="..\..\src\servers.pb.h" />
+    <ClInclude Include="..\..\src\storage.pb.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

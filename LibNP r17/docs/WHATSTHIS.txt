@@ -1,0 +1,5 @@
+This is where codename 'Terminal' (aka 'NPx') will reside - once it's somewhat-functional.
+
+'Terminal' is pretty much a 'basic network platform', mostly written in unmanaged code on the client side, and [TBD] on the server side.
+
+('Plaza' is way more 'advanced' as far as ideas went, I'd guess it could still use similar base code eventually)

@@ -1,0 +1,20 @@
+option optimize_for = LITE_RUNTIME;
+
+message HelloMessage
+{
+	required int32 number = 1;
+	required int32 number2 = 2;
+	required string name = 3;
+	required string stuff = 4;
+}
+
+message CloseAppMessage
+{
+	required string reason = 1;
+}
+
+message MessagingSendDataMessage
+{
+	required fixed64 npid = 1;
+	required bytes data = 2;
+}

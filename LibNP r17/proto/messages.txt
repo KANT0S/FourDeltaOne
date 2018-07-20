@@ -1,0 +1,185 @@
+{
+	"name" "RPCHelloMessage"
+	"type" "1000"
+	"message" "HelloMessage"
+}
+{
+	"name" "RPCAuthenticateWithKeyMessage"
+	"type" "1001"
+	"message" "AuthenticateWithKeyMessage"
+}
+{
+	"name" "RPCAuthenticateWithDetailsMessage"
+	"type" "1002"
+	"message" "AuthenticateWithDetailsMessage"
+}
+{
+	"name" "RPCAuthenticateWithTokenMessage"
+	"type" "1003"
+	"message" "AuthenticateWithTokenMessage"
+}
+{
+	"name" "RPCAuthenticateValidateTicketMessage"
+	"type" "1004"
+	"message" "AuthenticateValidateTicketMessage"
+}
+{
+	"name" "RPCAuthenticateKickUserMessage"
+	"type" "1005"
+	"message" "AuthenticateKickUserMessage"
+}
+{
+	"name" "RPCAuthenticateExternalStatusMessage"
+	"type" "1006"
+	"message" "AuthenticateExternalStatusMessage"
+}
+{
+	"name" "RPCAuthenticateResultMessage"
+	"type" "1010"
+	"message" "AuthenticateResultMessage"
+}
+{
+	"name" "RPCAuthenticateUserGroupMessage"
+	"type" "1011"
+	"message" "AuthenticateUserGroupMessage"
+}
+{
+	"name" "RPCAuthenticateValidateTicketResultMessage"
+	"type" "1012"
+	"message" "AuthenticateValidateTicketResultMessage"
+}
+{
+	"name" "RPCAuthenticateRegisterServerMessage"
+	"type" "1021"
+	"message" "AuthenticateRegisterServerMessage"
+}
+{
+	"name" "RPCAuthenticateRegisterServerResultMessage"
+	"type" "1022"
+	"message" "AuthenticateRegisterServerResultMessage"
+}
+{
+	"name" "RPCStorageGetPublisherFileMessage"
+	"type" "1101"
+	"message" "StorageGetPublisherFileMessage"
+}
+{
+	"name" "RPCStoragePublisherFileMessage"
+	"type" "1111"
+	"message" "StoragePublisherFileMessage"
+}
+{
+	"name" "RPCStorageGetUserFileMessage"
+	"type" "1102"
+	"message" "StorageGetUserFileMessage"
+}
+{
+	"name" "RPCStorageUserFileMessage"
+	"type" "1112"
+	"message" "StorageUserFileMessage"
+}
+{
+	"name" "RPCStorageWriteUserFileMessage"
+	"type" "1103"
+	"message" "StorageWriteUserFileMessage"
+}
+{
+	"name" "RPCStorageWriteUserFileResultMessage"
+	"type" "1113"
+	"message" "StorageWriteUserFileResultMessage"
+}
+{
+	"name" "RPCStorageSendRandomStringMessage"
+	"type" "1104"
+	"message" "StorageSendRandomStringMessage"
+}
+{
+	"name" "RPCFriendsSetSteamIDMessage"
+	"type" "1201"
+	"message" "FriendsSetSteamIDMessage"
+}
+{
+	"name" "RPCFriendsGetProfileDataMessage"
+	"type" "1202"
+	"message" "FriendsGetProfileDataMessage"
+}
+{
+	"name" "RPCFriendsGetProfileDataResultMessage"
+	"type" "1203"
+	"message" "FriendsGetProfileDataResultMessage"
+}
+{
+	"name" "RPCFriendsRosterMessage"
+	"type" "1211"
+	"message" "FriendsRosterMessage"
+}
+{
+	"name" "RPCFriendsPresenceMessage"
+	"type" "1212"
+	"message" "FriendsPresenceMessage"
+}
+{
+	"name" "RPCFriendsSetPresenceMessage"
+	"type" "1213"
+	"message" "FriendsSetPresenceMessage"
+}
+{
+	"name" "RPCFriendsGetUserAvatarMessage"
+	"type" "1214"
+	"message" "FriendsGetUserAvatarMessage"
+}
+{
+	"name" "RPCFriendsGetUserAvatarResultMessage"
+	"type" "1215"
+	"message" "FriendsGetUserAvatarResultMessage"
+}
+{
+	"name" "RPCServersCreateSessionMessage"
+	"type" "1301"
+	"message" "ServersCreateSessionMessage"
+}
+{
+	"name" "RPCServersCreateSessionResultMessage"
+	"type" "1302"
+	"message" "ServersCreateSessionResultMessage"
+}
+{
+	"name" "RPCServersGetSessionsMessage"
+	"type" "1303"
+	"message" "ServersGetSessionsMessage"
+}
+{
+	"name" "RPCServersGetSessionsResultMessage"
+	"type" "1304"
+	"message" "ServersGetSessionsResultMessage"
+}
+{
+	"name" "RPCServersUpdateSessionMessage"
+	"type" "1305"
+	"message" "ServersUpdateSessionMessage"
+}
+{
+	"name" "RPCServersUpdateSessionResultMessage"
+	"type" "1306"
+	"message" "ServersUpdateSessionResultMessage"
+}
+{
+	"name" "RPCServersDeleteSessionMessage"
+	"type" "1307"
+	"message" "ServersDeleteSessionMessage"
+}
+{
+	"name" "RPCServersDeleteSessionResultMessage"
+	"type" "1308"
+	"message" "ServersDeleteSessionResultMessage"
+}
+{
+	"name" "RPCCloseAppMessage"
+	"type" "2001"
+	"message" "CloseAppMessage"
+}
+{
+	"name" "RPCMessagingSendDataMessage"
+	"type" "2002"
+	"message" "MessagingSendDataMessage"
+}

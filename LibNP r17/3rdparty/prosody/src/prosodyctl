@@ -1,0 +1,616 @@
+#!/usr/bin/env lua
+-- Prosody IM
+-- Copyright (C) 2008-2010 Matthew Wild
+-- Copyright (C) 2008-2010 Waqas Hussain
+-- 
+-- This project is MIT/X11 licensed. Please see the
+-- COPYING file in the source package for more information.
+--
+
+-- prosodyctl - command-line controller for Prosody XMPP server
+
+-- Will be modified by configure script if run --
+
+CFG_SOURCEDIR=os.getenv("PROSODY_SRCDIR");
+CFG_CONFIGDIR=os.getenv("PROSODY_CFGDIR");
+CFG_PLUGINDIR=os.getenv("PROSODY_PLUGINDIR");
+CFG_DATADIR=os.getenv("PROSODY_DATADIR");
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+
+local function is_relative(path)
+	local path_sep = package.config:sub(1,1);
+        return ((path_sep == "/" and path:sub(1,1) ~= "/")
+	or (path_sep == "\\" and (path:sub(1,1) ~= "/" and path:sub(2,3) ~= ":\\")))
+end
+
+-- Tell Lua where to find our libraries
+if CFG_SOURCEDIR then
+	local function filter_relative_paths(path)
+		if is_relative(path) then return ""; end
+	end
+	local function sanitise_paths(paths)
+		return (paths:gsub("[^;]+;?", filter_relative_paths):gsub(";;+", ";"));
+	end
+	package.path = sanitise_paths(CFG_SOURCEDIR.."/?.lua;"..package.path);
+	package.cpath = sanitise_paths(CFG_SOURCEDIR.."/?.so;"..package.cpath);
+end
+
+-- Substitute ~ with path to home directory in data path
+if CFG_DATADIR then
+	if os.getenv("HOME") then
+		CFG_DATADIR = CFG_DATADIR:gsub("^~", os.getenv("HOME"));
+	end
+end
+
+-- Global 'prosody' object
+local prosody = {
+	hosts = {};
+	events = require "util.events".new();
+	platform = "posix";
+	lock_globals = function () end;
+	unlock_globals = function () end;
+};
+_G.prosody = prosody;
+
+local dependencies = require "util.dependencies";
+if not dependencies.check_dependencies() then
+	os.exit(1);
+end
+
+config = require "core.configmanager"
+
+do
+	local filenames = {};
+	
+	local filename;
+	if arg[1] == "--config" and arg[2] then
+		table.insert(filenames, arg[2]);
+		table.remove(arg, 1); table.remove(arg, 1);
+		if CFG_CONFIGDIR then
+			table.insert(filenames, CFG_CONFIGDIR.."/"..arg[2]);
+		end
+	else
+		for _, format in ipairs(config.parsers()) do
+			table.insert(filenames, (CFG_CONFIGDIR or ".").."/prosody.cfg."..format);
+		end
+	end
+	for _,_filename in ipairs(filenames) do
+		filename = _filename;
+		local file = io.open(filename);
+		if file then
+			file:close();
+			CFG_CONFIGDIR = filename:match("^(.*)[\\/][^\\/]*$");
+			break;
+		end
+	end
+	local ok, level, err = config.load(filename);
+	if not ok then
+		print("\n");
+		print("**************************");
+		if level == "parser" then
+			print("A problem occured while reading the config file "..(CFG_CONFIGDIR or ".").."/prosody.cfg.lua");
+			local err_line, err_message = tostring(err):match("%[string .-%]:(%d*): (.*)");
+			print("Error"..(err_line and (" on line "..err_line) or "")..": "..(err_message or tostring(err)));
+			print("");
+		elseif level == "file" then
+			print("Prosody was unable to find the configuration file.");
+			print("We looked for: "..(CFG_CONFIGDIR or ".").."/prosody.cfg.lua");
+			print("A sample config file is included in the Prosody download called prosody.cfg.lua.dist");
+			print("Copy or rename it to prosody.cfg.lua and edit as necessary.");
+		end
+		print("More help on configuring Prosody can be found at http://prosody.im/doc/configure");
+		print("Good luck!");
+		print("**************************");
+		print("");
+		os.exit(1);
+	end
+end
+local original_logging_config = config.get("*", "core", "log");
+config.set("*", "core", "log", { { levels = { min="info" }, to = "console" } });
+
+local data_path = config.get("*", "core", "data_path") or CFG_DATADIR or "data";
+local custom_plugin_paths = config.get("*", "core", "plugin_paths");
+if custom_plugin_paths then
+	local path_sep = package.config:sub(3,3);
+	-- path1;path2;path3;defaultpath...
+	CFG_PLUGINDIR = table.concat(custom_plugin_paths, path_sep)..path_sep..(CFG_PLUGINDIR or "plugins");
+end
+prosody.paths = { source = CFG_SOURCEDIR, config = CFG_CONFIGDIR, 
+	          plugins = CFG_PLUGINDIR or "plugins", data = data_path };
+
+require "core.loggingmanager"
+
+dependencies.log_warnings();
+
+-- Switch away from root and into the prosody user --
+local switched_user, current_uid;
+
+local want_pposix_version = "0.3.5";
+local ok, pposix = pcall(require, "util.pposix");
+
+if ok and pposix then
+	if pposix._VERSION ~= want_pposix_version then print(string.format("Unknown version (%s) of binary pposix module, expected %s", tostring(pposix._VERSION), want_pposix_version)); return; end
+	current_uid = pposix.getuid();
+	if current_uid == 0 then
+		-- We haz root!
+		local desired_user = config.get("*", "core", "prosody_user") or "prosody";
+		local desired_group = config.get("*", "core", "prosody_group") or desired_user;
+		local ok, err = pposix.setgid(desired_group);
+		if ok then
+			ok, err = pposix.initgroups(desired_user);
+		end
+		if ok then
+			ok, err = pposix.setuid(desired_user);
+			if ok then
+				-- Yay!
+				switched_user = true;
+			end
+		end
+		if not switched_user then
+			-- Boo!
+			print("Warning: Couldn't switch to Prosody user/group '"..tostring(desired_user).."'/'"..tostring(desired_group).."': "..tostring(err));
+		end
+	end
+	
+	-- Set our umask to protect data files
+	pposix.umask(config.get("*", "core", "umask") or "027");
+else
+	print("Error: Unable to load pposix module. Check that Prosody is installed correctly.")
+	print("For more help send the below error to us through http://prosody.im/discuss");
+	print(tostring(pposix))
+end
+
+local function test_writeable(filename)
+	local f, err = io.open(filename, "a");
+	if not f then
+		return false, err;
+	end
+	f:close();
+	return true;
+end
+
+local unwriteable_files = {};
+if type(original_logging_config) == "string" and original_logging_config:sub(1,1) ~= "*" then
+	local ok, err = test_writeable(original_logging_config);
+	if not ok then
+		table.insert(unwriteable_files, err);
+	end
+elseif type(original_logging_config) == "table" then
+	for _, rule in ipairs(original_logging_config) do
+		if rule.filename then
+			local ok, err = test_writeable(rule.filename);
+			if not ok then
+				table.insert(unwriteable_files, err);
+			end
+		end
+	end
+end
+
+if #unwriteable_files > 0 then
+	print("One of more of the Prosody log files are not");
+	print("writeable, please correct the errors and try");
+	print("starting prosodyctl again.");
+	print("");
+	for _, err in ipairs(unwriteable_files) do
+		print(err);
+	end
+	print("");
+	os.exit(1);
+end
+
+
+local error_messages = setmetatable({ 
+		["invalid-username"] = "The given username is invalid in a Jabber ID";
+		["invalid-hostname"] = "The given hostname is invalid";
+		["no-password"] = "No password was supplied";
+		["no-such-user"] = "The given user does not exist on the server";
+		["unable-to-save-data"] = "Unable to store, perhaps you don't have permission?";
+		["no-pidfile"] = "There is no 'pidfile' option in the configuration file, see http://prosody.im/doc/prosodyctl#pidfile for help";
+		["no-posix"] = "The mod_posix module is not enabled in the Prosody config file, see http://prosody.im/doc/prosodyctl for more info";
+		["no-such-method"] = "This module has no commands";
+		["not-running"] = "Prosody is not running";
+		}, { __index = function (t,k) return "Error: "..(tostring(k):gsub("%-", " "):gsub("^.", string.upper)); end });
+
+hosts = prosody.hosts;
+
+local function make_host(hostname)
+	return {
+		type = "local",
+		events = prosody.events,
+		users = require "core.usermanager".new_null_provider(hostname)
+	};
+end
+
+for hostname, config in pairs(config.getconfig()) do
+	hosts[hostname] = make_host(hostname);
+end
+	
+require "core.modulemanager"
+
+require "util.prosodyctl"
+require "socket"
+-----------------------
+
+local show_message, show_warning = prosodyctl.show_message, prosodyctl.show_warning;
+local show_usage = prosodyctl.show_usage;
+local getchar, getpass = prosodyctl.getchar, prosodyctl.getpass;
+local show_yesno = prosodyctl.show_yesno;
+local read_password = prosodyctl.read_password;
+
+local prosodyctl_timeout = (config.get("*", "core", "prosodyctl_timeout") or 5) * 2;
+-----------------------
+local commands = {};
+local command = arg[1];
+
+function commands.adduser(arg)
+	if not arg[1] or arg[1] == "--help" then
+		show_usage([[adduser JID]], [[Create the specified user account in Prosody]]);
+		return 1;
+	end
+	local user, host = arg[1]:match("([^@]+)@(.+)");
+	if not user and host then
+		show_message [[Failed to understand JID, please supply the JID you want to create]]
+		show_usage [[adduser user@host]]
+		return 1;
+	end
+	
+	if not host then
+		show_message [[Please specify a JID, including a host. e.g. alice@example.com]];
+		return 1;
+	end
+	
+	if not hosts[host] then
+		show_warning("The host '%s' is not listed in the configuration file (or is not enabled).", host)
+		show_warning("The user will not be able to log in until this is changed.");
+		hosts[host] = make_host(host);
+	end
+	
+	if prosodyctl.user_exists{ user = user, host = host } then
+		show_message [[That user already exists]];
+		return 1;
+	end
+	
+	local password = read_password();
+	if not password then return 1; end
+	
+	local ok, msg = prosodyctl.adduser { user = user, host = host, password = password };
+	
+	if ok then return 0; end
+	
+	show_message(msg)
+	return 1;
+end
+
+function commands.passwd(arg)
+	if not arg[1] or arg[1] == "--help" then
+		show_usage([[passwd JID]], [[Set the password for the specified user account in Prosody]]);
+		return 1;
+	end
+	local user, host = arg[1]:match("([^@]+)@(.+)");
+	if not user and host then
+		show_message [[Failed to understand JID, please supply the JID you want to set the password for]]
+		show_usage [[passwd user@host]]
+		return 1;
+	end
+	
+	if not host then
+		show_message [[Please specify a JID, including a host. e.g. alice@example.com]];
+		return 1;
+	end
+	
+	if not hosts[host] then
+		show_warning("The host '%s' is not listed in the configuration file (or is not enabled).", host)
+		show_warning("The user will not be able to log in until this is changed.");
+		hosts[host] = make_host(host);
+	end
+	
+	if not prosodyctl.user_exists { user = user, host = host } then
+		show_message [[That user does not exist, use prosodyctl adduser to create a new user]]
+		return 1;
+	end
+	
+	local password = read_password();
+	if not password then return 1; end
+	
+	local ok, msg = prosodyctl.passwd { user = user, host = host, password = password };
+	
+	if ok then return 0; end
+	
+	show_message(error_messages[msg])
+	return 1;
+end
+
+function commands.deluser(arg)
+	if not arg[1] or arg[1] == "--help" then
+		show_usage([[deluser JID]], [[Permanently remove the specified user account from Prosody]]);
+		return 1;
+	end
+	local user, host = arg[1]:match("([^@]+)@(.+)");
+	if not user and host then
+		show_message [[Failed to understand JID, please supply the JID you want to set the password for]]
+		show_usage [[passwd user@host]]
+		return 1;
+	end
+	
+	if not host then
+		show_message [[Please specify a JID, including a host. e.g. alice@example.com]];
+		return 1;
+	end
+	
+	if not hosts[host] then
+		show_warning("The host '%s' is not listed in the configuration file (or is not enabled).", host)
+		show_warning("The user will not be able to log in until this is changed.");
+		hosts[host] = make_host(host);
+	end
+
+	if not prosodyctl.user_exists { user = user, host = host } then
+		show_message [[That user does not exist on this server]]
+		return 1;
+	end
+	
+	local ok, msg = prosodyctl.passwd { user = user, host = host };
+	
+	if ok then return 0; end
+	
+	show_message(error_messages[msg])
+	return 1;
+end
+
+function commands.start(arg)
+	if arg[1] == "--help" then
+		show_usage([[start]], [[Start Prosody]]);
+		return 1;
+	end
+	local ok, ret = prosodyctl.isrunning();
+	if not ok then
+		show_message(error_messages[ret]);
+		return 1;
+	end
+	
+	if ret then
+		local ok, ret = prosodyctl.getpid();
+		if not ok then
+			show_message("Couldn't get running Prosody's PID");
+			show_message(error_messages[ret]);
+			return 1;
+		end
+		show_message("Prosody is already running with PID %s", ret or "(unknown)");
+		return 1;
+	end
+	
+	local ok, ret = prosodyctl.start();
+	if ok then
+		if config.get("*", "core", "daemonize") ~= false then
+			local i=1;
+			while true do
+				local ok, running = prosodyctl.isrunning();
+				if ok and running then
+					break;
+				elseif i == 5 then
+					show_message("Still waiting...");
+				elseif i >= prosodyctl_timeout then
+					show_message("Prosody is still not running. Please give it some time or check your log files for errors.");
+					return 2;
+				end
+				socket.sleep(0.5);
+				i = i + 1;
+			end
+			show_message("Started");
+		end
+		return 0;
+	end
+
+	show_message("Failed to start Prosody");
+	show_message(error_messages[ret])	
+	return 1;	
+end
+
+function commands.status(arg)
+	if arg[1] == "--help" then
+		show_usage([[status]], [[Reports the running status of Prosody]]);
+		return 1;
+	end
+
+	local ok, ret = prosodyctl.isrunning();
+	if not ok then
+		show_message(error_messages[ret]);
+		return 1;
+	end
+	
+	if ret then
+		local ok, ret = prosodyctl.getpid();
+		if not ok then
+			show_message("Couldn't get running Prosody's PID");
+			show_message(error_messages[ret]);
+			return 1;
+		end
+		show_message("Prosody is running with PID %s", ret or "(unknown)");
+		return 0;
+	else
+		show_message("Prosody is not running");
+		if not switched_user and current_uid ~= 0 then
+			print("\nNote:")
+			print(" You will also see this if prosodyctl is not running under");
+			print(" the same user account as Prosody. Try running as root (e.g. ");
+			print(" with 'sudo' in front) to gain access to Prosody's real status.");
+		end
+		return 2
+	end
+	return 1;
+end
+
+function commands.stop(arg)
+	if arg[1] == "--help" then
+		show_usage([[stop]], [[Stop a running Prosody server]]);
+		return 1;
+	end
+
+	if not prosodyctl.isrunning() then
+		show_message("Prosody is not running");
+		return 1;
+	end
+	
+	local ok, ret = prosodyctl.stop();
+	if ok then
+		local i=1;
+		while true do
+			local ok, running = prosodyctl.isrunning();
+			if ok and not running then
+				break;
+			elseif i == 5 then
+				show_message("Still waiting...");
+			elseif i >= prosodyctl_timeout then
+				show_message("Prosody is still running. Please give it some time or check your log files for errors.");
+				return 2;
+			end
+			socket.sleep(0.5);
+			i = i + 1;
+		end
+		show_message("Stopped");
+		return 0;
+	end
+
+	show_message(error_messages[ret]);
+	return 1;
+end
+
+function commands.restart(arg)
+	if arg[1] == "--help" then
+		show_usage([[restart]], [[Restart a running Prosody server]]);
+		return 1;
+	end
+	
+	commands.stop(arg);
+	return commands.start(arg);
+end
+
+-- ejabberdctl compatibility
+
+function commands.register(arg)
+	local user, host, password = unpack(arg);
+	if (not (user and host)) or arg[1] == "--help" then
+		if user ~= "--help" then
+			if not user then
+				show_message [[No username specified]]
+			elseif not host then
+				show_message [[Please specify which host you want to register the user on]];
+			end
+		end
+		show_usage("register USER HOST [PASSWORD]", "Register a user on the server, with the given password");
+		return 1;
+	end
+	if not password then
+		password = read_password();
+		if not password then
+			show_message [[Unable to register user with no password]];
+			return 1;
+		end
+	end
+	
+	local ok, msg = prosodyctl.adduser { user = user, host = host, password = password };
+	
+	if ok then return 0; end
+	
+	show_message(error_messages[msg])
+	return 1;
+end
+
+function commands.unregister(arg)
+	local user, host = unpack(arg);
+	if (not (user and host)) or arg[1] == "--help" then
+		if user ~= "--help" then
+			if not user then
+				show_message [[No username specified]]
+			elseif not host then
+				show_message [[Please specify which host you want to unregister the user from]];
+			end
+		end
+		show_usage("unregister USER HOST [PASSWORD]", "Permanently remove a user account from the server");
+		return 1;
+	end
+
+	local ok, msg = prosodyctl.deluser { user = user, host = host };
+	
+	if ok then return 0; end
+	
+	show_message(error_messages[msg])
+	return 1;
+end
+
+---------------------
+
+if command and command:match("^mod_") then -- Is a command in a module
+	local module_name = command:match("^mod_(.+)");
+	local ret, err = modulemanager.load("*", module_name);
+	if not ret then
+		show_message("Failed to load module '"..module_name.."': "..err);
+		os.exit(1);
+	end
+	
+	table.remove(arg, 1);
+	
+	local module = modulemanager.get_module("*", module_name);
+	if not module then
+		show_message("Failed to load module '"..module_name.."': Unknown error");
+		os.exit(1);
+	end
+	
+	if not modulemanager.module_has_method(module, "command") then
+		show_message("Fail: mod_"..module_name.." does not support any commands");
+		os.exit(1);
+	end
+	
+	local ok, ret = modulemanager.call_module_method(module, "command", arg);
+	if ok then
+		if type(ret) == "number" then
+			os.exit(ret);
+		elseif type(ret) == "string" then
+			show_message(ret);
+		end
+		os.exit(0); -- :)
+	else
+		show_message("Failed to execute command: "..error_messages[ret]);
+		os.exit(1); -- :(
+	end
+end
+
+if not commands[command] then -- Show help for all commands
+	function show_usage(usage, desc)
+		print(" "..usage);
+		print("    "..desc);
+	end
+
+	print("prosodyctl - Manage a Prosody server");
+	print("");
+	print("Usage: "..arg[0].." COMMAND [OPTIONS]");
+	print("");
+	print("Where COMMAND may be one of:\n");
+
+	local hidden_commands = require "util.set".new{ "register", "unregister", "addplugin" };
+	local commands_order = { "adduser", "passwd", "deluser", "start", "stop", "restart" };
+
+	local done = {};
+
+	for _, command_name in ipairs(commands_order) do
+		local command = commands[command_name];
+		if command then
+			command{ "--help" };
+			print""
+			done[command_name] = true;
+		end
+	end
+
+	for command_name, command in pairs(commands) do
+		if not done[command_name] and not hidden_commands:contains(command_name) then
+			command{ "--help" };
+			print""
+			done[command_name] = true;
+		end
+	end
+	
+	
+	os.exit(0);
+end
+
+os.exit(commands[command]({ select(2, unpack(arg)) }));

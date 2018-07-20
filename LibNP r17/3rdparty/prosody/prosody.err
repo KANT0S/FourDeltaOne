@@ -1,0 +1,440 @@
+Jan 15 18:50:06 modulemanager	error	Unable to load module 'auth_phpbb3': X:\svn\aiw\terminal\3rdparty\prosody\plugins\mod_auth_phpbb3.lua: No such file or directory
+Jan 15 18:51:16 modulemanager	error	Error initializing module 'auth_phpbb3' on 'plazagaming.net': X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:155: module 'DBI' not found:
+	no field package.preload['DBI']
+	no file 'X:\svn\aiw\terminal\3rdparty\prosody\\src\/DBI.lua'
+	no file 'X:\svn\aiw\terminal\3rdparty\prosody\\src\DBI.lua'
+	no file 'X:\svn\aiw\terminal\3rdparty\prosody\\lib\DBI.lua'
+	no file 'X:\svn\aiw\terminal\3rdparty\prosody\\src\/DBI.so'
+	no file 'X:\svn\aiw\terminal\3rdparty\prosody\\lib\DBI.dll'
+stack traceback:
+	...rminal\3rdparty\prosody\\src\/core\modulemanager.lua:35: in function <...rminal\3rdparty\prosody\\src\/core\modulemanager.lua:35>
+	[C]: in function '_real_require'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:155: in function 'require'
+	...erminal\3rdparty\prosody\plugins\mod_auth_phpbb3.lua:10: in main chunk
+	(tail call): ?
+	[C]: in function 'xpcall'
+	...rminal\3rdparty\prosody\\src\/core\modulemanager.lua:35: in function 'pcall'
+	...rminal\3rdparty\prosody\\src\/core\modulemanager.lua:129: in function 'load'
+	...terminal\3rdparty\prosody\\src\/core\usermanager.lua:61: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function 'fire_event'
+	...terminal\3rdparty\prosody\\src\/core\hostmanager.lua:84: in function 'activate'
+	...terminal\3rdparty\prosody\\src\/core\hostmanager.lua:42: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function 'fire_event'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:374: in function 'prepare_to_start'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:490: in main chunk
+	[C]: ?
+Jan 15 18:51:38 modulemanager	error	Error initializing module 'auth_phpbb3' on 'plazagaming.net': X:\svn\aiw\terminal\3rdparty\prosody\\lib\DBI.lua:52: Cannot load driver SQLite3. Available drivers are: MySQL
+stack traceback:
+	...rminal\3rdparty\prosody\\src\/core\modulemanager.lua:35: in function <...rminal\3rdparty\prosody\\src\/core\modulemanager.lua:35>
+	[C]: in function 'error'
+	X:\svn\aiw\terminal\3rdparty\prosody\\lib\DBI.lua:52: in function 'Connect'
+	...erminal\3rdparty\prosody\plugins\mod_auth_phpbb3.lua:31: in function 'connect'
+	...erminal\3rdparty\prosody\plugins\mod_auth_phpbb3.lua:57: in main chunk
+	(tail call): ?
+	[C]: in function 'xpcall'
+	...rminal\3rdparty\prosody\\src\/core\modulemanager.lua:35: in function 'pcall'
+	...rminal\3rdparty\prosody\\src\/core\modulemanager.lua:129: in function 'load'
+	...terminal\3rdparty\prosody\\src\/core\usermanager.lua:61: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function 'fire_event'
+	...terminal\3rdparty\prosody\\src\/core\hostmanager.lua:84: in function 'activate'
+	...terminal\3rdparty\prosody\\src\/core\hostmanager.lua:42: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function 'fire_event'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:374: in function 'prepare_to_start'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:490: in main chunk
+	[C]: ?
+Jan 15 18:56:45 modulemanager	error	Error initializing module 'auth_phpbb3' on 'plazagaming.net': X:\svn\aiw\terminal\3rdparty\prosody\\lib\DBI.lua:52: Cannot load driver SQLite3. Available drivers are: MySQL
+stack traceback:
+	...rminal\3rdparty\prosody\\src\/core\modulemanager.lua:35: in function <...rminal\3rdparty\prosody\\src\/core\modulemanager.lua:35>
+	[C]: in function 'error'
+	X:\svn\aiw\terminal\3rdparty\prosody\\lib\DBI.lua:52: in function 'Connect'
+	...erminal\3rdparty\prosody\plugins\mod_auth_phpbb3.lua:31: in function 'connect'
+	...erminal\3rdparty\prosody\plugins\mod_auth_phpbb3.lua:57: in main chunk
+	(tail call): ?
+	[C]: in function 'xpcall'
+	...rminal\3rdparty\prosody\\src\/core\modulemanager.lua:35: in function 'pcall'
+	...rminal\3rdparty\prosody\\src\/core\modulemanager.lua:129: in function 'load'
+	...terminal\3rdparty\prosody\\src\/core\usermanager.lua:61: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function 'fire_event'
+	...terminal\3rdparty\prosody\\src\/core\hostmanager.lua:84: in function 'activate'
+	...terminal\3rdparty\prosody\\src\/core\hostmanager.lua:42: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function 'fire_event'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:374: in function 'prepare_to_start'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:490: in main chunk
+	[C]: ?
+Jan 15 20:59:14 general	error	Top-level error, please report:
+...vn\aiw\terminal\3rdparty\prosody\\src\/util\sasl.lua:51: attempt to index local 'profile' (a nil value)
+Jan 15 20:59:14 general	error	
+stack traceback:
+	[C]: in function 'parse'
+	...\terminal\3rdparty\prosody\\src\/util\xmppstream.lua:200: in function 'feed'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:145: in function 'data'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:161: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:158>
+	(tail call): ?
+	...erminal\3rdparty\prosody\\src\/net\server_select.lua:820: in function <...erminal\3rdparty\prosody\\src\/net\server_select.lua:802>
+	[C]: in function 'xpcall'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:427: in function 'loop'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:494: in main chunk
+	[C]: ?
+Jan 16 16:32:48 xmppclient_listener	error	Traceback[c2s]: ...aiw\terminal\3rdparty\prosody\plugins\mod_roster.lua:40: attempt to index field 'roster' (a nil value): stack traceback:
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62>
+	...aiw\terminal\3rdparty\prosody\plugins\mod_roster.lua:40: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function <...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:63>
+	(tail call): ?
+	...svn\aiw\terminal\3rdparty\prosody\plugins\mod_iq.lua:57: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function 'fire_event'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:174: in function 'core_post_stanza'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:121: in function <...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:44>
+	(tail call): ?
+	[C]: in function 'xpcall'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:66: in function 'cb_handlestanza'
+	...\terminal\3rdparty\prosody\\src\/util\xmppstream.lua:139: in function <...\terminal\3rdparty\prosody\\src\/util\xmppstream.lua:125>
+	[C]: in function 'parse'
+	...\terminal\3rdparty\prosody\\src\/util\xmppstream.lua:200: in function 'feed'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:145: in function 'data'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:161: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:158>
+	(tail call): ?
+	...erminal\3rdparty\prosody\\src\/net\server_select.lua:820: in function <...erminal\3rdparty\prosody\\src\/net\server_select.lua:802>
+	[C]: in function 'xpcall'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:427: in function 'loop'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:494: in main chunk
+	[C]: ?
+Jan 16 16:35:01 xmppclient_listener	error	Traceback[c2s]: ...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:210: attempt to index local 'roster' (a nil value): stack traceback:
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62>
+	...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:210: in function 'rm_load_roster'
+	...minal\3rdparty\prosody\\src\/core\sessionmanager.lua:202: in function 'sm_bind_resource'
+	...w\terminal\3rdparty\prosody\plugins\mod_saslauth.lua:152: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function <...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:63>
+	(tail call): ?
+	...svn\aiw\terminal\3rdparty\prosody\plugins\mod_iq.lua:57: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function 'fire_event'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:174: in function 'core_post_stanza'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:121: in function <...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:44>
+	(tail call): ?
+	...
+	[C]: in function 'parse'
+	...\terminal\3rdparty\prosody\\src\/util\xmppstream.lua:200: in function 'feed'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:145: in function 'data'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:161: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:158>
+	(tail call): ?
+	...erminal\3rdparty\prosody\\src\/net\server_select.lua:820: in function <...erminal\3rdparty\prosody\\src\/net\server_select.lua:802>
+	[C]: in function 'xpcall'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:427: in function 'loop'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:494: in main chunk
+	[C]: ?
+Jan 16 16:36:39 xmppclient_listener	error	Traceback[c2s]: ...aiw\terminal\3rdparty\prosody\plugins\mod_roster.lua:53: bad argument #1 to 'pairs' (table expected, got nil): stack traceback:
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62>
+	[C]: in function 'pairs'
+	...aiw\terminal\3rdparty\prosody\plugins\mod_roster.lua:53: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function <...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:63>
+	(tail call): ?
+	...svn\aiw\terminal\3rdparty\prosody\plugins\mod_iq.lua:57: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function 'fire_event'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:174: in function 'core_post_stanza'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:121: in function <...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:44>
+	(tail call): ?
+	[C]: in function 'xpcall'
+	...
+	[C]: in function 'parse'
+	...\terminal\3rdparty\prosody\\src\/util\xmppstream.lua:200: in function 'feed'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:145: in function 'data'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:161: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:158>
+	(tail call): ?
+	...erminal\3rdparty\prosody\\src\/net\server_select.lua:820: in function <...erminal\3rdparty\prosody\\src\/net\server_select.lua:802>
+	[C]: in function 'xpcall'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:427: in function 'loop'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:494: in main chunk
+	[C]: ?
+Jan 19 11:27:13 xmppclient_listener	error	Traceback[c2s]: ...erminal\3rdparty\prosody\plugins\mod_auth_phpbb3.lua:66: attempt to index upvalue 'connection' (a nil value): stack traceback:
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62>
+	...erminal\3rdparty\prosody\plugins\mod_auth_phpbb3.lua:66: in function 'getsql'
+	...erminal\3rdparty\prosody\plugins\mod_auth_phpbb3.lua:93: in function 'test_password'
+	...erminal\3rdparty\prosody\plugins\mod_auth_phpbb3.lua:170: in function 'test'
+	...erminal\3rdparty\prosody\plugins\mod_auth_phpbb3.lua:172: in function 'process'
+	...w\terminal\3rdparty\prosody\plugins\mod_saslauth.lua:76: in function <...w\terminal\3rdparty\prosody\plugins\mod_saslauth.lua:65>
+	(tail call): ?
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function 'fire_event'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:135: in function <...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:44>
+	(tail call): ?
+	[C]: in function 'xpcall'
+	...
+	[C]: in function 'parse'
+	...\terminal\3rdparty\prosody\\src\/util\xmppstream.lua:200: in function 'feed'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:145: in function 'data'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:161: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:158>
+	(tail call): ?
+	...erminal\3rdparty\prosody\\src\/net\server_select.lua:820: in function <...erminal\3rdparty\prosody\\src\/net\server_select.lua:802>
+	[C]: in function 'xpcall'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:427: in function 'loop'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:494: in main chunk
+	[C]: ?
+Jan 19 18:05:09 xmppclient_listener	error	Traceback[c2s]: ...erminal\3rdparty\prosody\plugins\mod_auth_phpbb3.lua:66: attempt to index upvalue 'connection' (a nil value): stack traceback:
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62>
+	...erminal\3rdparty\prosody\plugins\mod_auth_phpbb3.lua:66: in function 'getsql'
+	...erminal\3rdparty\prosody\plugins\mod_auth_phpbb3.lua:93: in function 'test_password'
+	...erminal\3rdparty\prosody\plugins\mod_auth_phpbb3.lua:170: in function 'test'
+	...erminal\3rdparty\prosody\plugins\mod_auth_phpbb3.lua:172: in function 'process'
+	...w\terminal\3rdparty\prosody\plugins\mod_saslauth.lua:76: in function <...w\terminal\3rdparty\prosody\plugins\mod_saslauth.lua:65>
+	(tail call): ?
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function 'fire_event'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:135: in function <...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:44>
+	(tail call): ?
+	[C]: in function 'xpcall'
+	...
+	[C]: in function 'parse'
+	...\terminal\3rdparty\prosody\\src\/util\xmppstream.lua:200: in function 'feed'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:145: in function 'data'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:161: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:158>
+	(tail call): ?
+	...erminal\3rdparty\prosody\\src\/net\server_select.lua:820: in function <...erminal\3rdparty\prosody\\src\/net\server_select.lua:802>
+	[C]: in function 'xpcall'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:427: in function 'loop'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:494: in main chunk
+	[C]: ?
+Jan 19 18:05:09 xmppclient_listener	error	Traceback[c2s]: ...erminal\3rdparty\prosody\plugins\mod_auth_phpbb3.lua:66: attempt to index upvalue 'connection' (a nil value): stack traceback:
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62>
+	...erminal\3rdparty\prosody\plugins\mod_auth_phpbb3.lua:66: in function 'getsql'
+	...erminal\3rdparty\prosody\plugins\mod_auth_phpbb3.lua:93: in function 'test_password'
+	...erminal\3rdparty\prosody\plugins\mod_auth_phpbb3.lua:170: in function 'test'
+	...erminal\3rdparty\prosody\plugins\mod_auth_phpbb3.lua:172: in function 'process'
+	...w\terminal\3rdparty\prosody\plugins\mod_saslauth.lua:76: in function <...w\terminal\3rdparty\prosody\plugins\mod_saslauth.lua:65>
+	(tail call): ?
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function 'fire_event'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:135: in function <...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:44>
+	(tail call): ?
+	[C]: in function 'xpcall'
+	...
+	[C]: in function 'parse'
+	...\terminal\3rdparty\prosody\\src\/util\xmppstream.lua:200: in function 'feed'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:145: in function 'data'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:161: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:158>
+	(tail call): ?
+	...erminal\3rdparty\prosody\\src\/net\server_select.lua:820: in function <...erminal\3rdparty\prosody\\src\/net\server_select.lua:802>
+	[C]: in function 'xpcall'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:427: in function 'loop'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:494: in main chunk
+	[C]: ?
+Jan 22 17:18:22 modulemanager	error	Unable to load module 'auth_phpbb3': X:\svn\aiw\terminal\3rdparty\prosody\plugins\mod_auth_phpbb3.lua:95: 'end' expected (to close 'function' at line 92) near 'local'
+Jan 31 11:34:33 xmppclient_listener	error	Traceback[c2s]: ...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:84: attempt to index global 'debug' (a nil value): stack traceback:
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62>
+	...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:84: in function 'getsql'
+	...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:187: in function 'rm_load_roster'
+	...minal\3rdparty\prosody\\src\/core\sessionmanager.lua:202: in function 'sm_bind_resource'
+	...w\terminal\3rdparty\prosody\plugins\mod_saslauth.lua:152: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function <...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:63>
+	(tail call): ?
+	...svn\aiw\terminal\3rdparty\prosody\plugins\mod_iq.lua:57: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function 'fire_event'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:174: in function 'core_post_stanza'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:121: in function <...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:44>
+	...
+	[C]: in function 'parse'
+	...\terminal\3rdparty\prosody\\src\/util\xmppstream.lua:200: in function 'feed'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:145: in function 'data'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:161: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:158>
+	(tail call): ?
+	...erminal\3rdparty\prosody\\src\/net\server_select.lua:820: in function <...erminal\3rdparty\prosody\\src\/net\server_select.lua:802>
+	[C]: in function 'xpcall'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:427: in function 'loop'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:494: in main chunk
+	[C]: ?
+Jan 31 11:35:42 xmppclient_listener	error	Traceback[c2s]: ...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:84: attempt to index global 'debug' (a nil value): stack traceback:
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62>
+	...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:84: in function 'getsql'
+	...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:187: in function 'rm_load_roster'
+	...minal\3rdparty\prosody\\src\/core\sessionmanager.lua:202: in function 'sm_bind_resource'
+	...w\terminal\3rdparty\prosody\plugins\mod_saslauth.lua:152: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function <...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:63>
+	(tail call): ?
+	...svn\aiw\terminal\3rdparty\prosody\plugins\mod_iq.lua:57: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function 'fire_event'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:174: in function 'core_post_stanza'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:121: in function <...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:44>
+	...
+	[C]: in function 'parse'
+	...\terminal\3rdparty\prosody\\src\/util\xmppstream.lua:200: in function 'feed'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:145: in function 'data'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:161: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:158>
+	(tail call): ?
+	...erminal\3rdparty\prosody\\src\/net\server_select.lua:820: in function <...erminal\3rdparty\prosody\\src\/net\server_select.lua:802>
+	[C]: in function 'xpcall'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:427: in function 'loop'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:494: in main chunk
+	[C]: ?
+Jan 31 11:40:52 xmppclient_listener	error	Traceback[c2s]: ...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:84: attempt to index global 'debug' (a nil value): stack traceback:
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62>
+	...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:84: in function 'getsql'
+	...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:187: in function 'rm_load_roster'
+	...minal\3rdparty\prosody\\src\/core\sessionmanager.lua:202: in function 'sm_bind_resource'
+	...w\terminal\3rdparty\prosody\plugins\mod_saslauth.lua:152: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function <...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:63>
+	(tail call): ?
+	...svn\aiw\terminal\3rdparty\prosody\plugins\mod_iq.lua:57: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function 'fire_event'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:174: in function 'core_post_stanza'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:121: in function <...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:44>
+	...
+	[C]: in function 'parse'
+	...\terminal\3rdparty\prosody\\src\/util\xmppstream.lua:200: in function 'feed'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:145: in function 'data'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:161: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:158>
+	(tail call): ?
+	...erminal\3rdparty\prosody\\src\/net\server_select.lua:820: in function <...erminal\3rdparty\prosody\\src\/net\server_select.lua:802>
+	[C]: in function 'xpcall'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:427: in function 'loop'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:494: in main chunk
+	[C]: ?
+Jan 31 11:42:43 xmppclient_listener	error	Traceback[c2s]: ...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:84: attempt to index global 'debug' (a nil value): stack traceback:
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62>
+	...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:84: in function 'getsql'
+	...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:187: in function 'rm_load_roster'
+	...minal\3rdparty\prosody\\src\/core\sessionmanager.lua:202: in function 'sm_bind_resource'
+	...w\terminal\3rdparty\prosody\plugins\mod_saslauth.lua:152: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function <...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:63>
+	(tail call): ?
+	...svn\aiw\terminal\3rdparty\prosody\plugins\mod_iq.lua:57: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function 'fire_event'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:174: in function 'core_post_stanza'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:121: in function <...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:44>
+	...
+	[C]: in function 'parse'
+	...\terminal\3rdparty\prosody\\src\/util\xmppstream.lua:200: in function 'feed'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:145: in function 'data'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:161: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:158>
+	(tail call): ?
+	...erminal\3rdparty\prosody\\src\/net\server_select.lua:820: in function <...erminal\3rdparty\prosody\\src\/net\server_select.lua:802>
+	[C]: in function 'xpcall'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:427: in function 'loop'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:494: in main chunk
+	[C]: ?
+Jan 31 11:45:16 xmppclient_listener	error	Traceback[c2s]: ...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:84: attempt to index global 'debug' (a nil value): stack traceback:
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62>
+	...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:84: in function 'getsql'
+	...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:187: in function 'rm_load_roster'
+	...minal\3rdparty\prosody\\src\/core\sessionmanager.lua:202: in function 'sm_bind_resource'
+	...w\terminal\3rdparty\prosody\plugins\mod_saslauth.lua:152: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function <...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:63>
+	(tail call): ?
+	...svn\aiw\terminal\3rdparty\prosody\plugins\mod_iq.lua:57: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function 'fire_event'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:174: in function 'core_post_stanza'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:121: in function <...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:44>
+	...
+	[C]: in function 'parse'
+	...\terminal\3rdparty\prosody\\src\/util\xmppstream.lua:200: in function 'feed'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:145: in function 'data'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:161: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:158>
+	(tail call): ?
+	...erminal\3rdparty\prosody\\src\/net\server_select.lua:820: in function <...erminal\3rdparty\prosody\\src\/net\server_select.lua:802>
+	[C]: in function 'xpcall'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:427: in function 'loop'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:494: in main chunk
+	[C]: ?
+Jan 31 12:18:45 xmppclient_listener	error	Traceback[c2s]: ...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:84: attempt to index global 'debug' (a nil value): stack traceback:
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62>
+	...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:84: in function 'getsql'
+	...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:187: in function 'rm_load_roster'
+	...minal\3rdparty\prosody\\src\/core\sessionmanager.lua:202: in function 'sm_bind_resource'
+	...w\terminal\3rdparty\prosody\plugins\mod_saslauth.lua:152: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function <...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:63>
+	(tail call): ?
+	...svn\aiw\terminal\3rdparty\prosody\plugins\mod_iq.lua:57: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function 'fire_event'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:174: in function 'core_post_stanza'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:121: in function <...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:44>
+	...
+	[C]: in function 'parse'
+	...\terminal\3rdparty\prosody\\src\/util\xmppstream.lua:200: in function 'feed'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:145: in function 'data'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:161: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:158>
+	(tail call): ?
+	...erminal\3rdparty\prosody\\src\/net\server_select.lua:820: in function <...erminal\3rdparty\prosody\\src\/net\server_select.lua:802>
+	[C]: in function 'xpcall'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:427: in function 'loop'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:494: in main chunk
+	[C]: ?
+Jan 31 12:20:53 xmppclient_listener	error	Traceback[c2s]: ...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:84: attempt to index global 'debug' (a nil value): stack traceback:
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62>
+	...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:84: in function 'getsql'
+	...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:187: in function 'rm_load_roster'
+	...minal\3rdparty\prosody\\src\/core\sessionmanager.lua:202: in function 'sm_bind_resource'
+	...w\terminal\3rdparty\prosody\plugins\mod_saslauth.lua:152: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function <...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:63>
+	(tail call): ?
+	...svn\aiw\terminal\3rdparty\prosody\plugins\mod_iq.lua:57: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function 'fire_event'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:174: in function 'core_post_stanza'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:121: in function <...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:44>
+	...
+	[C]: in function 'parse'
+	...\terminal\3rdparty\prosody\\src\/util\xmppstream.lua:200: in function 'feed'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:145: in function 'data'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:161: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:158>
+	(tail call): ?
+	...erminal\3rdparty\prosody\\src\/net\server_select.lua:820: in function <...erminal\3rdparty\prosody\\src\/net\server_select.lua:802>
+	[C]: in function 'xpcall'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:427: in function 'loop'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:494: in main chunk
+	[C]: ?
+Jan 31 12:24:59 xmppclient_listener	error	Traceback[c2s]: ...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:84: attempt to index global 'debug' (a nil value): stack traceback:
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62>
+	...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:84: in function 'getsql'
+	...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:187: in function 'rm_load_roster'
+	...minal\3rdparty\prosody\\src\/core\sessionmanager.lua:202: in function 'sm_bind_resource'
+	...w\terminal\3rdparty\prosody\plugins\mod_saslauth.lua:152: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function <...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:63>
+	(tail call): ?
+	...svn\aiw\terminal\3rdparty\prosody\plugins\mod_iq.lua:57: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function 'fire_event'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:174: in function 'core_post_stanza'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:121: in function <...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:44>
+	...
+	[C]: in function 'parse'
+	...\terminal\3rdparty\prosody\\src\/util\xmppstream.lua:200: in function 'feed'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:145: in function 'data'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:161: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:158>
+	(tail call): ?
+	...erminal\3rdparty\prosody\\src\/net\server_select.lua:820: in function <...erminal\3rdparty\prosody\\src\/net\server_select.lua:802>
+	[C]: in function 'xpcall'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:427: in function 'loop'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:494: in main chunk
+	[C]: ?
+Jan 31 12:49:04 xmppclient_listener	error	Traceback[c2s]: ...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:84: attempt to index global 'debug' (a nil value): stack traceback:
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:62>
+	...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:84: in function 'getsql'
+	...rminal\3rdparty\prosody\\src\/core\rostermanager.lua:187: in function 'rm_load_roster'
+	...minal\3rdparty\prosody\\src\/core\sessionmanager.lua:202: in function 'sm_bind_resource'
+	...w\terminal\3rdparty\prosody\plugins\mod_saslauth.lua:152: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function <...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:63>
+	(tail call): ?
+	...svn\aiw\terminal\3rdparty\prosody\plugins\mod_iq.lua:57: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function 'fire_event'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:174: in function 'core_post_stanza'
+	...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:121: in function <...rminal\3rdparty\prosody\\src\/core\stanza_router.lua:44>
+	...
+	[C]: in function 'parse'
+	...\terminal\3rdparty\prosody\\src\/util\xmppstream.lua:200: in function 'feed'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:145: in function 'data'
+	...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:161: in function <...l\3rdparty\prosody\\src\/net/xmppclient_listener.lua:158>
+	(tail call): ?
+	...erminal\3rdparty\prosody\\src\/net\server_select.lua:820: in function <...erminal\3rdparty\prosody\\src\/net\server_select.lua:802>
+	[C]: in function 'xpcall'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:427: in function 'loop'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:494: in main chunk
+	[C]: ?
+Jun 11 20:04:15 modulemanager	error	Error initializing module 'auth_phpbb3' on 'fourdeltaone.net': ...erminal\3rdparty\prosody\plugins\mod_auth_phpbb3.lua:57: Failed to connect to database: Can't connect to MySQL server on 'fourdeltaone.net' (10061)
+stack traceback:
+	...rminal\3rdparty\prosody\\src\/core\modulemanager.lua:35: in function <...rminal\3rdparty\prosody\\src\/core\modulemanager.lua:35>
+	[C]: in function 'assert'
+	...erminal\3rdparty\prosody\plugins\mod_auth_phpbb3.lua:57: in main chunk
+	(tail call): ?
+	[C]: in function 'xpcall'
+	...rminal\3rdparty\prosody\\src\/core\modulemanager.lua:35: in function 'pcall'
+	...rminal\3rdparty\prosody\\src\/core\modulemanager.lua:129: in function 'load'
+	...terminal\3rdparty\prosody\\src\/core\usermanager.lua:61: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function 'fire_event'
+	...terminal\3rdparty\prosody\\src\/core\hostmanager.lua:84: in function 'activate'
+	...terminal\3rdparty\prosody\\src\/core\hostmanager.lua:42: in function '?'
+	...\aiw\terminal\3rdparty\prosody\\src\/util\events.lua:67: in function 'fire_event'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:374: in function 'prepare_to_start'
+	X:\svn\aiw\terminal\3rdparty\prosody\\src\prosody:490: in main chunk
+	[C]: ?

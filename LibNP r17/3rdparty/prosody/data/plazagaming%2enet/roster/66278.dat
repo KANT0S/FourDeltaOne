@@ -1,0 +1,12 @@
+return {
+	[false] = {
+		["version"] = 5;
+	};
+	["77@plazagaming.net"] = {
+		["groups"] = {
+			["Favorites"] = true;
+		};
+		["subscription"] = "both";
+	};
+	["pending"] = {};
+}
