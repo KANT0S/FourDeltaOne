@@ -1,0 +1,14 @@
+default
+{
+	texture Images/default.png
+}
+
+peds/testped
+{
+	texture Images/default.png
+}
+
+x1
+{
+	texture Images/x1.png
+}

@@ -1,0 +1,5952 @@
+gbh/bil/0
+{
+	texture Styles/bil.png
+	uv 0 0 0.03125 0.03125
+}
+
+gbh/bil/1
+{
+	texture Styles/bil.png
+	uv 0.03125 0 0.0625 0.03125
+}
+
+gbh/bil/2
+{
+	texture Styles/bil.png
+	uv 0.0625 0 0.09375 0.03125
+}
+
+gbh/bil/3
+{
+	texture Styles/bil.png
+	uv 0.09375 0 0.125 0.03125
+}
+
+gbh/bil/4
+{
+	texture Styles/bil.png
+	uv 0.125 0 0.15625 0.03125
+}
+
+gbh/bil/5
+{
+	texture Styles/bil.png
+	uv 0.15625 0 0.1875 0.03125
+}
+
+gbh/bil/6
+{
+	texture Styles/bil.png
+	uv 0.1875 0 0.21875 0.03125
+}
+
+gbh/bil/7
+{
+	texture Styles/bil.png
+	uv 0.21875 0 0.25 0.03125
+}
+
+gbh/bil/8
+{
+	texture Styles/bil.png
+	uv 0.25 0 0.28125 0.03125
+}
+
+gbh/bil/9
+{
+	texture Styles/bil.png
+	uv 0.28125 0 0.3125 0.03125
+}
+
+gbh/bil/10
+{
+	texture Styles/bil.png
+	uv 0.3125 0 0.34375 0.03125
+}
+
+gbh/bil/11
+{
+	texture Styles/bil.png
+	uv 0.34375 0 0.375 0.03125
+}
+
+gbh/bil/12
+{
+	texture Styles/bil.png
+	uv 0.375 0 0.40625 0.03125
+}
+
+gbh/bil/13
+{
+	texture Styles/bil.png
+	uv 0.40625 0 0.4375 0.03125
+}
+
+gbh/bil/14
+{
+	texture Styles/bil.png
+	uv 0.4375 0 0.46875 0.03125
+}
+
+gbh/bil/15
+{
+	texture Styles/bil.png
+	uv 0.46875 0 0.5 0.03125
+}
+
+gbh/bil/16
+{
+	texture Styles/bil.png
+	uv 0.5 0 0.53125 0.03125
+}
+
+gbh/bil/17
+{
+	texture Styles/bil.png
+	uv 0.53125 0 0.5625 0.03125
+}
+
+gbh/bil/18
+{
+	texture Styles/bil.png
+	uv 0.5625 0 0.59375 0.03125
+}
+
+gbh/bil/19
+{
+	texture Styles/bil.png
+	uv 0.59375 0 0.625 0.03125
+}
+
+gbh/bil/20
+{
+	texture Styles/bil.png
+	uv 0.625 0 0.65625 0.03125
+}
+
+gbh/bil/21
+{
+	texture Styles/bil.png
+	uv 0.65625 0 0.6875 0.03125
+}
+
+gbh/bil/22
+{
+	texture Styles/bil.png
+	uv 0.6875 0 0.71875 0.03125
+}
+
+gbh/bil/23
+{
+	texture Styles/bil.png
+	uv 0.71875 0 0.75 0.03125
+}
+
+gbh/bil/24
+{
+	texture Styles/bil.png
+	uv 0.75 0 0.78125 0.03125
+}
+
+gbh/bil/25
+{
+	texture Styles/bil.png
+	uv 0.78125 0 0.8125 0.03125
+}
+
+gbh/bil/26
+{
+	texture Styles/bil.png
+	uv 0.8125 0 0.84375 0.03125
+}
+
+gbh/bil/27
+{
+	texture Styles/bil.png
+	uv 0.84375 0 0.875 0.03125
+}
+
+gbh/bil/28
+{
+	texture Styles/bil.png
+	uv 0.875 0 0.90625 0.03125
+}
+
+gbh/bil/29
+{
+	texture Styles/bil.png
+	uv 0.90625 0 0.9375 0.03125
+}
+
+gbh/bil/30
+{
+	texture Styles/bil.png
+	uv 0.9375 0 0.96875 0.03125
+}
+
+gbh/bil/31
+{
+	texture Styles/bil.png
+	uv 0.96875 0 1 0.03125
+}
+
+gbh/bil/32
+{
+	texture Styles/bil.png
+	uv 0 0.03125 0.03125 0.0625
+}
+
+gbh/bil/33
+{
+	texture Styles/bil.png
+	uv 0.03125 0.03125 0.0625 0.0625
+}
+
+gbh/bil/34
+{
+	texture Styles/bil.png
+	uv 0.0625 0.03125 0.09375 0.0625
+}
+
+gbh/bil/35
+{
+	texture Styles/bil.png
+	uv 0.09375 0.03125 0.125 0.0625
+}
+
+gbh/bil/36
+{
+	texture Styles/bil.png
+	uv 0.125 0.03125 0.15625 0.0625
+}
+
+gbh/bil/37
+{
+	texture Styles/bil.png
+	uv 0.15625 0.03125 0.1875 0.0625
+}
+
+gbh/bil/38
+{
+	texture Styles/bil.png
+	uv 0.1875 0.03125 0.21875 0.0625
+}
+
+gbh/bil/39
+{
+	texture Styles/bil.png
+	uv 0.21875 0.03125 0.25 0.0625
+}
+
+gbh/bil/40
+{
+	texture Styles/bil.png
+	uv 0.25 0.03125 0.28125 0.0625
+}
+
+gbh/bil/41
+{
+	texture Styles/bil.png
+	uv 0.28125 0.03125 0.3125 0.0625
+}
+
+gbh/bil/42
+{
+	texture Styles/bil.png
+	uv 0.3125 0.03125 0.34375 0.0625
+}
+
+gbh/bil/43
+{
+	texture Styles/bil.png
+	uv 0.34375 0.03125 0.375 0.0625
+}
+
+gbh/bil/44
+{
+	texture Styles/bil.png
+	uv 0.375 0.03125 0.40625 0.0625
+}
+
+gbh/bil/45
+{
+	texture Styles/bil.png
+	uv 0.40625 0.03125 0.4375 0.0625
+}
+
+gbh/bil/46
+{
+	texture Styles/bil.png
+	uv 0.4375 0.03125 0.46875 0.0625
+}
+
+gbh/bil/47
+{
+	texture Styles/bil.png
+	uv 0.46875 0.03125 0.5 0.0625
+}
+
+gbh/bil/48
+{
+	texture Styles/bil.png
+	uv 0.5 0.03125 0.53125 0.0625
+}
+
+gbh/bil/49
+{
+	texture Styles/bil.png
+	uv 0.53125 0.03125 0.5625 0.0625
+}
+
+gbh/bil/50
+{
+	texture Styles/bil.png
+	uv 0.5625 0.03125 0.59375 0.0625
+}
+
+gbh/bil/51
+{
+	texture Styles/bil.png
+	uv 0.59375 0.03125 0.625 0.0625
+}
+
+gbh/bil/52
+{
+	texture Styles/bil.png
+	uv 0.625 0.03125 0.65625 0.0625
+}
+
+gbh/bil/53
+{
+	texture Styles/bil.png
+	uv 0.65625 0.03125 0.6875 0.0625
+}
+
+gbh/bil/54
+{
+	texture Styles/bil.png
+	uv 0.6875 0.03125 0.71875 0.0625
+}
+
+gbh/bil/55
+{
+	texture Styles/bil.png
+	uv 0.71875 0.03125 0.75 0.0625
+}
+
+gbh/bil/56
+{
+	texture Styles/bil.png
+	uv 0.75 0.03125 0.78125 0.0625
+}
+
+gbh/bil/57
+{
+	texture Styles/bil.png
+	uv 0.78125 0.03125 0.8125 0.0625
+}
+
+gbh/bil/58
+{
+	texture Styles/bil.png
+	uv 0.8125 0.03125 0.84375 0.0625
+}
+
+gbh/bil/59
+{
+	texture Styles/bil.png
+	uv 0.84375 0.03125 0.875 0.0625
+}
+
+gbh/bil/60
+{
+	texture Styles/bil.png
+	uv 0.875 0.03125 0.90625 0.0625
+}
+
+gbh/bil/61
+{
+	texture Styles/bil.png
+	uv 0.90625 0.03125 0.9375 0.0625
+}
+
+gbh/bil/62
+{
+	texture Styles/bil.png
+	uv 0.9375 0.03125 0.96875 0.0625
+}
+
+gbh/bil/63
+{
+	texture Styles/bil.png
+	uv 0.96875 0.03125 1 0.0625
+}
+
+gbh/bil/64
+{
+	texture Styles/bil.png
+	uv 0 0.0625 0.03125 0.09375
+}
+
+gbh/bil/65
+{
+	texture Styles/bil.png
+	uv 0.03125 0.0625 0.0625 0.09375
+}
+
+gbh/bil/66
+{
+	texture Styles/bil.png
+	uv 0.0625 0.0625 0.09375 0.09375
+}
+
+gbh/bil/67
+{
+	texture Styles/bil.png
+	uv 0.09375 0.0625 0.125 0.09375
+}
+
+gbh/bil/68
+{
+	texture Styles/bil.png
+	uv 0.125 0.0625 0.15625 0.09375
+}
+
+gbh/bil/69
+{
+	texture Styles/bil.png
+	uv 0.15625 0.0625 0.1875 0.09375
+}
+
+gbh/bil/70
+{
+	texture Styles/bil.png
+	uv 0.1875 0.0625 0.21875 0.09375
+}
+
+gbh/bil/71
+{
+	texture Styles/bil.png
+	uv 0.21875 0.0625 0.25 0.09375
+}
+
+gbh/bil/72
+{
+	texture Styles/bil.png
+	uv 0.25 0.0625 0.28125 0.09375
+}
+
+gbh/bil/73
+{
+	texture Styles/bil.png
+	uv 0.28125 0.0625 0.3125 0.09375
+}
+
+gbh/bil/74
+{
+	texture Styles/bil.png
+	uv 0.3125 0.0625 0.34375 0.09375
+}
+
+gbh/bil/75
+{
+	texture Styles/bil.png
+	uv 0.34375 0.0625 0.375 0.09375
+}
+
+gbh/bil/76
+{
+	texture Styles/bil.png
+	uv 0.375 0.0625 0.40625 0.09375
+}
+
+gbh/bil/77
+{
+	texture Styles/bil.png
+	uv 0.40625 0.0625 0.4375 0.09375
+}
+
+gbh/bil/78
+{
+	texture Styles/bil.png
+	uv 0.4375 0.0625 0.46875 0.09375
+}
+
+gbh/bil/79
+{
+	texture Styles/bil.png
+	uv 0.46875 0.0625 0.5 0.09375
+}
+
+gbh/bil/80
+{
+	texture Styles/bil.png
+	uv 0.5 0.0625 0.53125 0.09375
+}
+
+gbh/bil/81
+{
+	texture Styles/bil.png
+	uv 0.53125 0.0625 0.5625 0.09375
+}
+
+gbh/bil/82
+{
+	texture Styles/bil.png
+	uv 0.5625 0.0625 0.59375 0.09375
+}
+
+gbh/bil/83
+{
+	texture Styles/bil.png
+	uv 0.59375 0.0625 0.625 0.09375
+}
+
+gbh/bil/84
+{
+	texture Styles/bil.png
+	uv 0.625 0.0625 0.65625 0.09375
+}
+
+gbh/bil/85
+{
+	texture Styles/bil.png
+	uv 0.65625 0.0625 0.6875 0.09375
+}
+
+gbh/bil/86
+{
+	texture Styles/bil.png
+	uv 0.6875 0.0625 0.71875 0.09375
+}
+
+gbh/bil/87
+{
+	texture Styles/bil.png
+	uv 0.71875 0.0625 0.75 0.09375
+}
+
+gbh/bil/88
+{
+	texture Styles/bil.png
+	uv 0.75 0.0625 0.78125 0.09375
+}
+
+gbh/bil/89
+{
+	texture Styles/bil.png
+	uv 0.78125 0.0625 0.8125 0.09375
+}
+
+gbh/bil/90
+{
+	texture Styles/bil.png
+	uv 0.8125 0.0625 0.84375 0.09375
+}
+
+gbh/bil/91
+{
+	texture Styles/bil.png
+	uv 0.84375 0.0625 0.875 0.09375
+}
+
+gbh/bil/92
+{
+	texture Styles/bil.png
+	uv 0.875 0.0625 0.90625 0.09375
+}
+
+gbh/bil/93
+{
+	texture Styles/bil.png
+	uv 0.90625 0.0625 0.9375 0.09375
+}
+
+gbh/bil/94
+{
+	texture Styles/bil.png
+	uv 0.9375 0.0625 0.96875 0.09375
+}
+
+gbh/bil/95
+{
+	texture Styles/bil.png
+	uv 0.96875 0.0625 1 0.09375
+}
+
+gbh/bil/96
+{
+	texture Styles/bil.png
+	uv 0 0.09375 0.03125 0.125
+}
+
+gbh/bil/97
+{
+	texture Styles/bil.png
+	uv 0.03125 0.09375 0.0625 0.125
+}
+
+gbh/bil/98
+{
+	texture Styles/bil.png
+	uv 0.0625 0.09375 0.09375 0.125
+}
+
+gbh/bil/99
+{
+	texture Styles/bil.png
+	uv 0.09375 0.09375 0.125 0.125
+}
+
+gbh/bil/100
+{
+	texture Styles/bil.png
+	uv 0.125 0.09375 0.15625 0.125
+}
+
+gbh/bil/101
+{
+	texture Styles/bil.png
+	uv 0.15625 0.09375 0.1875 0.125
+}
+
+gbh/bil/102
+{
+	texture Styles/bil.png
+	uv 0.1875 0.09375 0.21875 0.125
+}
+
+gbh/bil/103
+{
+	texture Styles/bil.png
+	uv 0.21875 0.09375 0.25 0.125
+}
+
+gbh/bil/104
+{
+	texture Styles/bil.png
+	uv 0.25 0.09375 0.28125 0.125
+}
+
+gbh/bil/105
+{
+	texture Styles/bil.png
+	uv 0.28125 0.09375 0.3125 0.125
+}
+
+gbh/bil/106
+{
+	texture Styles/bil.png
+	uv 0.3125 0.09375 0.34375 0.125
+}
+
+gbh/bil/107
+{
+	texture Styles/bil.png
+	uv 0.34375 0.09375 0.375 0.125
+}
+
+gbh/bil/108
+{
+	texture Styles/bil.png
+	uv 0.375 0.09375 0.40625 0.125
+}
+
+gbh/bil/109
+{
+	texture Styles/bil.png
+	uv 0.40625 0.09375 0.4375 0.125
+}
+
+gbh/bil/110
+{
+	texture Styles/bil.png
+	uv 0.4375 0.09375 0.46875 0.125
+}
+
+gbh/bil/111
+{
+	texture Styles/bil.png
+	uv 0.46875 0.09375 0.5 0.125
+}
+
+gbh/bil/112
+{
+	texture Styles/bil.png
+	uv 0.5 0.09375 0.53125 0.125
+}
+
+gbh/bil/113
+{
+	texture Styles/bil.png
+	uv 0.53125 0.09375 0.5625 0.125
+}
+
+gbh/bil/114
+{
+	texture Styles/bil.png
+	uv 0.5625 0.09375 0.59375 0.125
+}
+
+gbh/bil/115
+{
+	texture Styles/bil.png
+	uv 0.59375 0.09375 0.625 0.125
+}
+
+gbh/bil/116
+{
+	texture Styles/bil.png
+	uv 0.625 0.09375 0.65625 0.125
+}
+
+gbh/bil/117
+{
+	texture Styles/bil.png
+	uv 0.65625 0.09375 0.6875 0.125
+}
+
+gbh/bil/118
+{
+	texture Styles/bil.png
+	uv 0.6875 0.09375 0.71875 0.125
+}
+
+gbh/bil/119
+{
+	texture Styles/bil.png
+	uv 0.71875 0.09375 0.75 0.125
+}
+
+gbh/bil/120
+{
+	texture Styles/bil.png
+	uv 0.75 0.09375 0.78125 0.125
+}
+
+gbh/bil/121
+{
+	texture Styles/bil.png
+	uv 0.78125 0.09375 0.8125 0.125
+}
+
+gbh/bil/122
+{
+	texture Styles/bil.png
+	uv 0.8125 0.09375 0.84375 0.125
+}
+
+gbh/bil/123
+{
+	texture Styles/bil.png
+	uv 0.84375 0.09375 0.875 0.125
+}
+
+gbh/bil/124
+{
+	texture Styles/bil.png
+	uv 0.875 0.09375 0.90625 0.125
+}
+
+gbh/bil/125
+{
+	texture Styles/bil.png
+	uv 0.90625 0.09375 0.9375 0.125
+}
+
+gbh/bil/126
+{
+	texture Styles/bil.png
+	uv 0.9375 0.09375 0.96875 0.125
+}
+
+gbh/bil/127
+{
+	texture Styles/bil.png
+	uv 0.96875 0.09375 1 0.125
+}
+
+gbh/bil/128
+{
+	texture Styles/bil.png
+	uv 0 0.125 0.03125 0.15625
+}
+
+gbh/bil/129
+{
+	texture Styles/bil.png
+	uv 0.03125 0.125 0.0625 0.15625
+}
+
+gbh/bil/130
+{
+	texture Styles/bil.png
+	uv 0.0625 0.125 0.09375 0.15625
+}
+
+gbh/bil/131
+{
+	texture Styles/bil.png
+	uv 0.09375 0.125 0.125 0.15625
+}
+
+gbh/bil/132
+{
+	texture Styles/bil.png
+	uv 0.125 0.125 0.15625 0.15625
+}
+
+gbh/bil/133
+{
+	texture Styles/bil.png
+	uv 0.15625 0.125 0.1875 0.15625
+}
+
+gbh/bil/134
+{
+	texture Styles/bil.png
+	uv 0.1875 0.125 0.21875 0.15625
+}
+
+gbh/bil/135
+{
+	texture Styles/bil.png
+	uv 0.21875 0.125 0.25 0.15625
+}
+
+gbh/bil/136
+{
+	texture Styles/bil.png
+	uv 0.25 0.125 0.28125 0.15625
+}
+
+gbh/bil/137
+{
+	texture Styles/bil.png
+	uv 0.28125 0.125 0.3125 0.15625
+}
+
+gbh/bil/138
+{
+	texture Styles/bil.png
+	uv 0.3125 0.125 0.34375 0.15625
+}
+
+gbh/bil/139
+{
+	texture Styles/bil.png
+	uv 0.34375 0.125 0.375 0.15625
+}
+
+gbh/bil/140
+{
+	texture Styles/bil.png
+	uv 0.375 0.125 0.40625 0.15625
+}
+
+gbh/bil/141
+{
+	texture Styles/bil.png
+	uv 0.40625 0.125 0.4375 0.15625
+}
+
+gbh/bil/142
+{
+	texture Styles/bil.png
+	uv 0.4375 0.125 0.46875 0.15625
+}
+
+gbh/bil/143
+{
+	texture Styles/bil.png
+	uv 0.46875 0.125 0.5 0.15625
+}
+
+gbh/bil/144
+{
+	texture Styles/bil.png
+	uv 0.5 0.125 0.53125 0.15625
+}
+
+gbh/bil/145
+{
+	texture Styles/bil.png
+	uv 0.53125 0.125 0.5625 0.15625
+}
+
+gbh/bil/146
+{
+	texture Styles/bil.png
+	uv 0.5625 0.125 0.59375 0.15625
+}
+
+gbh/bil/147
+{
+	texture Styles/bil.png
+	uv 0.59375 0.125 0.625 0.15625
+}
+
+gbh/bil/148
+{
+	texture Styles/bil.png
+	uv 0.625 0.125 0.65625 0.15625
+}
+
+gbh/bil/149
+{
+	texture Styles/bil.png
+	uv 0.65625 0.125 0.6875 0.15625
+}
+
+gbh/bil/150
+{
+	texture Styles/bil.png
+	uv 0.6875 0.125 0.71875 0.15625
+}
+
+gbh/bil/151
+{
+	texture Styles/bil.png
+	uv 0.71875 0.125 0.75 0.15625
+}
+
+gbh/bil/152
+{
+	texture Styles/bil.png
+	uv 0.75 0.125 0.78125 0.15625
+}
+
+gbh/bil/153
+{
+	texture Styles/bil.png
+	uv 0.78125 0.125 0.8125 0.15625
+}
+
+gbh/bil/154
+{
+	texture Styles/bil.png
+	uv 0.8125 0.125 0.84375 0.15625
+}
+
+gbh/bil/155
+{
+	texture Styles/bil.png
+	uv 0.84375 0.125 0.875 0.15625
+}
+
+gbh/bil/156
+{
+	texture Styles/bil.png
+	uv 0.875 0.125 0.90625 0.15625
+}
+
+gbh/bil/157
+{
+	texture Styles/bil.png
+	uv 0.90625 0.125 0.9375 0.15625
+}
+
+gbh/bil/158
+{
+	texture Styles/bil.png
+	uv 0.9375 0.125 0.96875 0.15625
+}
+
+gbh/bil/159
+{
+	texture Styles/bil.png
+	uv 0.96875 0.125 1 0.15625
+}
+
+gbh/bil/160
+{
+	texture Styles/bil.png
+	uv 0 0.15625 0.03125 0.1875
+}
+
+gbh/bil/161
+{
+	texture Styles/bil.png
+	uv 0.03125 0.15625 0.0625 0.1875
+}
+
+gbh/bil/162
+{
+	texture Styles/bil.png
+	uv 0.0625 0.15625 0.09375 0.1875
+}
+
+gbh/bil/163
+{
+	texture Styles/bil.png
+	uv 0.09375 0.15625 0.125 0.1875
+}
+
+gbh/bil/164
+{
+	texture Styles/bil.png
+	uv 0.125 0.15625 0.15625 0.1875
+}
+
+gbh/bil/165
+{
+	texture Styles/bil.png
+	uv 0.15625 0.15625 0.1875 0.1875
+}
+
+gbh/bil/166
+{
+	texture Styles/bil.png
+	uv 0.1875 0.15625 0.21875 0.1875
+}
+
+gbh/bil/167
+{
+	texture Styles/bil.png
+	uv 0.21875 0.15625 0.25 0.1875
+}
+
+gbh/bil/168
+{
+	texture Styles/bil.png
+	uv 0.25 0.15625 0.28125 0.1875
+}
+
+gbh/bil/169
+{
+	texture Styles/bil.png
+	uv 0.28125 0.15625 0.3125 0.1875
+}
+
+gbh/bil/170
+{
+	texture Styles/bil.png
+	uv 0.3125 0.15625 0.34375 0.1875
+}
+
+gbh/bil/171
+{
+	texture Styles/bil.png
+	uv 0.34375 0.15625 0.375 0.1875
+}
+
+gbh/bil/172
+{
+	texture Styles/bil.png
+	uv 0.375 0.15625 0.40625 0.1875
+}
+
+gbh/bil/173
+{
+	texture Styles/bil.png
+	uv 0.40625 0.15625 0.4375 0.1875
+}
+
+gbh/bil/174
+{
+	texture Styles/bil.png
+	uv 0.4375 0.15625 0.46875 0.1875
+}
+
+gbh/bil/175
+{
+	texture Styles/bil.png
+	uv 0.46875 0.15625 0.5 0.1875
+}
+
+gbh/bil/176
+{
+	texture Styles/bil.png
+	uv 0.5 0.15625 0.53125 0.1875
+}
+
+gbh/bil/177
+{
+	texture Styles/bil.png
+	uv 0.53125 0.15625 0.5625 0.1875
+}
+
+gbh/bil/178
+{
+	texture Styles/bil.png
+	uv 0.5625 0.15625 0.59375 0.1875
+}
+
+gbh/bil/179
+{
+	texture Styles/bil.png
+	uv 0.59375 0.15625 0.625 0.1875
+}
+
+gbh/bil/180
+{
+	texture Styles/bil.png
+	uv 0.625 0.15625 0.65625 0.1875
+}
+
+gbh/bil/181
+{
+	texture Styles/bil.png
+	uv 0.65625 0.15625 0.6875 0.1875
+}
+
+gbh/bil/182
+{
+	texture Styles/bil.png
+	uv 0.6875 0.15625 0.71875 0.1875
+}
+
+gbh/bil/183
+{
+	texture Styles/bil.png
+	uv 0.71875 0.15625 0.75 0.1875
+}
+
+gbh/bil/184
+{
+	texture Styles/bil.png
+	uv 0.75 0.15625 0.78125 0.1875
+}
+
+gbh/bil/185
+{
+	texture Styles/bil.png
+	uv 0.78125 0.15625 0.8125 0.1875
+}
+
+gbh/bil/186
+{
+	texture Styles/bil.png
+	uv 0.8125 0.15625 0.84375 0.1875
+}
+
+gbh/bil/187
+{
+	texture Styles/bil.png
+	uv 0.84375 0.15625 0.875 0.1875
+}
+
+gbh/bil/188
+{
+	texture Styles/bil.png
+	uv 0.875 0.15625 0.90625 0.1875
+}
+
+gbh/bil/189
+{
+	texture Styles/bil.png
+	uv 0.90625 0.15625 0.9375 0.1875
+}
+
+gbh/bil/190
+{
+	texture Styles/bil.png
+	uv 0.9375 0.15625 0.96875 0.1875
+}
+
+gbh/bil/191
+{
+	texture Styles/bil.png
+	uv 0.96875 0.15625 1 0.1875
+}
+
+gbh/bil/192
+{
+	texture Styles/bil.png
+	uv 0 0.1875 0.03125 0.21875
+}
+
+gbh/bil/193
+{
+	texture Styles/bil.png
+	uv 0.03125 0.1875 0.0625 0.21875
+}
+
+gbh/bil/194
+{
+	texture Styles/bil.png
+	uv 0.0625 0.1875 0.09375 0.21875
+}
+
+gbh/bil/195
+{
+	texture Styles/bil.png
+	uv 0.09375 0.1875 0.125 0.21875
+}
+
+gbh/bil/196
+{
+	texture Styles/bil.png
+	uv 0.125 0.1875 0.15625 0.21875
+}
+
+gbh/bil/197
+{
+	texture Styles/bil.png
+	uv 0.15625 0.1875 0.1875 0.21875
+}
+
+gbh/bil/198
+{
+	texture Styles/bil.png
+	uv 0.1875 0.1875 0.21875 0.21875
+}
+
+gbh/bil/199
+{
+	texture Styles/bil.png
+	uv 0.21875 0.1875 0.25 0.21875
+}
+
+gbh/bil/200
+{
+	texture Styles/bil.png
+	uv 0.25 0.1875 0.28125 0.21875
+}
+
+gbh/bil/201
+{
+	texture Styles/bil.png
+	uv 0.28125 0.1875 0.3125 0.21875
+}
+
+gbh/bil/202
+{
+	texture Styles/bil.png
+	uv 0.3125 0.1875 0.34375 0.21875
+}
+
+gbh/bil/203
+{
+	texture Styles/bil.png
+	uv 0.34375 0.1875 0.375 0.21875
+}
+
+gbh/bil/204
+{
+	texture Styles/bil.png
+	uv 0.375 0.1875 0.40625 0.21875
+}
+
+gbh/bil/205
+{
+	texture Styles/bil.png
+	uv 0.40625 0.1875 0.4375 0.21875
+}
+
+gbh/bil/206
+{
+	texture Styles/bil.png
+	uv 0.4375 0.1875 0.46875 0.21875
+}
+
+gbh/bil/207
+{
+	texture Styles/bil.png
+	uv 0.46875 0.1875 0.5 0.21875
+}
+
+gbh/bil/208
+{
+	texture Styles/bil.png
+	uv 0.5 0.1875 0.53125 0.21875
+}
+
+gbh/bil/209
+{
+	texture Styles/bil.png
+	uv 0.53125 0.1875 0.5625 0.21875
+}
+
+gbh/bil/210
+{
+	texture Styles/bil.png
+	uv 0.5625 0.1875 0.59375 0.21875
+}
+
+gbh/bil/211
+{
+	texture Styles/bil.png
+	uv 0.59375 0.1875 0.625 0.21875
+}
+
+gbh/bil/212
+{
+	texture Styles/bil.png
+	uv 0.625 0.1875 0.65625 0.21875
+}
+
+gbh/bil/213
+{
+	texture Styles/bil.png
+	uv 0.65625 0.1875 0.6875 0.21875
+}
+
+gbh/bil/214
+{
+	texture Styles/bil.png
+	uv 0.6875 0.1875 0.71875 0.21875
+}
+
+gbh/bil/215
+{
+	texture Styles/bil.png
+	uv 0.71875 0.1875 0.75 0.21875
+}
+
+gbh/bil/216
+{
+	texture Styles/bil.png
+	uv 0.75 0.1875 0.78125 0.21875
+}
+
+gbh/bil/217
+{
+	texture Styles/bil.png
+	uv 0.78125 0.1875 0.8125 0.21875
+}
+
+gbh/bil/218
+{
+	texture Styles/bil.png
+	uv 0.8125 0.1875 0.84375 0.21875
+}
+
+gbh/bil/219
+{
+	texture Styles/bil.png
+	uv 0.84375 0.1875 0.875 0.21875
+}
+
+gbh/bil/220
+{
+	texture Styles/bil.png
+	uv 0.875 0.1875 0.90625 0.21875
+}
+
+gbh/bil/221
+{
+	texture Styles/bil.png
+	uv 0.90625 0.1875 0.9375 0.21875
+}
+
+gbh/bil/222
+{
+	texture Styles/bil.png
+	uv 0.9375 0.1875 0.96875 0.21875
+}
+
+gbh/bil/223
+{
+	texture Styles/bil.png
+	uv 0.96875 0.1875 1 0.21875
+}
+
+gbh/bil/224
+{
+	texture Styles/bil.png
+	uv 0 0.21875 0.03125 0.25
+}
+
+gbh/bil/225
+{
+	texture Styles/bil.png
+	uv 0.03125 0.21875 0.0625 0.25
+}
+
+gbh/bil/226
+{
+	texture Styles/bil.png
+	uv 0.0625 0.21875 0.09375 0.25
+}
+
+gbh/bil/227
+{
+	texture Styles/bil.png
+	uv 0.09375 0.21875 0.125 0.25
+}
+
+gbh/bil/228
+{
+	texture Styles/bil.png
+	uv 0.125 0.21875 0.15625 0.25
+}
+
+gbh/bil/229
+{
+	texture Styles/bil.png
+	uv 0.15625 0.21875 0.1875 0.25
+}
+
+gbh/bil/230
+{
+	texture Styles/bil.png
+	uv 0.1875 0.21875 0.21875 0.25
+}
+
+gbh/bil/231
+{
+	texture Styles/bil.png
+	uv 0.21875 0.21875 0.25 0.25
+}
+
+gbh/bil/232
+{
+	texture Styles/bil.png
+	uv 0.25 0.21875 0.28125 0.25
+}
+
+gbh/bil/233
+{
+	texture Styles/bil.png
+	uv 0.28125 0.21875 0.3125 0.25
+}
+
+gbh/bil/234
+{
+	texture Styles/bil.png
+	uv 0.3125 0.21875 0.34375 0.25
+}
+
+gbh/bil/235
+{
+	texture Styles/bil.png
+	uv 0.34375 0.21875 0.375 0.25
+}
+
+gbh/bil/236
+{
+	texture Styles/bil.png
+	uv 0.375 0.21875 0.40625 0.25
+}
+
+gbh/bil/237
+{
+	texture Styles/bil.png
+	uv 0.40625 0.21875 0.4375 0.25
+}
+
+gbh/bil/238
+{
+	texture Styles/bil.png
+	uv 0.4375 0.21875 0.46875 0.25
+}
+
+gbh/bil/239
+{
+	texture Styles/bil.png
+	uv 0.46875 0.21875 0.5 0.25
+}
+
+gbh/bil/240
+{
+	texture Styles/bil.png
+	uv 0.5 0.21875 0.53125 0.25
+}
+
+gbh/bil/241
+{
+	texture Styles/bil.png
+	uv 0.53125 0.21875 0.5625 0.25
+}
+
+gbh/bil/242
+{
+	texture Styles/bil.png
+	uv 0.5625 0.21875 0.59375 0.25
+}
+
+gbh/bil/243
+{
+	texture Styles/bil.png
+	uv 0.59375 0.21875 0.625 0.25
+}
+
+gbh/bil/244
+{
+	texture Styles/bil.png
+	uv 0.625 0.21875 0.65625 0.25
+}
+
+gbh/bil/245
+{
+	texture Styles/bil.png
+	uv 0.65625 0.21875 0.6875 0.25
+}
+
+gbh/bil/246
+{
+	texture Styles/bil.png
+	uv 0.6875 0.21875 0.71875 0.25
+}
+
+gbh/bil/247
+{
+	texture Styles/bil.png
+	uv 0.71875 0.21875 0.75 0.25
+}
+
+gbh/bil/248
+{
+	texture Styles/bil.png
+	uv 0.75 0.21875 0.78125 0.25
+}
+
+gbh/bil/249
+{
+	texture Styles/bil.png
+	uv 0.78125 0.21875 0.8125 0.25
+}
+
+gbh/bil/250
+{
+	texture Styles/bil.png
+	uv 0.8125 0.21875 0.84375 0.25
+}
+
+gbh/bil/251
+{
+	texture Styles/bil.png
+	uv 0.84375 0.21875 0.875 0.25
+}
+
+gbh/bil/252
+{
+	texture Styles/bil.png
+	uv 0.875 0.21875 0.90625 0.25
+}
+
+gbh/bil/253
+{
+	texture Styles/bil.png
+	uv 0.90625 0.21875 0.9375 0.25
+}
+
+gbh/bil/254
+{
+	texture Styles/bil.png
+	uv 0.9375 0.21875 0.96875 0.25
+}
+
+gbh/bil/255
+{
+	texture Styles/bil.png
+	uv 0.96875 0.21875 1 0.25
+}
+
+gbh/bil/256
+{
+	texture Styles/bil.png
+	uv 0 0.25 0.03125 0.28125
+}
+
+gbh/bil/257
+{
+	texture Styles/bil.png
+	uv 0.03125 0.25 0.0625 0.28125
+}
+
+gbh/bil/258
+{
+	texture Styles/bil.png
+	uv 0.0625 0.25 0.09375 0.28125
+}
+
+gbh/bil/259
+{
+	texture Styles/bil.png
+	uv 0.09375 0.25 0.125 0.28125
+}
+
+gbh/bil/260
+{
+	texture Styles/bil.png
+	uv 0.125 0.25 0.15625 0.28125
+}
+
+gbh/bil/261
+{
+	texture Styles/bil.png
+	uv 0.15625 0.25 0.1875 0.28125
+}
+
+gbh/bil/262
+{
+	texture Styles/bil.png
+	uv 0.1875 0.25 0.21875 0.28125
+}
+
+gbh/bil/263
+{
+	texture Styles/bil.png
+	uv 0.21875 0.25 0.25 0.28125
+}
+
+gbh/bil/264
+{
+	texture Styles/bil.png
+	uv 0.25 0.25 0.28125 0.28125
+}
+
+gbh/bil/265
+{
+	texture Styles/bil.png
+	uv 0.28125 0.25 0.3125 0.28125
+}
+
+gbh/bil/266
+{
+	texture Styles/bil.png
+	uv 0.3125 0.25 0.34375 0.28125
+}
+
+gbh/bil/267
+{
+	texture Styles/bil.png
+	uv 0.34375 0.25 0.375 0.28125
+}
+
+gbh/bil/268
+{
+	texture Styles/bil.png
+	uv 0.375 0.25 0.40625 0.28125
+}
+
+gbh/bil/269
+{
+	texture Styles/bil.png
+	uv 0.40625 0.25 0.4375 0.28125
+}
+
+gbh/bil/270
+{
+	texture Styles/bil.png
+	uv 0.4375 0.25 0.46875 0.28125
+}
+
+gbh/bil/271
+{
+	texture Styles/bil.png
+	uv 0.46875 0.25 0.5 0.28125
+}
+
+gbh/bil/272
+{
+	texture Styles/bil.png
+	uv 0.5 0.25 0.53125 0.28125
+}
+
+gbh/bil/273
+{
+	texture Styles/bil.png
+	uv 0.53125 0.25 0.5625 0.28125
+}
+
+gbh/bil/274
+{
+	texture Styles/bil.png
+	uv 0.5625 0.25 0.59375 0.28125
+}
+
+gbh/bil/275
+{
+	texture Styles/bil.png
+	uv 0.59375 0.25 0.625 0.28125
+}
+
+gbh/bil/276
+{
+	texture Styles/bil.png
+	uv 0.625 0.25 0.65625 0.28125
+}
+
+gbh/bil/277
+{
+	texture Styles/bil.png
+	uv 0.65625 0.25 0.6875 0.28125
+}
+
+gbh/bil/278
+{
+	texture Styles/bil.png
+	uv 0.6875 0.25 0.71875 0.28125
+}
+
+gbh/bil/279
+{
+	texture Styles/bil.png
+	uv 0.71875 0.25 0.75 0.28125
+}
+
+gbh/bil/280
+{
+	texture Styles/bil.png
+	uv 0.75 0.25 0.78125 0.28125
+}
+
+gbh/bil/281
+{
+	texture Styles/bil.png
+	uv 0.78125 0.25 0.8125 0.28125
+}
+
+gbh/bil/282
+{
+	texture Styles/bil.png
+	uv 0.8125 0.25 0.84375 0.28125
+}
+
+gbh/bil/283
+{
+	texture Styles/bil.png
+	uv 0.84375 0.25 0.875 0.28125
+}
+
+gbh/bil/284
+{
+	texture Styles/bil.png
+	uv 0.875 0.25 0.90625 0.28125
+}
+
+gbh/bil/285
+{
+	texture Styles/bil.png
+	uv 0.90625 0.25 0.9375 0.28125
+}
+
+gbh/bil/286
+{
+	texture Styles/bil.png
+	uv 0.9375 0.25 0.96875 0.28125
+}
+
+gbh/bil/287
+{
+	texture Styles/bil.png
+	uv 0.96875 0.25 1 0.28125
+}
+
+gbh/bil/288
+{
+	texture Styles/bil.png
+	uv 0 0.28125 0.03125 0.3125
+}
+
+gbh/bil/289
+{
+	texture Styles/bil.png
+	uv 0.03125 0.28125 0.0625 0.3125
+}
+
+gbh/bil/290
+{
+	texture Styles/bil.png
+	uv 0.0625 0.28125 0.09375 0.3125
+}
+
+gbh/bil/291
+{
+	texture Styles/bil.png
+	uv 0.09375 0.28125 0.125 0.3125
+}
+
+gbh/bil/292
+{
+	texture Styles/bil.png
+	uv 0.125 0.28125 0.15625 0.3125
+}
+
+gbh/bil/293
+{
+	texture Styles/bil.png
+	uv 0.15625 0.28125 0.1875 0.3125
+}
+
+gbh/bil/294
+{
+	texture Styles/bil.png
+	uv 0.1875 0.28125 0.21875 0.3125
+}
+
+gbh/bil/295
+{
+	texture Styles/bil.png
+	uv 0.21875 0.28125 0.25 0.3125
+}
+
+gbh/bil/296
+{
+	texture Styles/bil.png
+	uv 0.25 0.28125 0.28125 0.3125
+}
+
+gbh/bil/297
+{
+	texture Styles/bil.png
+	uv 0.28125 0.28125 0.3125 0.3125
+}
+
+gbh/bil/298
+{
+	texture Styles/bil.png
+	uv 0.3125 0.28125 0.34375 0.3125
+}
+
+gbh/bil/299
+{
+	texture Styles/bil.png
+	uv 0.34375 0.28125 0.375 0.3125
+}
+
+gbh/bil/300
+{
+	texture Styles/bil.png
+	uv 0.375 0.28125 0.40625 0.3125
+}
+
+gbh/bil/301
+{
+	texture Styles/bil.png
+	uv 0.40625 0.28125 0.4375 0.3125
+}
+
+gbh/bil/302
+{
+	texture Styles/bil.png
+	uv 0.4375 0.28125 0.46875 0.3125
+}
+
+gbh/bil/303
+{
+	texture Styles/bil.png
+	uv 0.46875 0.28125 0.5 0.3125
+}
+
+gbh/bil/304
+{
+	texture Styles/bil.png
+	uv 0.5 0.28125 0.53125 0.3125
+}
+
+gbh/bil/305
+{
+	texture Styles/bil.png
+	uv 0.53125 0.28125 0.5625 0.3125
+}
+
+gbh/bil/306
+{
+	texture Styles/bil.png
+	uv 0.5625 0.28125 0.59375 0.3125
+}
+
+gbh/bil/307
+{
+	texture Styles/bil.png
+	uv 0.59375 0.28125 0.625 0.3125
+}
+
+gbh/bil/308
+{
+	texture Styles/bil.png
+	uv 0.625 0.28125 0.65625 0.3125
+}
+
+gbh/bil/309
+{
+	texture Styles/bil.png
+	uv 0.65625 0.28125 0.6875 0.3125
+}
+
+gbh/bil/310
+{
+	texture Styles/bil.png
+	uv 0.6875 0.28125 0.71875 0.3125
+}
+
+gbh/bil/311
+{
+	texture Styles/bil.png
+	uv 0.71875 0.28125 0.75 0.3125
+}
+
+gbh/bil/312
+{
+	texture Styles/bil.png
+	uv 0.75 0.28125 0.78125 0.3125
+}
+
+gbh/bil/313
+{
+	texture Styles/bil.png
+	uv 0.78125 0.28125 0.8125 0.3125
+}
+
+gbh/bil/314
+{
+	texture Styles/bil.png
+	uv 0.8125 0.28125 0.84375 0.3125
+}
+
+gbh/bil/315
+{
+	texture Styles/bil.png
+	uv 0.84375 0.28125 0.875 0.3125
+}
+
+gbh/bil/316
+{
+	texture Styles/bil.png
+	uv 0.875 0.28125 0.90625 0.3125
+}
+
+gbh/bil/317
+{
+	texture Styles/bil.png
+	uv 0.90625 0.28125 0.9375 0.3125
+}
+
+gbh/bil/318
+{
+	texture Styles/bil.png
+	uv 0.9375 0.28125 0.96875 0.3125
+}
+
+gbh/bil/319
+{
+	texture Styles/bil.png
+	uv 0.96875 0.28125 1 0.3125
+}
+
+gbh/bil/320
+{
+	texture Styles/bil.png
+	uv 0 0.3125 0.03125 0.34375
+}
+
+gbh/bil/321
+{
+	texture Styles/bil.png
+	uv 0.03125 0.3125 0.0625 0.34375
+}
+
+gbh/bil/322
+{
+	texture Styles/bil.png
+	uv 0.0625 0.3125 0.09375 0.34375
+}
+
+gbh/bil/323
+{
+	texture Styles/bil.png
+	uv 0.09375 0.3125 0.125 0.34375
+}
+
+gbh/bil/324
+{
+	texture Styles/bil.png
+	uv 0.125 0.3125 0.15625 0.34375
+}
+
+gbh/bil/325
+{
+	texture Styles/bil.png
+	uv 0.15625 0.3125 0.1875 0.34375
+}
+
+gbh/bil/326
+{
+	texture Styles/bil.png
+	uv 0.1875 0.3125 0.21875 0.34375
+}
+
+gbh/bil/327
+{
+	texture Styles/bil.png
+	uv 0.21875 0.3125 0.25 0.34375
+}
+
+gbh/bil/328
+{
+	texture Styles/bil.png
+	uv 0.25 0.3125 0.28125 0.34375
+}
+
+gbh/bil/329
+{
+	texture Styles/bil.png
+	uv 0.28125 0.3125 0.3125 0.34375
+}
+
+gbh/bil/330
+{
+	texture Styles/bil.png
+	uv 0.3125 0.3125 0.34375 0.34375
+}
+
+gbh/bil/331
+{
+	texture Styles/bil.png
+	uv 0.34375 0.3125 0.375 0.34375
+}
+
+gbh/bil/332
+{
+	texture Styles/bil.png
+	uv 0.375 0.3125 0.40625 0.34375
+}
+
+gbh/bil/333
+{
+	texture Styles/bil.png
+	uv 0.40625 0.3125 0.4375 0.34375
+}
+
+gbh/bil/334
+{
+	texture Styles/bil.png
+	uv 0.4375 0.3125 0.46875 0.34375
+}
+
+gbh/bil/335
+{
+	texture Styles/bil.png
+	uv 0.46875 0.3125 0.5 0.34375
+}
+
+gbh/bil/336
+{
+	texture Styles/bil.png
+	uv 0.5 0.3125 0.53125 0.34375
+}
+
+gbh/bil/337
+{
+	texture Styles/bil.png
+	uv 0.53125 0.3125 0.5625 0.34375
+}
+
+gbh/bil/338
+{
+	texture Styles/bil.png
+	uv 0.5625 0.3125 0.59375 0.34375
+}
+
+gbh/bil/339
+{
+	texture Styles/bil.png
+	uv 0.59375 0.3125 0.625 0.34375
+}
+
+gbh/bil/340
+{
+	texture Styles/bil.png
+	uv 0.625 0.3125 0.65625 0.34375
+}
+
+gbh/bil/341
+{
+	texture Styles/bil.png
+	uv 0.65625 0.3125 0.6875 0.34375
+}
+
+gbh/bil/342
+{
+	texture Styles/bil.png
+	uv 0.6875 0.3125 0.71875 0.34375
+}
+
+gbh/bil/343
+{
+	texture Styles/bil.png
+	uv 0.71875 0.3125 0.75 0.34375
+}
+
+gbh/bil/344
+{
+	texture Styles/bil.png
+	uv 0.75 0.3125 0.78125 0.34375
+}
+
+gbh/bil/345
+{
+	texture Styles/bil.png
+	uv 0.78125 0.3125 0.8125 0.34375
+}
+
+gbh/bil/346
+{
+	texture Styles/bil.png
+	uv 0.8125 0.3125 0.84375 0.34375
+}
+
+gbh/bil/347
+{
+	texture Styles/bil.png
+	uv 0.84375 0.3125 0.875 0.34375
+}
+
+gbh/bil/348
+{
+	texture Styles/bil.png
+	uv 0.875 0.3125 0.90625 0.34375
+}
+
+gbh/bil/349
+{
+	texture Styles/bil.png
+	uv 0.90625 0.3125 0.9375 0.34375
+}
+
+gbh/bil/350
+{
+	texture Styles/bil.png
+	uv 0.9375 0.3125 0.96875 0.34375
+}
+
+gbh/bil/351
+{
+	texture Styles/bil.png
+	uv 0.96875 0.3125 1 0.34375
+}
+
+gbh/bil/352
+{
+	texture Styles/bil.png
+	uv 0 0.34375 0.03125 0.375
+}
+
+gbh/bil/353
+{
+	texture Styles/bil.png
+	uv 0.03125 0.34375 0.0625 0.375
+}
+
+gbh/bil/354
+{
+	texture Styles/bil.png
+	uv 0.0625 0.34375 0.09375 0.375
+}
+
+gbh/bil/355
+{
+	texture Styles/bil.png
+	uv 0.09375 0.34375 0.125 0.375
+}
+
+gbh/bil/356
+{
+	texture Styles/bil.png
+	uv 0.125 0.34375 0.15625 0.375
+}
+
+gbh/bil/357
+{
+	texture Styles/bil.png
+	uv 0.15625 0.34375 0.1875 0.375
+}
+
+gbh/bil/358
+{
+	texture Styles/bil.png
+	uv 0.1875 0.34375 0.21875 0.375
+}
+
+gbh/bil/359
+{
+	texture Styles/bil.png
+	uv 0.21875 0.34375 0.25 0.375
+}
+
+gbh/bil/360
+{
+	texture Styles/bil.png
+	uv 0.25 0.34375 0.28125 0.375
+}
+
+gbh/bil/361
+{
+	texture Styles/bil.png
+	uv 0.28125 0.34375 0.3125 0.375
+}
+
+gbh/bil/362
+{
+	texture Styles/bil.png
+	uv 0.3125 0.34375 0.34375 0.375
+}
+
+gbh/bil/363
+{
+	texture Styles/bil.png
+	uv 0.34375 0.34375 0.375 0.375
+}
+
+gbh/bil/364
+{
+	texture Styles/bil.png
+	uv 0.375 0.34375 0.40625 0.375
+}
+
+gbh/bil/365
+{
+	texture Styles/bil.png
+	uv 0.40625 0.34375 0.4375 0.375
+}
+
+gbh/bil/366
+{
+	texture Styles/bil.png
+	uv 0.4375 0.34375 0.46875 0.375
+}
+
+gbh/bil/367
+{
+	texture Styles/bil.png
+	uv 0.46875 0.34375 0.5 0.375
+}
+
+gbh/bil/368
+{
+	texture Styles/bil.png
+	uv 0.5 0.34375 0.53125 0.375
+}
+
+gbh/bil/369
+{
+	texture Styles/bil.png
+	uv 0.53125 0.34375 0.5625 0.375
+}
+
+gbh/bil/370
+{
+	texture Styles/bil.png
+	uv 0.5625 0.34375 0.59375 0.375
+}
+
+gbh/bil/371
+{
+	texture Styles/bil.png
+	uv 0.59375 0.34375 0.625 0.375
+}
+
+gbh/bil/372
+{
+	texture Styles/bil.png
+	uv 0.625 0.34375 0.65625 0.375
+}
+
+gbh/bil/373
+{
+	texture Styles/bil.png
+	uv 0.65625 0.34375 0.6875 0.375
+}
+
+gbh/bil/374
+{
+	texture Styles/bil.png
+	uv 0.6875 0.34375 0.71875 0.375
+}
+
+gbh/bil/375
+{
+	texture Styles/bil.png
+	uv 0.71875 0.34375 0.75 0.375
+}
+
+gbh/bil/376
+{
+	texture Styles/bil.png
+	uv 0.75 0.34375 0.78125 0.375
+}
+
+gbh/bil/377
+{
+	texture Styles/bil.png
+	uv 0.78125 0.34375 0.8125 0.375
+}
+
+gbh/bil/378
+{
+	texture Styles/bil.png
+	uv 0.8125 0.34375 0.84375 0.375
+}
+
+gbh/bil/379
+{
+	texture Styles/bil.png
+	uv 0.84375 0.34375 0.875 0.375
+}
+
+gbh/bil/380
+{
+	texture Styles/bil.png
+	uv 0.875 0.34375 0.90625 0.375
+}
+
+gbh/bil/381
+{
+	texture Styles/bil.png
+	uv 0.90625 0.34375 0.9375 0.375
+}
+
+gbh/bil/382
+{
+	texture Styles/bil.png
+	uv 0.9375 0.34375 0.96875 0.375
+}
+
+gbh/bil/383
+{
+	texture Styles/bil.png
+	uv 0.96875 0.34375 1 0.375
+}
+
+gbh/bil/384
+{
+	texture Styles/bil.png
+	uv 0 0.375 0.03125 0.40625
+}
+
+gbh/bil/385
+{
+	texture Styles/bil.png
+	uv 0.03125 0.375 0.0625 0.40625
+}
+
+gbh/bil/386
+{
+	texture Styles/bil.png
+	uv 0.0625 0.375 0.09375 0.40625
+}
+
+gbh/bil/387
+{
+	texture Styles/bil.png
+	uv 0.09375 0.375 0.125 0.40625
+}
+
+gbh/bil/388
+{
+	texture Styles/bil.png
+	uv 0.125 0.375 0.15625 0.40625
+}
+
+gbh/bil/389
+{
+	texture Styles/bil.png
+	uv 0.15625 0.375 0.1875 0.40625
+}
+
+gbh/bil/390
+{
+	texture Styles/bil.png
+	uv 0.1875 0.375 0.21875 0.40625
+}
+
+gbh/bil/391
+{
+	texture Styles/bil.png
+	uv 0.21875 0.375 0.25 0.40625
+}
+
+gbh/bil/392
+{
+	texture Styles/bil.png
+	uv 0.25 0.375 0.28125 0.40625
+}
+
+gbh/bil/393
+{
+	texture Styles/bil.png
+	uv 0.28125 0.375 0.3125 0.40625
+}
+
+gbh/bil/394
+{
+	texture Styles/bil.png
+	uv 0.3125 0.375 0.34375 0.40625
+}
+
+gbh/bil/395
+{
+	texture Styles/bil.png
+	uv 0.34375 0.375 0.375 0.40625
+}
+
+gbh/bil/396
+{
+	texture Styles/bil.png
+	uv 0.375 0.375 0.40625 0.40625
+}
+
+gbh/bil/397
+{
+	texture Styles/bil.png
+	uv 0.40625 0.375 0.4375 0.40625
+}
+
+gbh/bil/398
+{
+	texture Styles/bil.png
+	uv 0.4375 0.375 0.46875 0.40625
+}
+
+gbh/bil/399
+{
+	texture Styles/bil.png
+	uv 0.46875 0.375 0.5 0.40625
+}
+
+gbh/bil/400
+{
+	texture Styles/bil.png
+	uv 0.5 0.375 0.53125 0.40625
+}
+
+gbh/bil/401
+{
+	texture Styles/bil.png
+	uv 0.53125 0.375 0.5625 0.40625
+}
+
+gbh/bil/402
+{
+	texture Styles/bil.png
+	uv 0.5625 0.375 0.59375 0.40625
+}
+
+gbh/bil/403
+{
+	texture Styles/bil.png
+	uv 0.59375 0.375 0.625 0.40625
+}
+
+gbh/bil/404
+{
+	texture Styles/bil.png
+	uv 0.625 0.375 0.65625 0.40625
+}
+
+gbh/bil/405
+{
+	texture Styles/bil.png
+	uv 0.65625 0.375 0.6875 0.40625
+}
+
+gbh/bil/406
+{
+	texture Styles/bil.png
+	uv 0.6875 0.375 0.71875 0.40625
+}
+
+gbh/bil/407
+{
+	texture Styles/bil.png
+	uv 0.71875 0.375 0.75 0.40625
+}
+
+gbh/bil/408
+{
+	texture Styles/bil.png
+	uv 0.75 0.375 0.78125 0.40625
+}
+
+gbh/bil/409
+{
+	texture Styles/bil.png
+	uv 0.78125 0.375 0.8125 0.40625
+}
+
+gbh/bil/410
+{
+	texture Styles/bil.png
+	uv 0.8125 0.375 0.84375 0.40625
+}
+
+gbh/bil/411
+{
+	texture Styles/bil.png
+	uv 0.84375 0.375 0.875 0.40625
+}
+
+gbh/bil/412
+{
+	texture Styles/bil.png
+	uv 0.875 0.375 0.90625 0.40625
+}
+
+gbh/bil/413
+{
+	texture Styles/bil.png
+	uv 0.90625 0.375 0.9375 0.40625
+}
+
+gbh/bil/414
+{
+	texture Styles/bil.png
+	uv 0.9375 0.375 0.96875 0.40625
+}
+
+gbh/bil/415
+{
+	texture Styles/bil.png
+	uv 0.96875 0.375 1 0.40625
+}
+
+gbh/bil/416
+{
+	texture Styles/bil.png
+	uv 0 0.40625 0.03125 0.4375
+}
+
+gbh/bil/417
+{
+	texture Styles/bil.png
+	uv 0.03125 0.40625 0.0625 0.4375
+}
+
+gbh/bil/418
+{
+	texture Styles/bil.png
+	uv 0.0625 0.40625 0.09375 0.4375
+}
+
+gbh/bil/419
+{
+	texture Styles/bil.png
+	uv 0.09375 0.40625 0.125 0.4375
+}
+
+gbh/bil/420
+{
+	texture Styles/bil.png
+	uv 0.125 0.40625 0.15625 0.4375
+}
+
+gbh/bil/421
+{
+	texture Styles/bil.png
+	uv 0.15625 0.40625 0.1875 0.4375
+}
+
+gbh/bil/422
+{
+	texture Styles/bil.png
+	uv 0.1875 0.40625 0.21875 0.4375
+}
+
+gbh/bil/423
+{
+	texture Styles/bil.png
+	uv 0.21875 0.40625 0.25 0.4375
+}
+
+gbh/bil/424
+{
+	texture Styles/bil.png
+	uv 0.25 0.40625 0.28125 0.4375
+}
+
+gbh/bil/425
+{
+	texture Styles/bil.png
+	uv 0.28125 0.40625 0.3125 0.4375
+}
+
+gbh/bil/426
+{
+	texture Styles/bil.png
+	uv 0.3125 0.40625 0.34375 0.4375
+}
+
+gbh/bil/427
+{
+	texture Styles/bil.png
+	uv 0.34375 0.40625 0.375 0.4375
+}
+
+gbh/bil/428
+{
+	texture Styles/bil.png
+	uv 0.375 0.40625 0.40625 0.4375
+}
+
+gbh/bil/429
+{
+	texture Styles/bil.png
+	uv 0.40625 0.40625 0.4375 0.4375
+}
+
+gbh/bil/430
+{
+	texture Styles/bil.png
+	uv 0.4375 0.40625 0.46875 0.4375
+}
+
+gbh/bil/431
+{
+	texture Styles/bil.png
+	uv 0.46875 0.40625 0.5 0.4375
+}
+
+gbh/bil/432
+{
+	texture Styles/bil.png
+	uv 0.5 0.40625 0.53125 0.4375
+}
+
+gbh/bil/433
+{
+	texture Styles/bil.png
+	uv 0.53125 0.40625 0.5625 0.4375
+}
+
+gbh/bil/434
+{
+	texture Styles/bil.png
+	uv 0.5625 0.40625 0.59375 0.4375
+}
+
+gbh/bil/435
+{
+	texture Styles/bil.png
+	uv 0.59375 0.40625 0.625 0.4375
+}
+
+gbh/bil/436
+{
+	texture Styles/bil.png
+	uv 0.625 0.40625 0.65625 0.4375
+}
+
+gbh/bil/437
+{
+	texture Styles/bil.png
+	uv 0.65625 0.40625 0.6875 0.4375
+}
+
+gbh/bil/438
+{
+	texture Styles/bil.png
+	uv 0.6875 0.40625 0.71875 0.4375
+}
+
+gbh/bil/439
+{
+	texture Styles/bil.png
+	uv 0.71875 0.40625 0.75 0.4375
+}
+
+gbh/bil/440
+{
+	texture Styles/bil.png
+	uv 0.75 0.40625 0.78125 0.4375
+}
+
+gbh/bil/441
+{
+	texture Styles/bil.png
+	uv 0.78125 0.40625 0.8125 0.4375
+}
+
+gbh/bil/442
+{
+	texture Styles/bil.png
+	uv 0.8125 0.40625 0.84375 0.4375
+}
+
+gbh/bil/443
+{
+	texture Styles/bil.png
+	uv 0.84375 0.40625 0.875 0.4375
+}
+
+gbh/bil/444
+{
+	texture Styles/bil.png
+	uv 0.875 0.40625 0.90625 0.4375
+}
+
+gbh/bil/445
+{
+	texture Styles/bil.png
+	uv 0.90625 0.40625 0.9375 0.4375
+}
+
+gbh/bil/446
+{
+	texture Styles/bil.png
+	uv 0.9375 0.40625 0.96875 0.4375
+}
+
+gbh/bil/447
+{
+	texture Styles/bil.png
+	uv 0.96875 0.40625 1 0.4375
+}
+
+gbh/bil/448
+{
+	texture Styles/bil.png
+	uv 0 0.4375 0.03125 0.46875
+}
+
+gbh/bil/449
+{
+	texture Styles/bil.png
+	uv 0.03125 0.4375 0.0625 0.46875
+}
+
+gbh/bil/450
+{
+	texture Styles/bil.png
+	uv 0.0625 0.4375 0.09375 0.46875
+}
+
+gbh/bil/451
+{
+	texture Styles/bil.png
+	uv 0.09375 0.4375 0.125 0.46875
+}
+
+gbh/bil/452
+{
+	texture Styles/bil.png
+	uv 0.125 0.4375 0.15625 0.46875
+}
+
+gbh/bil/453
+{
+	texture Styles/bil.png
+	uv 0.15625 0.4375 0.1875 0.46875
+}
+
+gbh/bil/454
+{
+	texture Styles/bil.png
+	uv 0.1875 0.4375 0.21875 0.46875
+}
+
+gbh/bil/455
+{
+	texture Styles/bil.png
+	uv 0.21875 0.4375 0.25 0.46875
+}
+
+gbh/bil/456
+{
+	texture Styles/bil.png
+	uv 0.25 0.4375 0.28125 0.46875
+}
+
+gbh/bil/457
+{
+	texture Styles/bil.png
+	uv 0.28125 0.4375 0.3125 0.46875
+}
+
+gbh/bil/458
+{
+	texture Styles/bil.png
+	uv 0.3125 0.4375 0.34375 0.46875
+}
+
+gbh/bil/459
+{
+	texture Styles/bil.png
+	uv 0.34375 0.4375 0.375 0.46875
+}
+
+gbh/bil/460
+{
+	texture Styles/bil.png
+	uv 0.375 0.4375 0.40625 0.46875
+}
+
+gbh/bil/461
+{
+	texture Styles/bil.png
+	uv 0.40625 0.4375 0.4375 0.46875
+}
+
+gbh/bil/462
+{
+	texture Styles/bil.png
+	uv 0.4375 0.4375 0.46875 0.46875
+}
+
+gbh/bil/463
+{
+	texture Styles/bil.png
+	uv 0.46875 0.4375 0.5 0.46875
+}
+
+gbh/bil/464
+{
+	texture Styles/bil.png
+	uv 0.5 0.4375 0.53125 0.46875
+}
+
+gbh/bil/465
+{
+	texture Styles/bil.png
+	uv 0.53125 0.4375 0.5625 0.46875
+}
+
+gbh/bil/466
+{
+	texture Styles/bil.png
+	uv 0.5625 0.4375 0.59375 0.46875
+}
+
+gbh/bil/467
+{
+	texture Styles/bil.png
+	uv 0.59375 0.4375 0.625 0.46875
+}
+
+gbh/bil/468
+{
+	texture Styles/bil.png
+	uv 0.625 0.4375 0.65625 0.46875
+}
+
+gbh/bil/469
+{
+	texture Styles/bil.png
+	uv 0.65625 0.4375 0.6875 0.46875
+}
+
+gbh/bil/470
+{
+	texture Styles/bil.png
+	uv 0.6875 0.4375 0.71875 0.46875
+}
+
+gbh/bil/471
+{
+	texture Styles/bil.png
+	uv 0.71875 0.4375 0.75 0.46875
+}
+
+gbh/bil/472
+{
+	texture Styles/bil.png
+	uv 0.75 0.4375 0.78125 0.46875
+}
+
+gbh/bil/473
+{
+	texture Styles/bil.png
+	uv 0.78125 0.4375 0.8125 0.46875
+}
+
+gbh/bil/474
+{
+	texture Styles/bil.png
+	uv 0.8125 0.4375 0.84375 0.46875
+}
+
+gbh/bil/475
+{
+	texture Styles/bil.png
+	uv 0.84375 0.4375 0.875 0.46875
+}
+
+gbh/bil/476
+{
+	texture Styles/bil.png
+	uv 0.875 0.4375 0.90625 0.46875
+}
+
+gbh/bil/477
+{
+	texture Styles/bil.png
+	uv 0.90625 0.4375 0.9375 0.46875
+}
+
+gbh/bil/478
+{
+	texture Styles/bil.png
+	uv 0.9375 0.4375 0.96875 0.46875
+}
+
+gbh/bil/479
+{
+	texture Styles/bil.png
+	uv 0.96875 0.4375 1 0.46875
+}
+
+gbh/bil/480
+{
+	texture Styles/bil.png
+	uv 0 0.46875 0.03125 0.5
+}
+
+gbh/bil/481
+{
+	texture Styles/bil.png
+	uv 0.03125 0.46875 0.0625 0.5
+}
+
+gbh/bil/482
+{
+	texture Styles/bil.png
+	uv 0.0625 0.46875 0.09375 0.5
+}
+
+gbh/bil/483
+{
+	texture Styles/bil.png
+	uv 0.09375 0.46875 0.125 0.5
+}
+
+gbh/bil/484
+{
+	texture Styles/bil.png
+	uv 0.125 0.46875 0.15625 0.5
+}
+
+gbh/bil/485
+{
+	texture Styles/bil.png
+	uv 0.15625 0.46875 0.1875 0.5
+}
+
+gbh/bil/486
+{
+	texture Styles/bil.png
+	uv 0.1875 0.46875 0.21875 0.5
+}
+
+gbh/bil/487
+{
+	texture Styles/bil.png
+	uv 0.21875 0.46875 0.25 0.5
+}
+
+gbh/bil/488
+{
+	texture Styles/bil.png
+	uv 0.25 0.46875 0.28125 0.5
+}
+
+gbh/bil/489
+{
+	texture Styles/bil.png
+	uv 0.28125 0.46875 0.3125 0.5
+}
+
+gbh/bil/490
+{
+	texture Styles/bil.png
+	uv 0.3125 0.46875 0.34375 0.5
+}
+
+gbh/bil/491
+{
+	texture Styles/bil.png
+	uv 0.34375 0.46875 0.375 0.5
+}
+
+gbh/bil/492
+{
+	texture Styles/bil.png
+	uv 0.375 0.46875 0.40625 0.5
+}
+
+gbh/bil/493
+{
+	texture Styles/bil.png
+	uv 0.40625 0.46875 0.4375 0.5
+}
+
+gbh/bil/494
+{
+	texture Styles/bil.png
+	uv 0.4375 0.46875 0.46875 0.5
+}
+
+gbh/bil/495
+{
+	texture Styles/bil.png
+	uv 0.46875 0.46875 0.5 0.5
+}
+
+gbh/bil/496
+{
+	texture Styles/bil.png
+	uv 0.5 0.46875 0.53125 0.5
+}
+
+gbh/bil/497
+{
+	texture Styles/bil.png
+	uv 0.53125 0.46875 0.5625 0.5
+}
+
+gbh/bil/498
+{
+	texture Styles/bil.png
+	uv 0.5625 0.46875 0.59375 0.5
+}
+
+gbh/bil/499
+{
+	texture Styles/bil.png
+	uv 0.59375 0.46875 0.625 0.5
+}
+
+gbh/bil/500
+{
+	texture Styles/bil.png
+	uv 0.625 0.46875 0.65625 0.5
+}
+
+gbh/bil/501
+{
+	texture Styles/bil.png
+	uv 0.65625 0.46875 0.6875 0.5
+}
+
+gbh/bil/502
+{
+	texture Styles/bil.png
+	uv 0.6875 0.46875 0.71875 0.5
+}
+
+gbh/bil/503
+{
+	texture Styles/bil.png
+	uv 0.71875 0.46875 0.75 0.5
+}
+
+gbh/bil/504
+{
+	texture Styles/bil.png
+	uv 0.75 0.46875 0.78125 0.5
+}
+
+gbh/bil/505
+{
+	texture Styles/bil.png
+	uv 0.78125 0.46875 0.8125 0.5
+}
+
+gbh/bil/506
+{
+	texture Styles/bil.png
+	uv 0.8125 0.46875 0.84375 0.5
+}
+
+gbh/bil/507
+{
+	texture Styles/bil.png
+	uv 0.84375 0.46875 0.875 0.5
+}
+
+gbh/bil/508
+{
+	texture Styles/bil.png
+	uv 0.875 0.46875 0.90625 0.5
+}
+
+gbh/bil/509
+{
+	texture Styles/bil.png
+	uv 0.90625 0.46875 0.9375 0.5
+}
+
+gbh/bil/510
+{
+	texture Styles/bil.png
+	uv 0.9375 0.46875 0.96875 0.5
+}
+
+gbh/bil/511
+{
+	texture Styles/bil.png
+	uv 0.96875 0.46875 1 0.5
+}
+
+gbh/bil/512
+{
+	texture Styles/bil.png
+	uv 0 0.5 0.03125 0.53125
+}
+
+gbh/bil/513
+{
+	texture Styles/bil.png
+	uv 0.03125 0.5 0.0625 0.53125
+}
+
+gbh/bil/514
+{
+	texture Styles/bil.png
+	uv 0.0625 0.5 0.09375 0.53125
+}
+
+gbh/bil/515
+{
+	texture Styles/bil.png
+	uv 0.09375 0.5 0.125 0.53125
+}
+
+gbh/bil/516
+{
+	texture Styles/bil.png
+	uv 0.125 0.5 0.15625 0.53125
+}
+
+gbh/bil/517
+{
+	texture Styles/bil.png
+	uv 0.15625 0.5 0.1875 0.53125
+}
+
+gbh/bil/518
+{
+	texture Styles/bil.png
+	uv 0.1875 0.5 0.21875 0.53125
+}
+
+gbh/bil/519
+{
+	texture Styles/bil.png
+	uv 0.21875 0.5 0.25 0.53125
+}
+
+gbh/bil/520
+{
+	texture Styles/bil.png
+	uv 0.25 0.5 0.28125 0.53125
+}
+
+gbh/bil/521
+{
+	texture Styles/bil.png
+	uv 0.28125 0.5 0.3125 0.53125
+}
+
+gbh/bil/522
+{
+	texture Styles/bil.png
+	uv 0.3125 0.5 0.34375 0.53125
+}
+
+gbh/bil/523
+{
+	texture Styles/bil.png
+	uv 0.34375 0.5 0.375 0.53125
+}
+
+gbh/bil/524
+{
+	texture Styles/bil.png
+	uv 0.375 0.5 0.40625 0.53125
+}
+
+gbh/bil/525
+{
+	texture Styles/bil.png
+	uv 0.40625 0.5 0.4375 0.53125
+}
+
+gbh/bil/526
+{
+	texture Styles/bil.png
+	uv 0.4375 0.5 0.46875 0.53125
+}
+
+gbh/bil/527
+{
+	texture Styles/bil.png
+	uv 0.46875 0.5 0.5 0.53125
+}
+
+gbh/bil/528
+{
+	texture Styles/bil.png
+	uv 0.5 0.5 0.53125 0.53125
+}
+
+gbh/bil/529
+{
+	texture Styles/bil.png
+	uv 0.53125 0.5 0.5625 0.53125
+}
+
+gbh/bil/530
+{
+	texture Styles/bil.png
+	uv 0.5625 0.5 0.59375 0.53125
+}
+
+gbh/bil/531
+{
+	texture Styles/bil.png
+	uv 0.59375 0.5 0.625 0.53125
+}
+
+gbh/bil/532
+{
+	texture Styles/bil.png
+	uv 0.625 0.5 0.65625 0.53125
+}
+
+gbh/bil/533
+{
+	texture Styles/bil.png
+	uv 0.65625 0.5 0.6875 0.53125
+}
+
+gbh/bil/534
+{
+	texture Styles/bil.png
+	uv 0.6875 0.5 0.71875 0.53125
+}
+
+gbh/bil/535
+{
+	texture Styles/bil.png
+	uv 0.71875 0.5 0.75 0.53125
+}
+
+gbh/bil/536
+{
+	texture Styles/bil.png
+	uv 0.75 0.5 0.78125 0.53125
+}
+
+gbh/bil/537
+{
+	texture Styles/bil.png
+	uv 0.78125 0.5 0.8125 0.53125
+}
+
+gbh/bil/538
+{
+	texture Styles/bil.png
+	uv 0.8125 0.5 0.84375 0.53125
+}
+
+gbh/bil/539
+{
+	texture Styles/bil.png
+	uv 0.84375 0.5 0.875 0.53125
+}
+
+gbh/bil/540
+{
+	texture Styles/bil.png
+	uv 0.875 0.5 0.90625 0.53125
+}
+
+gbh/bil/541
+{
+	texture Styles/bil.png
+	uv 0.90625 0.5 0.9375 0.53125
+}
+
+gbh/bil/542
+{
+	texture Styles/bil.png
+	uv 0.9375 0.5 0.96875 0.53125
+}
+
+gbh/bil/543
+{
+	texture Styles/bil.png
+	uv 0.96875 0.5 1 0.53125
+}
+
+gbh/bil/544
+{
+	texture Styles/bil.png
+	uv 0 0.53125 0.03125 0.5625
+}
+
+gbh/bil/545
+{
+	texture Styles/bil.png
+	uv 0.03125 0.53125 0.0625 0.5625
+}
+
+gbh/bil/546
+{
+	texture Styles/bil.png
+	uv 0.0625 0.53125 0.09375 0.5625
+}
+
+gbh/bil/547
+{
+	texture Styles/bil.png
+	uv 0.09375 0.53125 0.125 0.5625
+}
+
+gbh/bil/548
+{
+	texture Styles/bil.png
+	uv 0.125 0.53125 0.15625 0.5625
+}
+
+gbh/bil/549
+{
+	texture Styles/bil.png
+	uv 0.15625 0.53125 0.1875 0.5625
+}
+
+gbh/bil/550
+{
+	texture Styles/bil.png
+	uv 0.1875 0.53125 0.21875 0.5625
+}
+
+gbh/bil/551
+{
+	texture Styles/bil.png
+	uv 0.21875 0.53125 0.25 0.5625
+}
+
+gbh/bil/552
+{
+	texture Styles/bil.png
+	uv 0.25 0.53125 0.28125 0.5625
+}
+
+gbh/bil/553
+{
+	texture Styles/bil.png
+	uv 0.28125 0.53125 0.3125 0.5625
+}
+
+gbh/bil/554
+{
+	texture Styles/bil.png
+	uv 0.3125 0.53125 0.34375 0.5625
+}
+
+gbh/bil/555
+{
+	texture Styles/bil.png
+	uv 0.34375 0.53125 0.375 0.5625
+}
+
+gbh/bil/556
+{
+	texture Styles/bil.png
+	uv 0.375 0.53125 0.40625 0.5625
+}
+
+gbh/bil/557
+{
+	texture Styles/bil.png
+	uv 0.40625 0.53125 0.4375 0.5625
+}
+
+gbh/bil/558
+{
+	texture Styles/bil.png
+	uv 0.4375 0.53125 0.46875 0.5625
+}
+
+gbh/bil/559
+{
+	texture Styles/bil.png
+	uv 0.46875 0.53125 0.5 0.5625
+}
+
+gbh/bil/560
+{
+	texture Styles/bil.png
+	uv 0.5 0.53125 0.53125 0.5625
+}
+
+gbh/bil/561
+{
+	texture Styles/bil.png
+	uv 0.53125 0.53125 0.5625 0.5625
+}
+
+gbh/bil/562
+{
+	texture Styles/bil.png
+	uv 0.5625 0.53125 0.59375 0.5625
+}
+
+gbh/bil/563
+{
+	texture Styles/bil.png
+	uv 0.59375 0.53125 0.625 0.5625
+}
+
+gbh/bil/564
+{
+	texture Styles/bil.png
+	uv 0.625 0.53125 0.65625 0.5625
+}
+
+gbh/bil/565
+{
+	texture Styles/bil.png
+	uv 0.65625 0.53125 0.6875 0.5625
+}
+
+gbh/bil/566
+{
+	texture Styles/bil.png
+	uv 0.6875 0.53125 0.71875 0.5625
+}
+
+gbh/bil/567
+{
+	texture Styles/bil.png
+	uv 0.71875 0.53125 0.75 0.5625
+}
+
+gbh/bil/568
+{
+	texture Styles/bil.png
+	uv 0.75 0.53125 0.78125 0.5625
+}
+
+gbh/bil/569
+{
+	texture Styles/bil.png
+	uv 0.78125 0.53125 0.8125 0.5625
+}
+
+gbh/bil/570
+{
+	texture Styles/bil.png
+	uv 0.8125 0.53125 0.84375 0.5625
+}
+
+gbh/bil/571
+{
+	texture Styles/bil.png
+	uv 0.84375 0.53125 0.875 0.5625
+}
+
+gbh/bil/572
+{
+	texture Styles/bil.png
+	uv 0.875 0.53125 0.90625 0.5625
+}
+
+gbh/bil/573
+{
+	texture Styles/bil.png
+	uv 0.90625 0.53125 0.9375 0.5625
+}
+
+gbh/bil/574
+{
+	texture Styles/bil.png
+	uv 0.9375 0.53125 0.96875 0.5625
+}
+
+gbh/bil/575
+{
+	texture Styles/bil.png
+	uv 0.96875 0.53125 1 0.5625
+}
+
+gbh/bil/576
+{
+	texture Styles/bil.png
+	uv 0 0.5625 0.03125 0.59375
+}
+
+gbh/bil/577
+{
+	texture Styles/bil.png
+	uv 0.03125 0.5625 0.0625 0.59375
+}
+
+gbh/bil/578
+{
+	texture Styles/bil.png
+	uv 0.0625 0.5625 0.09375 0.59375
+}
+
+gbh/bil/579
+{
+	texture Styles/bil.png
+	uv 0.09375 0.5625 0.125 0.59375
+}
+
+gbh/bil/580
+{
+	texture Styles/bil.png
+	uv 0.125 0.5625 0.15625 0.59375
+}
+
+gbh/bil/581
+{
+	texture Styles/bil.png
+	uv 0.15625 0.5625 0.1875 0.59375
+}
+
+gbh/bil/582
+{
+	texture Styles/bil.png
+	uv 0.1875 0.5625 0.21875 0.59375
+}
+
+gbh/bil/583
+{
+	texture Styles/bil.png
+	uv 0.21875 0.5625 0.25 0.59375
+}
+
+gbh/bil/584
+{
+	texture Styles/bil.png
+	uv 0.25 0.5625 0.28125 0.59375
+}
+
+gbh/bil/585
+{
+	texture Styles/bil.png
+	uv 0.28125 0.5625 0.3125 0.59375
+}
+
+gbh/bil/586
+{
+	texture Styles/bil.png
+	uv 0.3125 0.5625 0.34375 0.59375
+}
+
+gbh/bil/587
+{
+	texture Styles/bil.png
+	uv 0.34375 0.5625 0.375 0.59375
+}
+
+gbh/bil/588
+{
+	texture Styles/bil.png
+	uv 0.375 0.5625 0.40625 0.59375
+}
+
+gbh/bil/589
+{
+	texture Styles/bil.png
+	uv 0.40625 0.5625 0.4375 0.59375
+}
+
+gbh/bil/590
+{
+	texture Styles/bil.png
+	uv 0.4375 0.5625 0.46875 0.59375
+}
+
+gbh/bil/591
+{
+	texture Styles/bil.png
+	uv 0.46875 0.5625 0.5 0.59375
+}
+
+gbh/bil/592
+{
+	texture Styles/bil.png
+	uv 0.5 0.5625 0.53125 0.59375
+}
+
+gbh/bil/593
+{
+	texture Styles/bil.png
+	uv 0.53125 0.5625 0.5625 0.59375
+}
+
+gbh/bil/594
+{
+	texture Styles/bil.png
+	uv 0.5625 0.5625 0.59375 0.59375
+}
+
+gbh/bil/595
+{
+	texture Styles/bil.png
+	uv 0.59375 0.5625 0.625 0.59375
+}
+
+gbh/bil/596
+{
+	texture Styles/bil.png
+	uv 0.625 0.5625 0.65625 0.59375
+}
+
+gbh/bil/597
+{
+	texture Styles/bil.png
+	uv 0.65625 0.5625 0.6875 0.59375
+}
+
+gbh/bil/598
+{
+	texture Styles/bil.png
+	uv 0.6875 0.5625 0.71875 0.59375
+}
+
+gbh/bil/599
+{
+	texture Styles/bil.png
+	uv 0.71875 0.5625 0.75 0.59375
+}
+
+gbh/bil/600
+{
+	texture Styles/bil.png
+	uv 0.75 0.5625 0.78125 0.59375
+}
+
+gbh/bil/601
+{
+	texture Styles/bil.png
+	uv 0.78125 0.5625 0.8125 0.59375
+}
+
+gbh/bil/602
+{
+	texture Styles/bil.png
+	uv 0.8125 0.5625 0.84375 0.59375
+}
+
+gbh/bil/603
+{
+	texture Styles/bil.png
+	uv 0.84375 0.5625 0.875 0.59375
+}
+
+gbh/bil/604
+{
+	texture Styles/bil.png
+	uv 0.875 0.5625 0.90625 0.59375
+}
+
+gbh/bil/605
+{
+	texture Styles/bil.png
+	uv 0.90625 0.5625 0.9375 0.59375
+}
+
+gbh/bil/606
+{
+	texture Styles/bil.png
+	uv 0.9375 0.5625 0.96875 0.59375
+}
+
+gbh/bil/607
+{
+	texture Styles/bil.png
+	uv 0.96875 0.5625 1 0.59375
+}
+
+gbh/bil/608
+{
+	texture Styles/bil.png
+	uv 0 0.59375 0.03125 0.625
+}
+
+gbh/bil/609
+{
+	texture Styles/bil.png
+	uv 0.03125 0.59375 0.0625 0.625
+}
+
+gbh/bil/610
+{
+	texture Styles/bil.png
+	uv 0.0625 0.59375 0.09375 0.625
+}
+
+gbh/bil/611
+{
+	texture Styles/bil.png
+	uv 0.09375 0.59375 0.125 0.625
+}
+
+gbh/bil/612
+{
+	texture Styles/bil.png
+	uv 0.125 0.59375 0.15625 0.625
+}
+
+gbh/bil/613
+{
+	texture Styles/bil.png
+	uv 0.15625 0.59375 0.1875 0.625
+}
+
+gbh/bil/614
+{
+	texture Styles/bil.png
+	uv 0.1875 0.59375 0.21875 0.625
+}
+
+gbh/bil/615
+{
+	texture Styles/bil.png
+	uv 0.21875 0.59375 0.25 0.625
+}
+
+gbh/bil/616
+{
+	texture Styles/bil.png
+	uv 0.25 0.59375 0.28125 0.625
+}
+
+gbh/bil/617
+{
+	texture Styles/bil.png
+	uv 0.28125 0.59375 0.3125 0.625
+}
+
+gbh/bil/618
+{
+	texture Styles/bil.png
+	uv 0.3125 0.59375 0.34375 0.625
+}
+
+gbh/bil/619
+{
+	texture Styles/bil.png
+	uv 0.34375 0.59375 0.375 0.625
+}
+
+gbh/bil/620
+{
+	texture Styles/bil.png
+	uv 0.375 0.59375 0.40625 0.625
+}
+
+gbh/bil/621
+{
+	texture Styles/bil.png
+	uv 0.40625 0.59375 0.4375 0.625
+}
+
+gbh/bil/622
+{
+	texture Styles/bil.png
+	uv 0.4375 0.59375 0.46875 0.625
+}
+
+gbh/bil/623
+{
+	texture Styles/bil.png
+	uv 0.46875 0.59375 0.5 0.625
+}
+
+gbh/bil/624
+{
+	texture Styles/bil.png
+	uv 0.5 0.59375 0.53125 0.625
+}
+
+gbh/bil/625
+{
+	texture Styles/bil.png
+	uv 0.53125 0.59375 0.5625 0.625
+}
+
+gbh/bil/626
+{
+	texture Styles/bil.png
+	uv 0.5625 0.59375 0.59375 0.625
+}
+
+gbh/bil/627
+{
+	texture Styles/bil.png
+	uv 0.59375 0.59375 0.625 0.625
+}
+
+gbh/bil/628
+{
+	texture Styles/bil.png
+	uv 0.625 0.59375 0.65625 0.625
+}
+
+gbh/bil/629
+{
+	texture Styles/bil.png
+	uv 0.65625 0.59375 0.6875 0.625
+}
+
+gbh/bil/630
+{
+	texture Styles/bil.png
+	uv 0.6875 0.59375 0.71875 0.625
+}
+
+gbh/bil/631
+{
+	texture Styles/bil.png
+	uv 0.71875 0.59375 0.75 0.625
+}
+
+gbh/bil/632
+{
+	texture Styles/bil.png
+	uv 0.75 0.59375 0.78125 0.625
+}
+
+gbh/bil/633
+{
+	texture Styles/bil.png
+	uv 0.78125 0.59375 0.8125 0.625
+}
+
+gbh/bil/634
+{
+	texture Styles/bil.png
+	uv 0.8125 0.59375 0.84375 0.625
+}
+
+gbh/bil/635
+{
+	texture Styles/bil.png
+	uv 0.84375 0.59375 0.875 0.625
+}
+
+gbh/bil/636
+{
+	texture Styles/bil.png
+	uv 0.875 0.59375 0.90625 0.625
+}
+
+gbh/bil/637
+{
+	texture Styles/bil.png
+	uv 0.90625 0.59375 0.9375 0.625
+}
+
+gbh/bil/638
+{
+	texture Styles/bil.png
+	uv 0.9375 0.59375 0.96875 0.625
+}
+
+gbh/bil/639
+{
+	texture Styles/bil.png
+	uv 0.96875 0.59375 1 0.625
+}
+
+gbh/bil/640
+{
+	texture Styles/bil.png
+	uv 0 0.625 0.03125 0.65625
+}
+
+gbh/bil/641
+{
+	texture Styles/bil.png
+	uv 0.03125 0.625 0.0625 0.65625
+}
+
+gbh/bil/642
+{
+	texture Styles/bil.png
+	uv 0.0625 0.625 0.09375 0.65625
+}
+
+gbh/bil/643
+{
+	texture Styles/bil.png
+	uv 0.09375 0.625 0.125 0.65625
+}
+
+gbh/bil/644
+{
+	texture Styles/bil.png
+	uv 0.125 0.625 0.15625 0.65625
+}
+
+gbh/bil/645
+{
+	texture Styles/bil.png
+	uv 0.15625 0.625 0.1875 0.65625
+}
+
+gbh/bil/646
+{
+	texture Styles/bil.png
+	uv 0.1875 0.625 0.21875 0.65625
+}
+
+gbh/bil/647
+{
+	texture Styles/bil.png
+	uv 0.21875 0.625 0.25 0.65625
+}
+
+gbh/bil/648
+{
+	texture Styles/bil.png
+	uv 0.25 0.625 0.28125 0.65625
+}
+
+gbh/bil/649
+{
+	texture Styles/bil.png
+	uv 0.28125 0.625 0.3125 0.65625
+}
+
+gbh/bil/650
+{
+	texture Styles/bil.png
+	uv 0.3125 0.625 0.34375 0.65625
+}
+
+gbh/bil/651
+{
+	texture Styles/bil.png
+	uv 0.34375 0.625 0.375 0.65625
+}
+
+gbh/bil/652
+{
+	texture Styles/bil.png
+	uv 0.375 0.625 0.40625 0.65625
+}
+
+gbh/bil/653
+{
+	texture Styles/bil.png
+	uv 0.40625 0.625 0.4375 0.65625
+}
+
+gbh/bil/654
+{
+	texture Styles/bil.png
+	uv 0.4375 0.625 0.46875 0.65625
+}
+
+gbh/bil/655
+{
+	texture Styles/bil.png
+	uv 0.46875 0.625 0.5 0.65625
+}
+
+gbh/bil/656
+{
+	texture Styles/bil.png
+	uv 0.5 0.625 0.53125 0.65625
+}
+
+gbh/bil/657
+{
+	texture Styles/bil.png
+	uv 0.53125 0.625 0.5625 0.65625
+}
+
+gbh/bil/658
+{
+	texture Styles/bil.png
+	uv 0.5625 0.625 0.59375 0.65625
+}
+
+gbh/bil/659
+{
+	texture Styles/bil.png
+	uv 0.59375 0.625 0.625 0.65625
+}
+
+gbh/bil/660
+{
+	texture Styles/bil.png
+	uv 0.625 0.625 0.65625 0.65625
+}
+
+gbh/bil/661
+{
+	texture Styles/bil.png
+	uv 0.65625 0.625 0.6875 0.65625
+}
+
+gbh/bil/662
+{
+	texture Styles/bil.png
+	uv 0.6875 0.625 0.71875 0.65625
+}
+
+gbh/bil/663
+{
+	texture Styles/bil.png
+	uv 0.71875 0.625 0.75 0.65625
+}
+
+gbh/bil/664
+{
+	texture Styles/bil.png
+	uv 0.75 0.625 0.78125 0.65625
+}
+
+gbh/bil/665
+{
+	texture Styles/bil.png
+	uv 0.78125 0.625 0.8125 0.65625
+}
+
+gbh/bil/666
+{
+	texture Styles/bil.png
+	uv 0.8125 0.625 0.84375 0.65625
+}
+
+gbh/bil/667
+{
+	texture Styles/bil.png
+	uv 0.84375 0.625 0.875 0.65625
+}
+
+gbh/bil/668
+{
+	texture Styles/bil.png
+	uv 0.875 0.625 0.90625 0.65625
+}
+
+gbh/bil/669
+{
+	texture Styles/bil.png
+	uv 0.90625 0.625 0.9375 0.65625
+}
+
+gbh/bil/670
+{
+	texture Styles/bil.png
+	uv 0.9375 0.625 0.96875 0.65625
+}
+
+gbh/bil/671
+{
+	texture Styles/bil.png
+	uv 0.96875 0.625 1 0.65625
+}
+
+gbh/bil/672
+{
+	texture Styles/bil.png
+	uv 0 0.65625 0.03125 0.6875
+}
+
+gbh/bil/673
+{
+	texture Styles/bil.png
+	uv 0.03125 0.65625 0.0625 0.6875
+}
+
+gbh/bil/674
+{
+	texture Styles/bil.png
+	uv 0.0625 0.65625 0.09375 0.6875
+}
+
+gbh/bil/675
+{
+	texture Styles/bil.png
+	uv 0.09375 0.65625 0.125 0.6875
+}
+
+gbh/bil/676
+{
+	texture Styles/bil.png
+	uv 0.125 0.65625 0.15625 0.6875
+}
+
+gbh/bil/677
+{
+	texture Styles/bil.png
+	uv 0.15625 0.65625 0.1875 0.6875
+}
+
+gbh/bil/678
+{
+	texture Styles/bil.png
+	uv 0.1875 0.65625 0.21875 0.6875
+}
+
+gbh/bil/679
+{
+	texture Styles/bil.png
+	uv 0.21875 0.65625 0.25 0.6875
+}
+
+gbh/bil/680
+{
+	texture Styles/bil.png
+	uv 0.25 0.65625 0.28125 0.6875
+}
+
+gbh/bil/681
+{
+	texture Styles/bil.png
+	uv 0.28125 0.65625 0.3125 0.6875
+}
+
+gbh/bil/682
+{
+	texture Styles/bil.png
+	uv 0.3125 0.65625 0.34375 0.6875
+}
+
+gbh/bil/683
+{
+	texture Styles/bil.png
+	uv 0.34375 0.65625 0.375 0.6875
+}
+
+gbh/bil/684
+{
+	texture Styles/bil.png
+	uv 0.375 0.65625 0.40625 0.6875
+}
+
+gbh/bil/685
+{
+	texture Styles/bil.png
+	uv 0.40625 0.65625 0.4375 0.6875
+}
+
+gbh/bil/686
+{
+	texture Styles/bil.png
+	uv 0.4375 0.65625 0.46875 0.6875
+}
+
+gbh/bil/687
+{
+	texture Styles/bil.png
+	uv 0.46875 0.65625 0.5 0.6875
+}
+
+gbh/bil/688
+{
+	texture Styles/bil.png
+	uv 0.5 0.65625 0.53125 0.6875
+}
+
+gbh/bil/689
+{
+	texture Styles/bil.png
+	uv 0.53125 0.65625 0.5625 0.6875
+}
+
+gbh/bil/690
+{
+	texture Styles/bil.png
+	uv 0.5625 0.65625 0.59375 0.6875
+}
+
+gbh/bil/691
+{
+	texture Styles/bil.png
+	uv 0.59375 0.65625 0.625 0.6875
+}
+
+gbh/bil/692
+{
+	texture Styles/bil.png
+	uv 0.625 0.65625 0.65625 0.6875
+}
+
+gbh/bil/693
+{
+	texture Styles/bil.png
+	uv 0.65625 0.65625 0.6875 0.6875
+}
+
+gbh/bil/694
+{
+	texture Styles/bil.png
+	uv 0.6875 0.65625 0.71875 0.6875
+}
+
+gbh/bil/695
+{
+	texture Styles/bil.png
+	uv 0.71875 0.65625 0.75 0.6875
+}
+
+gbh/bil/696
+{
+	texture Styles/bil.png
+	uv 0.75 0.65625 0.78125 0.6875
+}
+
+gbh/bil/697
+{
+	texture Styles/bil.png
+	uv 0.78125 0.65625 0.8125 0.6875
+}
+
+gbh/bil/698
+{
+	texture Styles/bil.png
+	uv 0.8125 0.65625 0.84375 0.6875
+}
+
+gbh/bil/699
+{
+	texture Styles/bil.png
+	uv 0.84375 0.65625 0.875 0.6875
+}
+
+gbh/bil/700
+{
+	texture Styles/bil.png
+	uv 0.875 0.65625 0.90625 0.6875
+}
+
+gbh/bil/701
+{
+	texture Styles/bil.png
+	uv 0.90625 0.65625 0.9375 0.6875
+}
+
+gbh/bil/702
+{
+	texture Styles/bil.png
+	uv 0.9375 0.65625 0.96875 0.6875
+}
+
+gbh/bil/703
+{
+	texture Styles/bil.png
+	uv 0.96875 0.65625 1 0.6875
+}
+
+gbh/bil/704
+{
+	texture Styles/bil.png
+	uv 0 0.6875 0.03125 0.71875
+}
+
+gbh/bil/705
+{
+	texture Styles/bil.png
+	uv 0.03125 0.6875 0.0625 0.71875
+}
+
+gbh/bil/706
+{
+	texture Styles/bil.png
+	uv 0.0625 0.6875 0.09375 0.71875
+}
+
+gbh/bil/707
+{
+	texture Styles/bil.png
+	uv 0.09375 0.6875 0.125 0.71875
+}
+
+gbh/bil/708
+{
+	texture Styles/bil.png
+	uv 0.125 0.6875 0.15625 0.71875
+}
+
+gbh/bil/709
+{
+	texture Styles/bil.png
+	uv 0.15625 0.6875 0.1875 0.71875
+}
+
+gbh/bil/710
+{
+	texture Styles/bil.png
+	uv 0.1875 0.6875 0.21875 0.71875
+}
+
+gbh/bil/711
+{
+	texture Styles/bil.png
+	uv 0.21875 0.6875 0.25 0.71875
+}
+
+gbh/bil/712
+{
+	texture Styles/bil.png
+	uv 0.25 0.6875 0.28125 0.71875
+}
+
+gbh/bil/713
+{
+	texture Styles/bil.png
+	uv 0.28125 0.6875 0.3125 0.71875
+}
+
+gbh/bil/714
+{
+	texture Styles/bil.png
+	uv 0.3125 0.6875 0.34375 0.71875
+}
+
+gbh/bil/715
+{
+	texture Styles/bil.png
+	uv 0.34375 0.6875 0.375 0.71875
+}
+
+gbh/bil/716
+{
+	texture Styles/bil.png
+	uv 0.375 0.6875 0.40625 0.71875
+}
+
+gbh/bil/717
+{
+	texture Styles/bil.png
+	uv 0.40625 0.6875 0.4375 0.71875
+}
+
+gbh/bil/718
+{
+	texture Styles/bil.png
+	uv 0.4375 0.6875 0.46875 0.71875
+}
+
+gbh/bil/719
+{
+	texture Styles/bil.png
+	uv 0.46875 0.6875 0.5 0.71875
+}
+
+gbh/bil/720
+{
+	texture Styles/bil.png
+	uv 0.5 0.6875 0.53125 0.71875
+}
+
+gbh/bil/721
+{
+	texture Styles/bil.png
+	uv 0.53125 0.6875 0.5625 0.71875
+}
+
+gbh/bil/722
+{
+	texture Styles/bil.png
+	uv 0.5625 0.6875 0.59375 0.71875
+}
+
+gbh/bil/723
+{
+	texture Styles/bil.png
+	uv 0.59375 0.6875 0.625 0.71875
+}
+
+gbh/bil/724
+{
+	texture Styles/bil.png
+	uv 0.625 0.6875 0.65625 0.71875
+}
+
+gbh/bil/725
+{
+	texture Styles/bil.png
+	uv 0.65625 0.6875 0.6875 0.71875
+}
+
+gbh/bil/726
+{
+	texture Styles/bil.png
+	uv 0.6875 0.6875 0.71875 0.71875
+}
+
+gbh/bil/727
+{
+	texture Styles/bil.png
+	uv 0.71875 0.6875 0.75 0.71875
+}
+
+gbh/bil/728
+{
+	texture Styles/bil.png
+	uv 0.75 0.6875 0.78125 0.71875
+}
+
+gbh/bil/729
+{
+	texture Styles/bil.png
+	uv 0.78125 0.6875 0.8125 0.71875
+}
+
+gbh/bil/730
+{
+	texture Styles/bil.png
+	uv 0.8125 0.6875 0.84375 0.71875
+}
+
+gbh/bil/731
+{
+	texture Styles/bil.png
+	uv 0.84375 0.6875 0.875 0.71875
+}
+
+gbh/bil/732
+{
+	texture Styles/bil.png
+	uv 0.875 0.6875 0.90625 0.71875
+}
+
+gbh/bil/733
+{
+	texture Styles/bil.png
+	uv 0.90625 0.6875 0.9375 0.71875
+}
+
+gbh/bil/734
+{
+	texture Styles/bil.png
+	uv 0.9375 0.6875 0.96875 0.71875
+}
+
+gbh/bil/735
+{
+	texture Styles/bil.png
+	uv 0.96875 0.6875 1 0.71875
+}
+
+gbh/bil/736
+{
+	texture Styles/bil.png
+	uv 0 0.71875 0.03125 0.75
+}
+
+gbh/bil/737
+{
+	texture Styles/bil.png
+	uv 0.03125 0.71875 0.0625 0.75
+}
+
+gbh/bil/738
+{
+	texture Styles/bil.png
+	uv 0.0625 0.71875 0.09375 0.75
+}
+
+gbh/bil/739
+{
+	texture Styles/bil.png
+	uv 0.09375 0.71875 0.125 0.75
+}
+
+gbh/bil/740
+{
+	texture Styles/bil.png
+	uv 0.125 0.71875 0.15625 0.75
+}
+
+gbh/bil/741
+{
+	texture Styles/bil.png
+	uv 0.15625 0.71875 0.1875 0.75
+}
+
+gbh/bil/742
+{
+	texture Images/roads.png
+	uv 0.25 0.5 0.5 1.0
+}
+
+gbh/bil/743
+{
+	texture Styles/bil.png
+	uv 0.21875 0.71875 0.25 0.75
+}
+
+gbh/bil/744
+{
+	texture Styles/bil.png
+	uv 0.25 0.71875 0.28125 0.75
+}
+
+gbh/bil/745
+{
+	texture Styles/bil.png
+	uv 0.28125 0.71875 0.3125 0.75
+}
+
+gbh/bil/746
+{
+	texture Images/roads.png
+	uv 0.0 0.5 0.25 1.0
+}
+
+gbh/bil/747
+{
+	texture Styles/bil.png
+	uv 0.34375 0.71875 0.375 0.75
+}
+
+gbh/bil/748
+{
+	texture Styles/bil.png
+	uv 0.375 0.71875 0.40625 0.75
+}
+
+gbh/bil/749
+{
+	texture Styles/bil.png
+	uv 0.40625 0.71875 0.4375 0.75
+}
+
+gbh/bil/750
+{
+	texture Images/roads.png
+	uv 0.5 0.5 0.75 1.0
+}
+
+gbh/bil/751
+{
+	texture Styles/bil.png
+	uv 0.46875 0.71875 0.5 0.75
+}
+
+gbh/bil/752
+{
+	texture Styles/bil.png
+	uv 0.5 0.71875 0.53125 0.75
+}
+
+gbh/bil/753
+{
+	texture Styles/bil.png
+	uv 0.53125 0.71875 0.5625 0.75
+}
+
+gbh/bil/754
+{
+	texture Images/roads.png
+	uv 0.5 0.0 0.75 0.5
+}
+
+gbh/bil/755
+{
+	texture Images/roads.png
+	uv 0.5 0.0 0.75 0.5
+}
+
+gbh/bil/756
+{
+	texture Images/roads.png
+	uv 0.0 0.0 0.25 0.5
+}
+
+gbh/bil/757
+{
+	texture Images/roads.png
+	uv 0.75 0.0 1.0 0.5
+}
+
+gbh/bil/758
+{
+	texture Images/roads.png
+	uv 0.25 0.0 0.5 0.5
+}
+
+gbh/bil/759
+{
+	texture Images/roads.png
+	uv 0.5 0.0 0.75 0.5
+}
+
+gbh/bil/760
+{
+	texture Styles/bil.png
+	uv 0.75 0.71875 0.78125 0.75
+}
+
+gbh/bil/761
+{
+	texture Styles/bil.png
+	uv 0.78125 0.71875 0.8125 0.75
+}
+
+gbh/bil/762
+{
+	texture Styles/bil.png
+	uv 0.8125 0.71875 0.84375 0.75
+}
+
+gbh/bil/763
+{
+	texture Styles/bil.png
+	uv 0.84375 0.71875 0.875 0.75
+}
+
+gbh/bil/764
+{
+	texture Styles/bil.png
+	uv 0.875 0.71875 0.90625 0.75
+}
+
+gbh/bil/765
+{
+	texture Styles/bil.png
+	uv 0.90625 0.71875 0.9375 0.75
+}
+
+gbh/bil/766
+{
+	texture Styles/bil.png
+	uv 0.9375 0.71875 0.96875 0.75
+}
+
+gbh/bil/767
+{
+	texture Styles/bil.png
+	uv 0.96875 0.71875 1 0.75
+}
+
+gbh/bil/768
+{
+	texture Styles/bil.png
+	uv 0 0.75 0.03125 0.78125
+}
+
+gbh/bil/769
+{
+	texture Styles/bil.png
+	uv 0.03125 0.75 0.0625 0.78125
+}
+
+gbh/bil/770
+{
+	texture Styles/bil.png
+	uv 0.0625 0.75 0.09375 0.78125
+}
+
+gbh/bil/771
+{
+	texture Styles/bil.png
+	uv 0.09375 0.75 0.125 0.78125
+}
+
+gbh/bil/772
+{
+	texture Styles/bil.png
+	uv 0.125 0.75 0.15625 0.78125
+}
+
+gbh/bil/773
+{
+	texture Styles/bil.png
+	uv 0.15625 0.75 0.1875 0.78125
+}
+
+gbh/bil/774
+{
+	texture Styles/bil.png
+	uv 0.1875 0.75 0.21875 0.78125
+}
+
+gbh/bil/775
+{
+	texture Styles/bil.png
+	uv 0.21875 0.75 0.25 0.78125
+}
+
+gbh/bil/776
+{
+	texture Styles/bil.png
+	uv 0.25 0.75 0.28125 0.78125
+}
+
+gbh/bil/777
+{
+	texture Styles/bil.png
+	uv 0.28125 0.75 0.3125 0.78125
+}
+
+gbh/bil/778
+{
+	texture Styles/bil.png
+	uv 0.3125 0.75 0.34375 0.78125
+}
+
+gbh/bil/779
+{
+	texture Styles/bil.png
+	uv 0.34375 0.75 0.375 0.78125
+}
+
+gbh/bil/780
+{
+	texture Styles/bil.png
+	uv 0.375 0.75 0.40625 0.78125
+}
+
+gbh/bil/781
+{
+	texture Styles/bil.png
+	uv 0.40625 0.75 0.4375 0.78125
+}
+
+gbh/bil/782
+{
+	texture Styles/bil.png
+	uv 0.4375 0.75 0.46875 0.78125
+}
+
+gbh/bil/783
+{
+	texture Styles/bil.png
+	uv 0.46875 0.75 0.5 0.78125
+}
+
+gbh/bil/784
+{
+	texture Styles/bil.png
+	uv 0.5 0.75 0.53125 0.78125
+}
+
+gbh/bil/785
+{
+	texture Styles/bil.png
+	uv 0.53125 0.75 0.5625 0.78125
+}
+
+gbh/bil/786
+{
+	texture Styles/bil.png
+	uv 0.5625 0.75 0.59375 0.78125
+}
+
+gbh/bil/787
+{
+	texture Styles/bil.png
+	uv 0.59375 0.75 0.625 0.78125
+}
+
+gbh/bil/788
+{
+	texture Styles/bil.png
+	uv 0.625 0.75 0.65625 0.78125
+}
+
+gbh/bil/789
+{
+	texture Styles/bil.png
+	uv 0.65625 0.75 0.6875 0.78125
+}
+
+gbh/bil/790
+{
+	texture Styles/bil.png
+	uv 0.6875 0.75 0.71875 0.78125
+}
+
+gbh/bil/791
+{
+	texture Styles/bil.png
+	uv 0.71875 0.75 0.75 0.78125
+}
+
+gbh/bil/792
+{
+	texture Styles/bil.png
+	uv 0.75 0.75 0.78125 0.78125
+}
+
+gbh/bil/793
+{
+	texture Styles/bil.png
+	uv 0.78125 0.75 0.8125 0.78125
+}
+
+gbh/bil/794
+{
+	texture Styles/bil.png
+	uv 0.8125 0.75 0.84375 0.78125
+}
+
+gbh/bil/795
+{
+	texture Styles/bil.png
+	uv 0.84375 0.75 0.875 0.78125
+}
+
+gbh/bil/796
+{
+	texture Styles/bil.png
+	uv 0.875 0.75 0.90625 0.78125
+}
+
+gbh/bil/797
+{
+	texture Styles/bil.png
+	uv 0.90625 0.75 0.9375 0.78125
+}
+
+gbh/bil/798
+{
+	texture Styles/bil.png
+	uv 0.9375 0.75 0.96875 0.78125
+}
+
+gbh/bil/799
+{
+	texture Styles/bil.png
+	uv 0.96875 0.75 1 0.78125
+}
+
+gbh/bil/800
+{
+	texture Styles/bil.png
+	uv 0 0.78125 0.03125 0.8125
+}
+
+gbh/bil/801
+{
+	texture Styles/bil.png
+	uv 0.03125 0.78125 0.0625 0.8125
+}
+
+gbh/bil/802
+{
+	texture Styles/bil.png
+	uv 0.0625 0.78125 0.09375 0.8125
+}
+
+gbh/bil/803
+{
+	texture Styles/bil.png
+	uv 0.09375 0.78125 0.125 0.8125
+}
+
+gbh/bil/804
+{
+	texture Styles/bil.png
+	uv 0.125 0.78125 0.15625 0.8125
+}
+
+gbh/bil/805
+{
+	texture Styles/bil.png
+	uv 0.15625 0.78125 0.1875 0.8125
+}
+
+gbh/bil/806
+{
+	texture Styles/bil.png
+	uv 0.1875 0.78125 0.21875 0.8125
+}
+
+gbh/bil/807
+{
+	texture Styles/bil.png
+	uv 0.21875 0.78125 0.25 0.8125
+}
+
+gbh/bil/808
+{
+	texture Styles/bil.png
+	uv 0.25 0.78125 0.28125 0.8125
+}
+
+gbh/bil/809
+{
+	texture Styles/bil.png
+	uv 0.28125 0.78125 0.3125 0.8125
+}
+
+gbh/bil/810
+{
+	texture Styles/bil.png
+	uv 0.3125 0.78125 0.34375 0.8125
+}
+
+gbh/bil/811
+{
+	texture Styles/bil.png
+	uv 0.34375 0.78125 0.375 0.8125
+}
+
+gbh/bil/812
+{
+	texture Styles/bil.png
+	uv 0.375 0.78125 0.40625 0.8125
+}
+
+gbh/bil/813
+{
+	texture Styles/bil.png
+	uv 0.40625 0.78125 0.4375 0.8125
+}
+
+gbh/bil/814
+{
+	texture Styles/bil.png
+	uv 0.4375 0.78125 0.46875 0.8125
+}
+
+gbh/bil/815
+{
+	texture Styles/bil.png
+	uv 0.46875 0.78125 0.5 0.8125
+}
+
+gbh/bil/816
+{
+	texture Styles/bil.png
+	uv 0.5 0.78125 0.53125 0.8125
+}
+
+gbh/bil/817
+{
+	texture Styles/bil.png
+	uv 0.53125 0.78125 0.5625 0.8125
+}
+
+gbh/bil/818
+{
+	texture Styles/bil.png
+	uv 0.5625 0.78125 0.59375 0.8125
+}
+
+gbh/bil/819
+{
+	texture Styles/bil.png
+	uv 0.59375 0.78125 0.625 0.8125
+}
+
+gbh/bil/820
+{
+	texture Styles/bil.png
+	uv 0.625 0.78125 0.65625 0.8125
+}
+
+gbh/bil/821
+{
+	texture Styles/bil.png
+	uv 0.65625 0.78125 0.6875 0.8125
+}
+
+gbh/bil/822
+{
+	texture Styles/bil.png
+	uv 0.6875 0.78125 0.71875 0.8125
+}
+
+gbh/bil/823
+{
+	texture Styles/bil.png
+	uv 0.71875 0.78125 0.75 0.8125
+}
+
+gbh/bil/824
+{
+	texture Styles/bil.png
+	uv 0.75 0.78125 0.78125 0.8125
+}
+
+gbh/bil/825
+{
+	texture Styles/bil.png
+	uv 0.78125 0.78125 0.8125 0.8125
+}
+
+gbh/bil/826
+{
+	texture Styles/bil.png
+	uv 0.8125 0.78125 0.84375 0.8125
+}
+
+gbh/bil/827
+{
+	texture Styles/bil.png
+	uv 0.84375 0.78125 0.875 0.8125
+}
+
+gbh/bil/828
+{
+	texture Styles/bil.png
+	uv 0.875 0.78125 0.90625 0.8125
+}
+
+gbh/bil/829
+{
+	texture Styles/bil.png
+	uv 0.90625 0.78125 0.9375 0.8125
+}
+
+gbh/bil/830
+{
+	texture Styles/bil.png
+	uv 0.9375 0.78125 0.96875 0.8125
+}
+
+gbh/bil/831
+{
+	texture Styles/bil.png
+	uv 0.96875 0.78125 1 0.8125
+}
+
+gbh/bil/832
+{
+	texture Styles/bil.png
+	uv 0 0.8125 0.03125 0.84375
+}
+
+gbh/bil/833
+{
+	texture Styles/bil.png
+	uv 0.03125 0.8125 0.0625 0.84375
+}
+
+gbh/bil/834
+{
+	texture Styles/bil.png
+	uv 0.0625 0.8125 0.09375 0.84375
+}
+
+gbh/bil/835
+{
+	texture Styles/bil.png
+	uv 0.09375 0.8125 0.125 0.84375
+}
+
+gbh/bil/836
+{
+	texture Styles/bil.png
+	uv 0.125 0.8125 0.15625 0.84375
+}
+
+gbh/bil/837
+{
+	texture Styles/bil.png
+	uv 0.15625 0.8125 0.1875 0.84375
+}
+
+gbh/bil/838
+{
+	texture Styles/bil.png
+	uv 0.1875 0.8125 0.21875 0.84375
+}
+
+gbh/bil/839
+{
+	texture Styles/bil.png
+	uv 0.21875 0.8125 0.25 0.84375
+}
+
+gbh/bil/840
+{
+	texture Styles/bil.png
+	uv 0.25 0.8125 0.28125 0.84375
+}
+
+gbh/bil/841
+{
+	texture Styles/bil.png
+	uv 0.28125 0.8125 0.3125 0.84375
+}
+
+gbh/bil/842
+{
+	texture Styles/bil.png
+	uv 0.3125 0.8125 0.34375 0.84375
+}
+
+gbh/bil/843
+{
+	texture Styles/bil.png
+	uv 0.34375 0.8125 0.375 0.84375
+}
+
+gbh/bil/844
+{
+	texture Styles/bil.png
+	uv 0.375 0.8125 0.40625 0.84375
+}
+
+gbh/bil/845
+{
+	texture Styles/bil.png
+	uv 0.40625 0.8125 0.4375 0.84375
+}
+
+gbh/bil/846
+{
+	texture Styles/bil.png
+	uv 0.4375 0.8125 0.46875 0.84375
+}
+
+gbh/bil/847
+{
+	texture Styles/bil.png
+	uv 0.46875 0.8125 0.5 0.84375
+}
+
+gbh/bil/848
+{
+	texture Styles/bil.png
+	uv 0.5 0.8125 0.53125 0.84375
+}
+
+gbh/bil/849
+{
+	texture Styles/bil.png
+	uv 0.53125 0.8125 0.5625 0.84375
+}
+
+gbh/bil/850
+{
+	texture Styles/bil.png
+	uv 0.5625 0.8125 0.59375 0.84375
+}
+
+gbh/bil/851
+{
+	texture Styles/bil.png
+	uv 0.59375 0.8125 0.625 0.84375
+}
+
+gbh/bil/852
+{
+	texture Styles/bil.png
+	uv 0.625 0.8125 0.65625 0.84375
+}
+
+gbh/bil/853
+{
+	texture Styles/bil.png
+	uv 0.65625 0.8125 0.6875 0.84375
+}
+
+gbh/bil/854
+{
+	texture Styles/bil.png
+	uv 0.6875 0.8125 0.71875 0.84375
+}
+
+gbh/bil/855
+{
+	texture Styles/bil.png
+	uv 0.71875 0.8125 0.75 0.84375
+}
+
+gbh/bil/856
+{
+	texture Styles/bil.png
+	uv 0.75 0.8125 0.78125 0.84375
+}
+
+gbh/bil/857
+{
+	texture Styles/bil.png
+	uv 0.78125 0.8125 0.8125 0.84375
+}
+
+gbh/bil/858
+{
+	texture Styles/bil.png
+	uv 0.8125 0.8125 0.84375 0.84375
+}
+
+gbh/bil/859
+{
+	texture Styles/bil.png
+	uv 0.84375 0.8125 0.875 0.84375
+}
+
+gbh/bil/860
+{
+	texture Styles/bil.png
+	uv 0.875 0.8125 0.90625 0.84375
+}
+
+gbh/bil/861
+{
+	texture Styles/bil.png
+	uv 0.90625 0.8125 0.9375 0.84375
+}
+
+gbh/bil/862
+{
+	texture Styles/bil.png
+	uv 0.9375 0.8125 0.96875 0.84375
+}
+
+gbh/bil/863
+{
+	texture Styles/bil.png
+	uv 0.96875 0.8125 1 0.84375
+}
+
+gbh/bil/864
+{
+	texture Styles/bil.png
+	uv 0 0.84375 0.03125 0.875
+}
+
+gbh/bil/865
+{
+	texture Styles/bil.png
+	uv 0.03125 0.84375 0.0625 0.875
+}
+
+gbh/bil/866
+{
+	texture Styles/bil.png
+	uv 0.0625 0.84375 0.09375 0.875
+}
+
+gbh/bil/867
+{
+	texture Styles/bil.png
+	uv 0.09375 0.84375 0.125 0.875
+}
+
+gbh/bil/868
+{
+	texture Styles/bil.png
+	uv 0.125 0.84375 0.15625 0.875
+}
+
+gbh/bil/869
+{
+	texture Styles/bil.png
+	uv 0.15625 0.84375 0.1875 0.875
+}
+
+gbh/bil/870
+{
+	texture Styles/bil.png
+	uv 0.1875 0.84375 0.21875 0.875
+}
+
+gbh/bil/871
+{
+	texture Styles/bil.png
+	uv 0.21875 0.84375 0.25 0.875
+}
+
+gbh/bil/872
+{
+	texture Styles/bil.png
+	uv 0.25 0.84375 0.28125 0.875
+}
+
+gbh/bil/873
+{
+	texture Styles/bil.png
+	uv 0.28125 0.84375 0.3125 0.875
+}
+
+gbh/bil/874
+{
+	texture Styles/bil.png
+	uv 0.3125 0.84375 0.34375 0.875
+}
+
+gbh/bil/875
+{
+	texture Styles/bil.png
+	uv 0.34375 0.84375 0.375 0.875
+}
+
+gbh/bil/876
+{
+	texture Styles/bil.png
+	uv 0.375 0.84375 0.40625 0.875
+}
+
+gbh/bil/877
+{
+	texture Styles/bil.png
+	uv 0.40625 0.84375 0.4375 0.875
+}
+
+gbh/bil/878
+{
+	texture Styles/bil.png
+	uv 0.4375 0.84375 0.46875 0.875
+}
+
+gbh/bil/879
+{
+	texture Styles/bil.png
+	uv 0.46875 0.84375 0.5 0.875
+}
+
+gbh/bil/880
+{
+	texture Styles/bil.png
+	uv 0.5 0.84375 0.53125 0.875
+}
+
+gbh/bil/881
+{
+	texture Styles/bil.png
+	uv 0.53125 0.84375 0.5625 0.875
+}
+
+gbh/bil/882
+{
+	texture Styles/bil.png
+	uv 0.5625 0.84375 0.59375 0.875
+}
+
+gbh/bil/883
+{
+	texture Styles/bil.png
+	uv 0.59375 0.84375 0.625 0.875
+}
+
+gbh/bil/884
+{
+	texture Styles/bil.png
+	uv 0.625 0.84375 0.65625 0.875
+}
+
+gbh/bil/885
+{
+	texture Styles/bil.png
+	uv 0.65625 0.84375 0.6875 0.875
+}
+
+gbh/bil/886
+{
+	texture Styles/bil.png
+	uv 0.6875 0.84375 0.71875 0.875
+}
+
+gbh/bil/887
+{
+	texture Styles/bil.png
+	uv 0.71875 0.84375 0.75 0.875
+}
+
+gbh/bil/888
+{
+	texture Styles/bil.png
+	uv 0.75 0.84375 0.78125 0.875
+}
+
+gbh/bil/889
+{
+	texture Styles/bil.png
+	uv 0.78125 0.84375 0.8125 0.875
+}
+
+gbh/bil/890
+{
+	texture Styles/bil.png
+	uv 0.8125 0.84375 0.84375 0.875
+}
+
+gbh/bil/891
+{
+	texture Styles/bil.png
+	uv 0.84375 0.84375 0.875 0.875
+}
+
+gbh/bil/892
+{
+	texture Styles/bil.png
+	uv 0.875 0.84375 0.90625 0.875
+}
+
+gbh/bil/893
+{
+	texture Styles/bil.png
+	uv 0.90625 0.84375 0.9375 0.875
+}
+
+gbh/bil/894
+{
+	texture Styles/bil.png
+	uv 0.9375 0.84375 0.96875 0.875
+}
+
+gbh/bil/895
+{
+	texture Styles/bil.png
+	uv 0.96875 0.84375 1 0.875
+}
+
+gbh/bil/896
+{
+	texture Styles/bil.png
+	uv 0 0.875 0.03125 0.90625
+}
+
+gbh/bil/897
+{
+	texture Styles/bil.png
+	uv 0.03125 0.875 0.0625 0.90625
+}
+
+gbh/bil/898
+{
+	texture Styles/bil.png
+	uv 0.0625 0.875 0.09375 0.90625
+}
+
+gbh/bil/899
+{
+	texture Styles/bil.png
+	uv 0.09375 0.875 0.125 0.90625
+}
+
+gbh/bil/900
+{
+	texture Styles/bil.png
+	uv 0.125 0.875 0.15625 0.90625
+}
+
+gbh/bil/901
+{
+	texture Styles/bil.png
+	uv 0.15625 0.875 0.1875 0.90625
+}
+
+gbh/bil/902
+{
+	texture Styles/bil.png
+	uv 0.1875 0.875 0.21875 0.90625
+}
+
+gbh/bil/903
+{
+	texture Styles/bil.png
+	uv 0.21875 0.875 0.25 0.90625
+}
+
+gbh/bil/904
+{
+	texture Styles/bil.png
+	uv 0.25 0.875 0.28125 0.90625
+}
+
+gbh/bil/905
+{
+	texture Styles/bil.png
+	uv 0.28125 0.875 0.3125 0.90625
+}
+
+gbh/bil/906
+{
+	texture Styles/bil.png
+	uv 0.3125 0.875 0.34375 0.90625
+}
+
+gbh/bil/907
+{
+	texture Styles/bil.png
+	uv 0.34375 0.875 0.375 0.90625
+}
+
+gbh/bil/908
+{
+	texture Styles/bil.png
+	uv 0.375 0.875 0.40625 0.90625
+}
+
+gbh/bil/909
+{
+	texture Styles/bil.png
+	uv 0.40625 0.875 0.4375 0.90625
+}
+
+gbh/bil/910
+{
+	texture Styles/bil.png
+	uv 0.4375 0.875 0.46875 0.90625
+}
+
+gbh/bil/911
+{
+	texture Styles/bil.png
+	uv 0.46875 0.875 0.5 0.90625
+}
+
+gbh/bil/912
+{
+	texture Styles/bil.png
+	uv 0.5 0.875 0.53125 0.90625
+}
+
+gbh/bil/913
+{
+	texture Styles/bil.png
+	uv 0.53125 0.875 0.5625 0.90625
+}
+
+gbh/bil/914
+{
+	texture Styles/bil.png
+	uv 0.5625 0.875 0.59375 0.90625
+}
+
+gbh/bil/915
+{
+	texture Styles/bil.png
+	uv 0.59375 0.875 0.625 0.90625
+}
+
+gbh/bil/916
+{
+	texture Styles/bil.png
+	uv 0.625 0.875 0.65625 0.90625
+}
+
+gbh/bil/917
+{
+	texture Styles/bil.png
+	uv 0.65625 0.875 0.6875 0.90625
+}
+
+gbh/bil/918
+{
+	texture Styles/bil.png
+	uv 0.6875 0.875 0.71875 0.90625
+}
+
+gbh/bil/919
+{
+	texture Styles/bil.png
+	uv 0.71875 0.875 0.75 0.90625
+}
+
+gbh/bil/920
+{
+	texture Styles/bil.png
+	uv 0.75 0.875 0.78125 0.90625
+}
+
+gbh/bil/921
+{
+	texture Styles/bil.png
+	uv 0.78125 0.875 0.8125 0.90625
+}
+
+gbh/bil/922
+{
+	texture Styles/bil.png
+	uv 0.8125 0.875 0.84375 0.90625
+}
+
+gbh/bil/923
+{
+	texture Styles/bil.png
+	uv 0.84375 0.875 0.875 0.90625
+}
+
+gbh/bil/924
+{
+	texture Styles/bil.png
+	uv 0.875 0.875 0.90625 0.90625
+}
+
+gbh/bil/925
+{
+	texture Styles/bil.png
+	uv 0.90625 0.875 0.9375 0.90625
+}
+
+gbh/bil/926
+{
+	texture Styles/bil.png
+	uv 0.9375 0.875 0.96875 0.90625
+}
+
+gbh/bil/927
+{
+	texture Styles/bil.png
+	uv 0.96875 0.875 1 0.90625
+}
+
+gbh/bil/928
+{
+	texture Styles/bil.png
+	uv 0 0.90625 0.03125 0.9375
+}
+
+gbh/bil/929
+{
+	texture Styles/bil.png
+	uv 0.03125 0.90625 0.0625 0.9375
+}
+
+gbh/bil/930
+{
+	texture Styles/bil.png
+	uv 0.0625 0.90625 0.09375 0.9375
+}
+
+gbh/bil/931
+{
+	texture Styles/bil.png
+	uv 0.09375 0.90625 0.125 0.9375
+}
+
+gbh/bil/932
+{
+	texture Styles/bil.png
+	uv 0.125 0.90625 0.15625 0.9375
+}
+
+gbh/bil/933
+{
+	texture Styles/bil.png
+	uv 0.15625 0.90625 0.1875 0.9375
+}
+
+gbh/bil/934
+{
+	texture Styles/bil.png
+	uv 0.1875 0.90625 0.21875 0.9375
+}
+
+gbh/bil/935
+{
+	texture Styles/bil.png
+	uv 0.21875 0.90625 0.25 0.9375
+}
+
+gbh/bil/936
+{
+	texture Styles/bil.png
+	uv 0.25 0.90625 0.28125 0.9375
+}
+
+gbh/bil/937
+{
+	texture Styles/bil.png
+	uv 0.28125 0.90625 0.3125 0.9375
+}
+
+gbh/bil/938
+{
+	texture Styles/bil.png
+	uv 0.3125 0.90625 0.34375 0.9375
+}
+
+gbh/bil/939
+{
+	texture Styles/bil.png
+	uv 0.34375 0.90625 0.375 0.9375
+}
+
+gbh/bil/940
+{
+	texture Styles/bil.png
+	uv 0.375 0.90625 0.40625 0.9375
+}
+
+gbh/bil/941
+{
+	texture Styles/bil.png
+	uv 0.40625 0.90625 0.4375 0.9375
+}
+
+gbh/bil/942
+{
+	texture Styles/bil.png
+	uv 0.4375 0.90625 0.46875 0.9375
+}
+
+gbh/bil/943
+{
+	texture Styles/bil.png
+	uv 0.46875 0.90625 0.5 0.9375
+}
+
+gbh/bil/944
+{
+	texture Styles/bil.png
+	uv 0.5 0.90625 0.53125 0.9375
+}
+
+gbh/bil/945
+{
+	texture Styles/bil.png
+	uv 0.53125 0.90625 0.5625 0.9375
+}
+
+gbh/bil/946
+{
+	texture Styles/bil.png
+	uv 0.5625 0.90625 0.59375 0.9375
+}
+
+gbh/bil/947
+{
+	texture Styles/bil.png
+	uv 0.59375 0.90625 0.625 0.9375
+}
+
+gbh/bil/948
+{
+	texture Styles/bil.png
+	uv 0.625 0.90625 0.65625 0.9375
+}
+
+gbh/bil/949
+{
+	texture Styles/bil.png
+	uv 0.65625 0.90625 0.6875 0.9375
+}
+
+gbh/bil/950
+{
+	texture Styles/bil.png
+	uv 0.6875 0.90625 0.71875 0.9375
+}
+
+gbh/bil/951
+{
+	texture Styles/bil.png
+	uv 0.71875 0.90625 0.75 0.9375
+}
+
+gbh/bil/952
+{
+	texture Styles/bil.png
+	uv 0.75 0.90625 0.78125 0.9375
+}
+
+gbh/bil/953
+{
+	texture Styles/bil.png
+	uv 0.78125 0.90625 0.8125 0.9375
+}
+
+gbh/bil/954
+{
+	texture Styles/bil.png
+	uv 0.8125 0.90625 0.84375 0.9375
+}
+
+gbh/bil/955
+{
+	texture Styles/bil.png
+	uv 0.84375 0.90625 0.875 0.9375
+}
+
+gbh/bil/956
+{
+	texture Styles/bil.png
+	uv 0.875 0.90625 0.90625 0.9375
+}
+
+gbh/bil/957
+{
+	texture Styles/bil.png
+	uv 0.90625 0.90625 0.9375 0.9375
+}
+
+gbh/bil/958
+{
+	texture Styles/bil.png
+	uv 0.9375 0.90625 0.96875 0.9375
+}
+
+gbh/bil/959
+{
+	texture Styles/bil.png
+	uv 0.96875 0.90625 1 0.9375
+}
+
+gbh/bil/960
+{
+	texture Styles/bil.png
+	uv 0 0.9375 0.03125 0.96875
+}
+
+gbh/bil/961
+{
+	texture Styles/bil.png
+	uv 0.03125 0.9375 0.0625 0.96875
+}
+
+gbh/bil/962
+{
+	texture Styles/bil.png
+	uv 0.0625 0.9375 0.09375 0.96875
+}
+
+gbh/bil/963
+{
+	texture Styles/bil.png
+	uv 0.09375 0.9375 0.125 0.96875
+}
+
+gbh/bil/964
+{
+	texture Styles/bil.png
+	uv 0.125 0.9375 0.15625 0.96875
+}
+
+gbh/bil/965
+{
+	texture Styles/bil.png
+	uv 0.15625 0.9375 0.1875 0.96875
+}
+
+gbh/bil/966
+{
+	texture Styles/bil.png
+	uv 0.1875 0.9375 0.21875 0.96875
+}
+
+gbh/bil/967
+{
+	texture Styles/bil.png
+	uv 0.21875 0.9375 0.25 0.96875
+}
+
+gbh/bil/968
+{
+	texture Styles/bil.png
+	uv 0.25 0.9375 0.28125 0.96875
+}
+
+gbh/bil/969
+{
+	texture Styles/bil.png
+	uv 0.28125 0.9375 0.3125 0.96875
+}
+
+gbh/bil/970
+{
+	texture Styles/bil.png
+	uv 0.3125 0.9375 0.34375 0.96875
+}
+
+gbh/bil/971
+{
+	texture Styles/bil.png
+	uv 0.34375 0.9375 0.375 0.96875
+}
+
+gbh/bil/972
+{
+	texture Styles/bil.png
+	uv 0.375 0.9375 0.40625 0.96875
+}
+
+gbh/bil/973
+{
+	texture Styles/bil.png
+	uv 0.40625 0.9375 0.4375 0.96875
+}
+
+gbh/bil/974
+{
+	texture Styles/bil.png
+	uv 0.4375 0.9375 0.46875 0.96875
+}
+
+gbh/bil/975
+{
+	texture Styles/bil.png
+	uv 0.46875 0.9375 0.5 0.96875
+}
+
+gbh/bil/976
+{
+	texture Styles/bil.png
+	uv 0.5 0.9375 0.53125 0.96875
+}
+
+gbh/bil/977
+{
+	texture Styles/bil.png
+	uv 0.53125 0.9375 0.5625 0.96875
+}
+
+gbh/bil/978
+{
+	texture Styles/bil.png
+	uv 0.5625 0.9375 0.59375 0.96875
+}
+
+gbh/bil/979
+{
+	texture Styles/bil.png
+	uv 0.59375 0.9375 0.625 0.96875
+}
+
+gbh/bil/980
+{
+	texture Styles/bil.png
+	uv 0.625 0.9375 0.65625 0.96875
+}
+
+gbh/bil/981
+{
+	texture Styles/bil.png
+	uv 0.65625 0.9375 0.6875 0.96875
+}
+
+gbh/bil/982
+{
+	texture Styles/bil.png
+	uv 0.6875 0.9375 0.71875 0.96875
+}
+
+gbh/bil/983
+{
+	texture Styles/bil.png
+	uv 0.71875 0.9375 0.75 0.96875
+}
+
+gbh/bil/984
+{
+	texture Styles/bil.png
+	uv 0.75 0.9375 0.78125 0.96875
+}
+
+gbh/bil/985
+{
+	texture Styles/bil.png
+	uv 0.78125 0.9375 0.8125 0.96875
+}
+
+gbh/bil/986
+{
+	texture Styles/bil.png
+	uv 0.8125 0.9375 0.84375 0.96875
+}
+
+gbh/bil/987
+{
+	texture Styles/bil.png
+	uv 0.84375 0.9375 0.875 0.96875
+}
+
+gbh/bil/988
+{
+	texture Styles/bil.png
+	uv 0.875 0.9375 0.90625 0.96875
+}
+
+gbh/bil/989
+{
+	texture Styles/bil.png
+	uv 0.90625 0.9375 0.9375 0.96875
+}
+
+gbh/bil/990
+{
+	texture Styles/bil.png
+	uv 0.9375 0.9375 0.96875 0.96875
+}
+
+gbh/bil/991
+{
+	texture Styles/bil.png
+	uv 0.96875 0.9375 1 0.96875
+}
+
