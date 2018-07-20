@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clientdll", "code\clientdll\clientdll.vcxproj", "{09B0D451-4A49-4603-B8AD-F720397C7FD7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "t5launch", "code\t5launch\t5launch.vcxproj", "{5CBB7C50-9152-4B10-9813-C746F0CAF5DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Normal|Win32 = Normal|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09B0D451-4A49-4603-B8AD-F720397C7FD7}.Normal|Win32.ActiveCfg = Normal|Win32
+		{09B0D451-4A49-4603-B8AD-F720397C7FD7}.Normal|Win32.Build.0 = Normal|Win32
+		{5CBB7C50-9152-4B10-9813-C746F0CAF5DE}.Normal|Win32.ActiveCfg = Normal|Win32
+		{5CBB7C50-9152-4B10-9813-C746F0CAF5DE}.Normal|Win32.Build.0 = Normal|Win32
+		{5CBB7C50-9152-4B10-9813-C746F0CAF5DE}.Normal|Win32.Deploy.0 = Normal|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Normal|Win32">
+      <Configuration>Normal</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{09B0D451-4A49-4603-B8AD-F720397C7FD7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>clientdll</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Normal|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Normal|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Normal|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Normal|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeaderFile>StdInc.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\deps\include\np;$(SolutionDir)\deps\include\osw;$(SolutionDir)\deps\include</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\deps\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>cpprest110_1_2.lib;shlwapi.lib;credui.lib;libcurl.lib;libnp.lib;ws2_32.lib;tomcrypt.lib;tommath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>if "%COMPUTERNAME%" == "SNOWPOINT" (
+    copy /y "$(TargetPath)" "E:\mm\t5\t5game.dll"
+)
+
+if "%COMPUTERNAME%" == "FALLARBOR" (
+    copy /y "$(TargetPath)" "T:\games\call of duty black ops\t5game.dll"
+)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AntiCode.cpp" />
+    <ClCompile Include="Auth.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Normal|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="base64.cpp" />
+    <ClCompile Include="dw\bdAuthServer.cpp" />
+    <ClCompile Include="dw\bdBitBuffer.cpp" />
+    <ClCompile Include="dw\bdByteBuffer.cpp" />
+    <ClCompile Include="dw\bdDediAuthService.cpp" />
+    <ClCompile Include="dw\bdLSGServer.cpp" />
+    <ClCompile Include="dw\bdMatchMaking.cpp" />
+    <ClCompile Include="dw\bdMessage.cpp" />
+    <ClCompile Include="DW\bdMessaging.cpp" />
+    <ClCompile Include="dw\bdProfiles.cpp" />
+    <ClCompile Include="dw\bdServer.cpp" />
+    <ClCompile Include="dw\bdServerImpls.cpp" />
+    <ClCompile Include="dw\bdContentStreaming.cpp" />
+    <ClCompile Include="dw\bdSteamAuthService.cpp" />
+    <ClCompile Include="dw\bdStorage.cpp" />
+    <ClCompile Include="dw\bdTitleUtilities.cpp" />
+    <ClCompile Include="dw\DWCrypto.cpp" />
+    <ClCompile Include="dw\DWInit.cpp" />
+    <ClCompile Include="dw\DWTickets.cpp" />
+    <ClCompile Include="Hooking.cpp" />
+    <ClCompile Include="hwbrk.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="PatchT5CACValidate.cpp" />
+    <ClCompile Include="PatchT5DediConfig.cpp" />
+    <ClCompile Include="PatchT5MP.cpp" />
+    <ClCompile Include="PatchT5SP.cpp" />
+    <ClCompile Include="PatchT5TargetFuncs.cpp" />
+    <ClCompile Include="StdInc.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Normal|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SteamAPI.cpp" />
+    <ClCompile Include="SteamApps003.cpp" />
+    <ClCompile Include="SteamBase.cpp" />
+    <ClCompile Include="SteamFriends007.cpp" />
+    <ClCompile Include="SteamGameServer010.cpp" />
+    <ClCompile Include="SteamMasterServerUpdater001.cpp" />
+    <ClCompile Include="SteamNetworking004.cpp" />
+    <ClCompile Include="SteamUser014.cpp" />
+    <ClCompile Include="SteamUserStats007.cpp" />
+    <ClCompile Include="SteamUtils005.cpp" />
+    <ClCompile Include="SysMain.cpp" />
+    <ClCompile Include="T5.cpp" />
+    <ClCompile Include="Utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dw\bdAuthServer.h" />
+    <ClInclude Include="dw\bdBitBuffer.h" />
+    <ClInclude Include="dw\bdByteBuffer.h" />
+    <ClInclude Include="dw\bdLSGServer.h" />
+    <ClInclude Include="dw\DW.h" />
+    <ClInclude Include="dw\dwMessage.h" />
+    <ClInclude Include="dw\StdInc.h" />
+    <ClInclude Include="hwbrk.h" />
+    <ClInclude Include="StdInc.h" />
+    <ClInclude Include="T5.h" />
+    <ClInclude Include="T5TargetFuncs.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

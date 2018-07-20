@@ -1,0 +1,15 @@
+{
+  "name": "Theater",
+  "description": "Secret!",
+  "version": "0.1.0",
+  "author": "NTAuthority",
+  "dependencies": {
+    "express": "~3.3.7",
+    "sequelize": "~2.0.0-beta.0",
+    "mysql": "~2.0.0-alpha9",
+    "redisq": "~0.1.13",
+    "mkdirp": "~0.3.5",
+    "async": "~0.2.9"
+  },
+  "devDependencies": {}
+}

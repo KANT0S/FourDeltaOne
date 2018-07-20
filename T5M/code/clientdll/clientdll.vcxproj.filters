@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\DW">
+      <UniqueIdentifier>{a1a9aa2b-9459-465b-bd03-8e2ba3d04c15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DW">
+      <UniqueIdentifier>{8f1c3d66-98f0-4c28-94b0-6fdb78d816d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Patches">
+      <UniqueIdentifier>{baac4dad-201e-4edb-b965-6f6de603bd2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utilities">
+      <UniqueIdentifier>{40c6d176-3d51-4f99-ad4f-261408f8bc52}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooking.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdInc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamUtils005.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamApps003.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamFriends007.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamGameServer010.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamMasterServerUpdater001.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamNetworking004.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamUser014.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamUserStats007.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SysMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AntiCode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hwbrk.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dw\DWInit.cpp">
+      <Filter>Source Files\DW</Filter>
+    </ClCompile>
+    <ClCompile Include="dw\bdBitBuffer.cpp">
+      <Filter>Source Files\DW</Filter>
+    </ClCompile>
+    <ClCompile Include="dw\bdByteBuffer.cpp">
+      <Filter>Source Files\DW</Filter>
+    </ClCompile>
+    <ClCompile Include="dw\bdAuthServer.cpp">
+      <Filter>Source Files\DW</Filter>
+    </ClCompile>
+    <ClCompile Include="dw\bdSteamAuthService.cpp">
+      <Filter>Source Files\DW</Filter>
+    </ClCompile>
+    <ClCompile Include="dw\bdServer.cpp">
+      <Filter>Source Files\DW</Filter>
+    </ClCompile>
+    <ClCompile Include="dw\bdServerImpls.cpp">
+      <Filter>Source Files\DW</Filter>
+    </ClCompile>
+    <ClCompile Include="dw\DWTickets.cpp">
+      <Filter>Source Files\DW</Filter>
+    </ClCompile>
+    <ClCompile Include="dw\DWCrypto.cpp">
+      <Filter>Source Files\DW</Filter>
+    </ClCompile>
+    <ClCompile Include="dw\bdMessage.cpp">
+      <Filter>Source Files\DW</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchT5MP.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="dw\bdLSGServer.cpp">
+      <Filter>Source Files\DW</Filter>
+    </ClCompile>
+    <ClCompile Include="dw\bdTitleUtilities.cpp">
+      <Filter>Source Files\DW</Filter>
+    </ClCompile>
+    <ClCompile Include="dw\bdStorage.cpp">
+      <Filter>Source Files\DW</Filter>
+    </ClCompile>
+    <ClCompile Include="dw\bdMatchMaking.cpp">
+      <Filter>Source Files\DW</Filter>
+    </ClCompile>
+    <ClCompile Include="base64.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Auth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T5.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchT5DediConfig.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="dw\bdDediAuthService.cpp">
+      <Filter>Source Files\DW</Filter>
+    </ClCompile>
+    <ClCompile Include="DW\bdMessaging.cpp">
+      <Filter>Source Files\DW</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchT5SP.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="dw\bdProfiles.cpp">
+      <Filter>Source Files\DW</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchT5TargetFuncs.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="dw\bdContentStreaming.cpp">
+      <Filter>Source Files\DW</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchT5CACValidate.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StdInc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="T5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hwbrk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dw\DW.h">
+      <Filter>Header Files\DW</Filter>
+    </ClInclude>
+    <ClInclude Include="dw\StdInc.h">
+      <Filter>Header Files\DW</Filter>
+    </ClInclude>
+    <ClInclude Include="dw\dwMessage.h">
+      <Filter>Header Files\DW</Filter>
+    </ClInclude>
+    <ClInclude Include="dw\bdBitBuffer.h">
+      <Filter>Header Files\DW</Filter>
+    </ClInclude>
+    <ClInclude Include="dw\bdByteBuffer.h">
+      <Filter>Header Files\DW</Filter>
+    </ClInclude>
+    <ClInclude Include="dw\bdAuthServer.h">
+      <Filter>Header Files\DW</Filter>
+    </ClInclude>
+    <ClInclude Include="dw\bdLSGServer.h">
+      <Filter>Header Files\DW</Filter>
+    </ClInclude>
+    <ClInclude Include="T5TargetFuncs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
