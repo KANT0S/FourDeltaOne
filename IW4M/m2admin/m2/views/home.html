@@ -1,0 +1,26 @@
+<h2>Current clients</h2>
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Score</th>
+		<th>Address</th>
+		<th>Ping</th>
+%if admin_auth:
+		<th>Actions</th>
+%end
+	</tr>
+	
+%for client in clients:
+	<tr>
+		<td><a href="http://fourdeltaone.net/memberlist.php?mode=viewprofile&amp;u={{client.uid}}">{{client.name}}</a></td>
+		<td>{{client.score}}</td>
+		<td>{{client.address}}</td>
+		<td>{{client.ping}}</td>
+%if admin_auth:
+		<td><a href="/kick/{{client.num}}">Kick</a></td>
+%end
+	</tr>
+%end
+</table>
+
+%rebase layout admin_auth = admin_auth

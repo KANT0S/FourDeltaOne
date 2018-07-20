@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>{{get('title', 'IW4M')}}</title>
+<style type="text/css">
+html {
+	height: 100%;
+}
+
+body {
+ 	font-family: Verdana, Arial, sans-serif;
+	font-size: 10px;
+	line-height: 140%;
+	margin: 0px;
+	text-align: center;
+	background-color: #ACA8A1;
+	height: 100%;
+}
+
+#wrap {
+	width: 950px;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.2em;
+	background-color: #ffffff;
+	border-left: 1px solid #888888;
+	border-right: 1px solid #888888;
+	height: 100%;
+}
+
+#header {
+	background-color: #0066ff;
+	width: 100%;
+	height: 100px;
+}
+
+#header h1 {
+	font-family: "Segoe UI", Arial, sans-serif;
+	color: #ffffff;
+	text-align: center;	
+	font-size: 50px;
+	font-weight: normal;
+	margin: 0px;
+	padding-top: 40px;
+}
+
+#left {
+	float: left;
+	width: 24%;
+	padding-top: 5px;
+}
+
+#right {
+	float: right;
+	width: 74%;
+	padding-top: 5px;
+	padding-right: 5px;
+}
+
+table {
+	font-size: 12px;
+}
+
+#nodes {
+	margin-top: 5px;
+	margin-left: 10px;
+	list-style-type: none;
+	padding: 0px;
+}
+
+#nodes a { padding-left: 19px; display: block; height: 16px; text-decoration: none; color: #0066ff; }
+#nodes a:visited { color: #0066ff; }
+#nodes a.site { background: url(images/site.png) 0 0 no-repeat; }
+#nodes a.page { background: url(images/page.png) 0 0 no-repeat; }
+
+p.icon_p {
+	clear: left;
+}
+img.icon, p.icon_p img {
+	height: 48px;
+	width: 48px;
+	float: left;
+	margin: 5px 10px 5px 10px;
+	border: 0;
+}
+
+.error
+{
+	margin-bottom: 5px;
+	border: 1px solid #f00;
+	background-color: #fcc;
+	padding: 5px;
+}
+</style>
+</head>
+<body>
+<div id="wrap">
+<div id="header"><h1>
+IW4M
+</h1></div>
+<div id="left">
+<ul id="nodes">
+<li><a href="/" style="background-image: url(/images/status.png);">Status</a></li>
+%if get("admin_auth", False):
+	<li><a href="/logout" style="background-image: url(/images/login.png);">Log out</a></li>	
+%else:
+	<li><a href="/login" style="background-image: url(/images/login.png);">Log in</a></li>
+%end
+</ul>
+</div>
+<div id="right">
+%include
+</div>
+</div>
+</body>
+</html>

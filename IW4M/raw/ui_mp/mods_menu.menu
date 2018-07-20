@@ -1,0 +1,573 @@
+#include "ui/menudef.h"
+{
+	menuDef
+	{
+		name mods_menu
+		fullscreen 1
+		rect 0 0 640 480
+		style 1
+		border 0
+		ownerdraw 0
+		ownerdrawFlag 0
+		borderSize 0
+		foreColor 1 1 1 1
+		backColor 0 0 0 0
+		borderColor 0 0 0 0
+		outlineColor 0 0 0 0
+		fadeCycle 1
+		fadeClamp 1
+		fadeAmount 0.1
+		fadeInAmount 0
+		blurWorld 0
+		soundLoop music_mainmenu_mp
+		onOpen
+		{
+			setLocalVarBool ui_hideBack 1;
+			uiScript LoadMods;
+		}
+		onClose
+		{
+			setLocalVarBool ui_hideBack 1;
+		}
+		onESC
+		{
+			close self;
+			open main_text;
+		}
+		focusColor 1 1 1 1
+		#define DONT_DO_THE_SIDEBAR_THINGY
+		#include "ui_mp/bg.inc"
+		
+		itemDef
+		{
+			rect -120 -32 378 64
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0.9 0.9 0.95 0.175
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background white
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			visible 1
+		}
+		itemDef
+		{
+			rect 258 -32 16 -64
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0.9 0.9 0.95 0.175
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background button_highlight_end
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			visible 1
+		}
+		itemDef
+		{
+			rect 56 448 528 40
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0.9 0.9 0.95 0.175
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background white
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			visible 1
+		}
+		itemDef
+		{
+			rect 584 448 16 64
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0.9 0.9 0.95 0.175
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background button_highlight_end
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			visible 1
+		}
+		itemDef
+		{
+			rect 40 448 -16 64
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0.9 0.9 0.95 0.175
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background button_highlight_end
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			visible 1
+		}
+		itemDef
+		{
+			rect -120 464 160 32
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0.9 0.9 0.95 0.175
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background white
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			visible 1
+		}
+		itemDef
+		{
+			rect 600 464 160 32
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0.9 0.9 0.95 0.175
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background white
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			visible 1
+		}
+		itemDef
+		{
+			name back
+			rect -250 9 40 20 2 3
+			style 1
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 1 1 1 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			type 1
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 18
+			textScale 0.375
+			textStyle 3
+			textFont 1
+			text "@MENU_BACK"
+			visible 1
+			mouseEnter
+			{
+				play mouse_over;
+			}
+			action
+			{
+				play mouse_click;
+				play mouse_click;
+				close self;
+				open main_text;
+			}
+		}
+		itemDef
+		{
+			rect 48 40 0 0
+			style 0
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 1 0.8 0.4 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			decoration 
+			type 0
+			align 0
+			textAlign 4
+			textAlignX -36
+			textAlignY -36
+			textScale 0.5833
+			textStyle 6
+			textFont 1
+			visible 1
+			exp text ( "@MENU_MODS"  )
+		}
+		itemDef
+		{
+			name modlist
+			rect -170 64 340 280 2 1
+			style 1
+			border 1
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 1
+			foreColor 1 1 1 0.9
+			backColor 0 0 0 0
+			borderColor 1 1 1 0.3
+			outlineColor 0.9 0.9 1 0.07
+			type 6
+			align 0
+			textAlign 0
+			textAlignX 6
+			textAlignY 0
+			textScale 0.4
+			textStyle 3
+			textFont 0
+			feeder 9
+			visible 1
+			action
+			{
+				show accept;
+			}
+			elementWidth 120
+			elementHeight 22
+			elementType 0
+			columns 0
+			doubleClick { uiScript RunMod }
+			execkeyint 	13	{ uiScript RunMod }
+		}
+		itemDef
+		{
+			rect -170 348 334.5 22 2 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0.9 0.9 1 0.07
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			visible 1
+			exp material ( "gradient_fadein"  )
+		}
+		itemDef
+		{
+			rect 164.5 348 5.5 22 2 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0.9 0.9 1 0.07
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background button_highlight_end
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			visible 1
+		}
+		itemDef
+		{
+			rect -170 348 334.5 22 2 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 2
+			foreColor 0.9 0.95 1 0.35
+			backColor 0 0 0 0
+			borderColor 0.8 0.95 1 0.4
+			outlineColor 0 0 0 0
+			background gradient_fadein
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			visible 1
+			visible when ( localvarint( "ui_highlight" ) == 1 && localvarstring( "ui_choicegroup" ) == "mods"  )
+		}
+		itemDef
+		{
+			rect 164.5 348 5.5 22 2 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0.9 0.95 1 0.35
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background button_highlight_end
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			visible 1
+			visible when ( localvarint( "ui_highlight" ) == 1 && localvarstring( "ui_choicegroup" ) == "mods"  )
+		}
+		itemDef
+		{
+			rect -170 348 340 22 2 1
+			style 0
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 1 1 1 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			type 1
+			align 0
+			textAlign 10
+			textAlignX -10
+			textAlignY 0
+			textScale 0.4
+			textStyle 3
+			textFont 1
+			visible 1
+			onFocus
+			{
+				play mouse_over;
+				setLocalVarInt ui_highlight 1;
+				setLocalVarString ui_choicegroup "mods";
+			}
+			leaveFocus
+			{
+				setLocalVarInt ui_highlight 1;
+			}
+			action
+			{
+				play mouse_click;
+				uiScript RunMod;
+			}
+			exp text ( "@MENU_LAUNCH"  )
+		}
+		itemDef
+		{
+			rect -170 372 334.5 22 2 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0.9 0.9 1 0.07
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			exp material ( "gradient_fadein"  )
+			visible when ( dvarstring( "fs_game" ) != ""  )
+		}
+		itemDef
+		{
+			rect 164.5 372 5.5 22 2 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0.9 0.9 1 0.07
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background button_highlight_end
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			visible when ( dvarstring( "fs_game" ) != ""  )
+		}
+		itemDef
+		{
+			rect -170 372 334.5 22 2 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 2
+			foreColor 0.9 0.95 1 0.35
+			backColor 0 0 0 0
+			borderColor 0.8 0.95 1 0.4
+			outlineColor 0 0 0 0
+			background gradient_fadein
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			visible when ( localvarint( "ui_highlight" ) == 2 && localvarstring( "ui_choicegroup" ) == "mods"  && dvarstring( "fs_game" ) != "")
+		}
+		itemDef
+		{
+			rect 164.5 372 5.5 22 2 1
+			style 3
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 0.9 0.95 1 0.35
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			background button_highlight_end
+			decoration 
+			type 0
+			align 0
+			textAlign 0
+			textAlignX 0
+			textAlignY 0
+			textScale 0.55
+			textStyle 0
+			textFont 0
+			visible when ( localvarint( "ui_highlight" ) == 2 && localvarstring( "ui_choicegroup" ) == "mods"  && dvarstring( "fs_game" ) != "")
+		}
+		itemDef
+		{
+			rect -170 372 340 22 2 1
+			style 0
+			border 0
+			ownerdraw 0
+			ownerdrawFlag 0
+			borderSize 0
+			foreColor 1 1 1 1
+			backColor 0 0 0 0
+			borderColor 0 0 0 0
+			outlineColor 0 0 0 0
+			type 1
+			align 0
+			textAlign 10
+			textAlignX -10
+			textAlignY 0
+			textScale 0.4
+			textStyle 3
+			textFont 1
+			onFocus
+			{
+				play mouse_over;
+				setLocalVarInt ui_highlight 2;
+				setLocalVarString ui_choicegroup "mods";
+			}
+			leaveFocus
+			{
+				setLocalVarInt ui_highlight 2;
+			}
+			action
+			{
+				play mouse_click;
+				uiScript ClearMods;
+			}
+			exp text ( "@MENU_LAUNCH_WITHOUT_MODS"  )
+			visible when ( dvarstring( "fs_game" ) != ""  )
+		}
+	}
+}

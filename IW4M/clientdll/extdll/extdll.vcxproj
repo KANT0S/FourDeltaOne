@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Normal|Win32">
+      <Configuration>Normal</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8955BC26-3026-454D-9017-F45C85177AFB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>extdll</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Normal|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Normal|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Normal|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;BUILDING_EXTDLL</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\extdll\dependencies\include\ogre;$(SolutionDir)\dependencies\include;$(SolutionDir)\extdll\dependencies\include;$(SolutionDir)\extdll\dependencies\src;$(DXSDK_DIR)\Include;$(SolutionDir)\steam_api;$(SolutionDir)\dependencies\include\cef;$(SolutionDir)\dependencies\include\python;$(SolutionDir)\dependencies\include\np;$(SolutionDir)\dependencies\include\osw;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>tomcrypt.lib;tommath.lib;powrprof.lib;ws2_32.lib;mongoose.lib;dxguid.lib;d3d9.lib;dxerr.lib;d3dx9.lib;freeimage.lib;freetype2311.lib;zlib.lib;zziplib.lib;winmm.lib;mono.lib;BulletCollision_vs2010.lib;LinearMath_vs2010.lib;libcef.lib;libcef_dll_wrapper.lib;libnp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\extdll\dependencies\include\ogre;$(SolutionDir)\extdll\dependencies\lib;$(SolutionDir)\dependencies\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>if "%COMPUTERNAME%" == "FALLARBOR" (
+  copy /y "$(TargetPath)" "S:\games\steam\steamapps\common\zero gear\server\NetRT.146"
+  copy /y "$(TargetPath)" "Q:\Games\Warfare2\NetRT.149"
+  copy /y "$(TargetPath)" "Q:\dev\w2\NetRT.149"
+)
+
+if "%COMPUTERNAME%" == "SNOWPOINT" (
+  copy /y "$(TargetPath)" "E:\mm\mw2\NetRT.99999"
+   copy /y "$(TargetPath)" "E:\gms\warfare2\NetRT.99999"
+)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\steam_api\Hooking.cpp" />
+    <ClCompile Include="..\steam_api\MW2.cpp" />
+    <ClCompile Include="..\steam_api\PatchMW2UILoading.cpp" />
+    <ClCompile Include="..\steam_api\Script.cpp" />
+    <ClCompile Include="..\steam_api\Utils.cpp" />
+    <ClCompile Include="cm_load.c" />
+    <ClCompile Include="cm_patch.c" />
+    <ClCompile Include="cm_polylib.c" />
+    <ClCompile Include="cm_test.c" />
+    <ClCompile Include="cm_trace.c" />
+    <ClCompile Include="ExtDLL.cpp" />
+    <ClCompile Include="ExtDLLSafety.cpp" />
+    <ClCompile Include="GameInterface.cpp" />
+    <ClCompile Include="InvBSP.cpp" />
+    <ClCompile Include="InvColModel.cpp" />
+    <ClCompile Include="InvCurve.cpp" />
+    <ClCompile Include="InvertifyOGRE.cpp" />
+    <ClCompile Include="InvertifyQ.cpp" />
+    <ClCompile Include="InvModelLoader.cpp" />
+    <ClCompile Include="InvStreaming.cpp" />
+    <ClCompile Include="miniz.c" />
+    <ClCompile Include="MonoInit.cpp" />
+    <ClCompile Include="NUIExtensionHandler.cpp" />
+    <ClCompile Include="NUIMain.cpp" />
+    <ClCompile Include="NUIMono.cpp" />
+    <ClCompile Include="NUISchemeHandler.cpp" />
+    <ClCompile Include="NUIStatusResponse.cpp" />
+    <ClCompile Include="PatchMW2CryptoFiles.cpp" />
+    <ClCompile Include="PatchMW2CryptoZone.cpp" />
+    <ClCompile Include="PatchMW2FifthInfinity.cpp" />
+    <ClCompile Include="PatchMW2FilePointers.cpp" />
+    <ClCompile Include="PatchMW2Inverse.cpp" />
+    <ClCompile Include="PatchMW2NUI.cpp" />
+    <ClCompile Include="PatchMW2ScriptSafe.cpp" />
+    <ClCompile Include="PatchMW2T6Clips.cpp" />
+    <ClCompile Include="q_math.c" />
+    <ClCompile Include="Scriptability.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cm_local.h" />
+    <ClInclude Include="cm_patch.h" />
+    <ClInclude Include="cm_polylib.h" />
+    <ClInclude Include="cm_public.h" />
+    <ClInclude Include="Inverse.h" />
+    <ClInclude Include="InvOgre.h" />
+    <ClInclude Include="iqm.h" />
+    <ClInclude Include="IWDKey.h" />
+    <ClInclude Include="Mono.h" />
+    <ClInclude Include="NUI.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

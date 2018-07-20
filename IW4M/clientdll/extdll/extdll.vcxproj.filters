@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\nUI">
+      <UniqueIdentifier>{6fc5520d-0628-4761-99ad-bc5bba7778ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Inverse">
+      <UniqueIdentifier>{39f2ae45-6657-4472-b4ea-bb6946ce87d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\InfinityScript">
+      <UniqueIdentifier>{a92cdde8-a756-4fce-b137-561ff36fc1cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Managed">
+      <UniqueIdentifier>{e8ec3ebd-929c-460b-84b2-0c873188b0ef}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ExtDLL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\steam_api\MW2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\steam_api\Utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtDLLSafety.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\steam_api\Hooking.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2FifthInfinity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2FilePointers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2NUI.cpp">
+      <Filter>Source Files\nUI</Filter>
+    </ClCompile>
+    <ClCompile Include="miniz.c">
+      <Filter>Source Files\nUI</Filter>
+    </ClCompile>
+    <ClCompile Include="NUIExtensionHandler.cpp">
+      <Filter>Source Files\nUI</Filter>
+    </ClCompile>
+    <ClCompile Include="NUIMain.cpp">
+      <Filter>Source Files\nUI</Filter>
+    </ClCompile>
+    <ClCompile Include="NUISchemeHandler.cpp">
+      <Filter>Source Files\nUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\steam_api\PatchMW2UILoading.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InvModelLoader.cpp">
+      <Filter>Source Files\Inverse</Filter>
+    </ClCompile>
+    <ClCompile Include="InvStreaming.cpp">
+      <Filter>Source Files\Inverse</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2Inverse.cpp">
+      <Filter>Source Files\Inverse</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2T6Clips.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InvColModel.cpp">
+      <Filter>Source Files\Inverse</Filter>
+    </ClCompile>
+    <ClCompile Include="Scriptability.cpp">
+      <Filter>Source Files\InfinityScript</Filter>
+    </ClCompile>
+    <ClCompile Include="..\steam_api\Script.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameInterface.cpp">
+      <Filter>Source Files\InfinityScript</Filter>
+    </ClCompile>
+    <ClCompile Include="MonoInit.cpp">
+      <Filter>Source Files\Managed</Filter>
+    </ClCompile>
+    <ClCompile Include="NUIMono.cpp">
+      <Filter>Source Files\nUI</Filter>
+    </ClCompile>
+    <ClCompile Include="InvertifyOGRE.cpp">
+      <Filter>Source Files\Inverse</Filter>
+    </ClCompile>
+    <ClCompile Include="InvertifyQ.cpp">
+      <Filter>Source Files\Inverse</Filter>
+    </ClCompile>
+    <ClCompile Include="InvBSP.cpp">
+      <Filter>Source Files\Inverse</Filter>
+    </ClCompile>
+    <ClCompile Include="InvCurve.cpp">
+      <Filter>Source Files\Inverse</Filter>
+    </ClCompile>
+    <ClCompile Include="cm_load.c">
+      <Filter>Source Files\Inverse</Filter>
+    </ClCompile>
+    <ClCompile Include="cm_patch.c">
+      <Filter>Source Files\Inverse</Filter>
+    </ClCompile>
+    <ClCompile Include="cm_polylib.c">
+      <Filter>Source Files\Inverse</Filter>
+    </ClCompile>
+    <ClCompile Include="cm_test.c">
+      <Filter>Source Files\Inverse</Filter>
+    </ClCompile>
+    <ClCompile Include="cm_trace.c">
+      <Filter>Source Files\Inverse</Filter>
+    </ClCompile>
+    <ClCompile Include="q_math.c">
+      <Filter>Source Files\Inverse</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2ScriptSafe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NUIStatusResponse.cpp">
+      <Filter>Source Files\nUI</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2CryptoFiles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2CryptoZone.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Inverse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iqm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mono.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InvOgre.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cm_polylib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cm_public.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cm_patch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cm_local.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IWDKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

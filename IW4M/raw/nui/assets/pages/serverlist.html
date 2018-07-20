@@ -1,0 +1,21 @@
+		<li class="row" data-addr="{addr}">
+			<dl>
+				<dt class="hostname">
+					<h1>{@colorize text="{hostname}" /}</h1>
+					<span class="description">
+						{mapname} - 
+						{@if cond="'{fs_game}'.length"}
+							{fs_game} ({rgametype})
+						{:else}
+							{rgametype}
+						{/if}
+					</span>
+				</dt>
+				<dd class="players">
+					{clients} ({sv_maxclients})
+				</dd>
+				<dd class="ping">
+					{ping}
+				</dd>
+			</dl>
+		</li>

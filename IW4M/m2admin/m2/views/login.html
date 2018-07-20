@@ -1,0 +1,9 @@
+%if get('error', '') != '':
+<div class="error">{{error}}</div>
+%end
+<form method="post" action="/login">
+Password:<br />
+<input type="password" name="password" /><br />
+<input type="submit" value="Login" />
+</form>
+%rebase layout admin_auth = get("admin_auth", False)

@@ -1,0 +1,12 @@
+		<div class="box {type}{?big} big{/big} {?server}server-{server.mapname}{/server}" data-addr="{server.addr}">
+			<div class="image"></div>
+			<div class="detail">
+			{?server}
+				<h1>{server.hostname}</h1>
+				<h2>{server.clients}/{server.sv_maxclients}</h2>
+			{/server}
+			{?list}
+				<h1>Browse servers</h1>
+			{/list}
+			</div>
+		</div>

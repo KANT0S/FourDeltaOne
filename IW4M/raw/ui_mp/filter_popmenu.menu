@@ -1,0 +1,52 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+
+#define CHOICE_GROUP			"filter"
+
+#include "ui_mp/menustyle.inc"
+#include "ui/choices_setup_common.menu"
+
+#include "ui_mp/popupstyle.inc"	
+#include "ui/choices_setup_popmenu.menu"
+
+#undef CHOICE_HORIZONTAL_ALIGN
+#define CHOICE_HORIZONTAL_ALIGN	HORIZONTAL_ALIGN_CENTER
+#undef CHOICE_VERTICAL_ALIGN
+#define CHOICE_VERTICAL_ALIGN	VERTICAL_ALIGN_CENTER
+	
+#undef CHOICE_SIZE_X
+#define CHOICE_SIZE_X	250
+
+{
+	menuDef
+	{
+		CENTER_POPUP_SETUP( filter_popmenu, 13, ;, 1 )
+		CHOICE_POPMENU_TITLE( "@MENU_FILTER_SERVERS" )
+		
+		#undef	CHOICE_SIZE_X
+		#define CHOICE_SIZE_X		140
+		
+		#undef	CHOICE_X_START
+		#define CHOICE_X_START			24
+
+		CHOICE_DVARYESNO( 3, "@MENU_VIEW_EMPTY", ui_browserShowEmpty, ; )
+		CHOICE_DVARYESNO( 4, "@MENU_VIEW_FULL", ui_browserShowFull, ; )
+		//CHOICE_DVARFLOATLIST( 5, "@MENU_VIEW_PASSWORD", ui_browserShowPassword, { "@MENU_ALL" -1 "@MENU_NO" 0 "@MENU_YES" 1 }, ; )
+		//CHOICE_DVARYESNO( 6, "@MENU_VIEW_PURE", ui_browserShowPure, ; )
+		CHOICE_DVARFLOATLIST( 5, "Hardcore Mode:", ui_browserKillcam, { "@MENU_ALL" -1 "@MENU_NO" 0 "@MENU_YES" 1 }, ; )
+		CHOICE_DVARFLOATLIST( 6, "@MENU_MODSWITHCOLON", ui_browserMod, { "@MENU_ALL" -1 "@MENU_NO" 0 "@MENU_YES" 1 }, ; )
+		CHOICE_DVARFLOATLIST( 7, "Legacy Servers:", ui_browserFriendlyfire, { "All" -1 "Off" 0 "On" 1 }, ; )
+		//CHOICE_DVARFLOATLIST( 9, "@MENU_VIEW_KILLCAM", ui_browserKillcam, { "@MENU_ALL" -1 "@MENU_OFF" 0 "@MENU_ON" 1 }, ; )
+		//CHOICE_DVARFLOATLIST( 8, "@MPUI_PUNKBUSTERWITHCOLON", ui_browserShowPunkbuster, { "@MENU_ALL" -1 "@MENU_OFF" 0 "@MENU_ON" 1 }, ; )
+		
+		#undef CHOICE_SIZE_X
+		#define CHOICE_SIZE_X	250
+		
+		#undef	CHOICE_X_START
+		#define CHOICE_X_START			0
+		
+		CHOICE_BUTTON( 12, "@MENU_OK", uiscript "UpdateFilter"; close self; )
+		CHOICE_BUTTON( 13, "@MENU_RESET", exec "exec default_filter.cfg"; )
+	}
+
+}
