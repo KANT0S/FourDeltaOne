@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FFC76D3F-1674-4C83-BA07-19065549118A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DWServer</RootNamespace>
+    <AssemblyName>DWServer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>C:\Users\Alexander Marston\Desktop\content-drop-1-t5 (1)\DWServer\DWServer\DWServer\bin\Debug\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>C:\Users\Alexander Marston\Desktop\content-drop-1-t5 (1)\DWServer\DWServer\DWServer\bin\Debug\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\RazorEngine.3.0.7\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3rd\PasswordGen.cs" />
+    <Compile Include="Base\BitStream.cs" />
+    <Compile Include="Base\Database.cs" />
+    <Compile Include="Base\Extensions.cs" />
+    <Compile Include="Base\Log.cs" />
+    <Compile Include="Base\MessageData.cs" />
+    <Compile Include="Base\TCPHandler.cs" />
+    <Compile Include="Base\TigerHash.cs" />
+    <Compile Include="DW\DWAuther.cs" />
+    <Compile Include="DW\DWBitBuffer.cs" />
+    <Compile Include="DW\DWByteBuffer.cs" />
+    <Compile Include="DW\DWCrypto.cs" />
+    <Compile Include="DW\DWDML.cs" />
+    <Compile Include="DW\DWEventLog.cs" />
+    <Compile Include="DW\DWGroups.cs" />
+    <Compile Include="DW\DWLobby.cs" />
+    <Compile Include="DW\DWMatch.cs" />
+    <Compile Include="DW\DWMessaging.cs" />
+    <Compile Include="DW\DWProfiles.cs" />
+    <Compile Include="DW\DWRouter.cs" />
+    <Compile Include="DW\DWStorage.cs" />
+    <Compile Include="DW\DWTickets.cs" />
+    <Compile Include="DW\DWTitles.cs" />
+    <Compile Include="GeoIP\Country.cs" />
+    <Compile Include="GeoIP\DatabaseInfo.cs" />
+    <Compile Include="GeoIP\Location.cs" />
+    <Compile Include="GeoIP\LookupService.cs" />
+    <Compile Include="GeoIP\Region.cs" />
+    <Compile Include="GeoIP\RegionName.cs" />
+    <Compile Include="Heatmap\Heatmap.cs" />
+    <Compile Include="WAD\CommonSrc\CRC32.cs" />
+    <Compile Include="WAD\Manager.cs" />
+    <Compile Include="WAD\Zlib\Deflate.cs" />
+    <Compile Include="WAD\Zlib\DeflateStream.cs" />
+    <Compile Include="WAD\Zlib\GZipStream.cs" />
+    <Compile Include="WAD\Zlib\Inflate.cs" />
+    <Compile Include="WAD\Zlib\InfTree.cs" />
+    <Compile Include="WAD\Zlib\ParallelDeflateOutputStream.cs" />
+    <Compile Include="WAD\Zlib\Tree.cs" />
+    <Compile Include="WAD\Zlib\Zlib.cs" />
+    <Compile Include="WAD\Zlib\ZlibBaseStream.cs" />
+    <Compile Include="WAD\Zlib\ZlibCodec.cs" />
+    <Compile Include="WAD\Zlib\ZlibConstants.cs" />
+    <Compile Include="WAD\Zlib\ZlibStream.cs" />
+    <Compile Include="WebAPI\HttpHandler.cs" />
+    <Compile Include="Kayak\Disposable.cs" />
+    <Compile Include="Kayak\Extensions\Trace.cs" />
+    <Compile Include="Kayak\HttpMachine\HttpParser.cs" />
+    <Compile Include="Kayak\HttpMachine\IHttpParserDelegate.cs" />
+    <Compile Include="Kayak\Http\DataSubject.cs" />
+    <Compile Include="Kayak\Http\Extensions\Request.cs" />
+    <Compile Include="Kayak\Http\Extensions\Server.cs" />
+    <Compile Include="Kayak\Http\Http.cs" />
+    <Compile Include="Kayak\Http\HttpResponseHeaderRenderer.cs" />
+    <Compile Include="Kayak\Http\HttpServer.cs" />
+    <Compile Include="Kayak\Http\HttpServerSocketDelegate.cs" />
+    <Compile Include="Kayak\Http\HttpServerTransaction.cs" />
+    <Compile Include="Kayak\Http\HttpServerTransactionDelegate.cs" />
+    <Compile Include="Kayak\Http\OutputQueue.cs" />
+    <Compile Include="Kayak\Http\Parsing\ParserEventQueue.cs" />
+    <Compile Include="Kayak\Http\Parsing\ParserHandler.cs" />
+    <Compile Include="Kayak\Http\Parsing\ParserToTransactionTransform.cs" />
+    <Compile Include="Kayak\Net\KayakScheduler.cs" />
+    <Compile Include="Kayak\Net\Net.cs" />
+    <Compile Include="Kayak\Net\Server\KayakServer.cs" />
+    <Compile Include="Kayak\Net\Server\KayakServerState.cs" />
+    <Compile Include="Kayak\Net\Socket\KayakSocket.cs" />
+    <Compile Include="Kayak\Net\Socket\KayakSocketState.cs" />
+    <Compile Include="Kayak\Net\Socket\OutputBuffer.cs" />
+    <Compile Include="Kayak\Net\Socket\SocketWrapper.cs" />
+    <Compile Include="WebAPI\DWWebAPIService.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RazorEngine\Compilation\CompilerServiceBase.cs" />
+    <Compile Include="RazorEngine\Compilation\CompilerServiceBuilder.cs" />
+    <Compile Include="RazorEngine\Compilation\CompilerServicesUtility.cs" />
+    <Compile Include="RazorEngine\Compilation\CSharp\CSharpCodeParser.cs" />
+    <Compile Include="RazorEngine\Compilation\CSharp\CSharpDirectCompilerService.cs" />
+    <Compile Include="RazorEngine\Compilation\CSharp\CSharpRazorCodeGenerator.cs" />
+    <Compile Include="RazorEngine\Compilation\CSharp\CSharpRazorCodeLanguage.cs" />
+    <Compile Include="RazorEngine\Compilation\DefaultCompilerServiceFactory.cs" />
+    <Compile Include="RazorEngine\Compilation\DirectCompilerServiceBase.cs" />
+    <Compile Include="RazorEngine\Compilation\HasDynamicModelAttribute.cs" />
+    <Compile Include="RazorEngine\Compilation\ICompilerService.cs" />
+    <Compile Include="RazorEngine\Compilation\ICompilerServiceFactory.cs" />
+    <Compile Include="RazorEngine\Compilation\Inspectors\ICodeInspector.cs" />
+    <Compile Include="RazorEngine\Compilation\RazorDynamicObject.cs" />
+    <Compile Include="RazorEngine\Compilation\RazorEngineHost.cs" />
+    <Compile Include="RazorEngine\Compilation\TypeContext.cs" />
+    <Compile Include="RazorEngine\Compilation\VisualBasic\VBCodeParser.cs" />
+    <Compile Include="RazorEngine\Compilation\VisualBasic\VBDirectCompilerService.cs" />
+    <Compile Include="RazorEngine\Compilation\VisualBasic\VBRazorCodeGenerator.cs" />
+    <Compile Include="RazorEngine\Compilation\VisualBasic\VBRazorCodeLanguage.cs" />
+    <Compile Include="RazorEngine\Configuration\Fluent\FluentConfigurationBuilder.cs" />
+    <Compile Include="RazorEngine\Configuration\Fluent\FluentTemplateServiceConfiguration.cs" />
+    <Compile Include="RazorEngine\Configuration\Fluent\IConfigurationBuilder.cs" />
+    <Compile Include="RazorEngine\Configuration\ITemplateServiceConfiguration.cs" />
+    <Compile Include="RazorEngine\Configuration\RazorEngineConfigurationSection.cs" />
+    <Compile Include="RazorEngine\Configuration\TemplateServiceConfiguration.cs" />
+    <Compile Include="RazorEngine\Configuration\Xml\NamespaceConfigurationElement.cs" />
+    <Compile Include="RazorEngine\Configuration\Xml\NamespaceConfigurationElementCollection.cs" />
+    <Compile Include="RazorEngine\Configuration\Xml\TemplateServiceConfigurationElement.cs" />
+    <Compile Include="RazorEngine\Configuration\Xml\TemplateServiceConfigurationElementCollection.cs" />
+    <Compile Include="RazorEngine\Configuration\Xml\XmlTemplateServiceConfiguration.cs" />
+    <Compile Include="RazorEngine\Encoding.cs" />
+    <Compile Include="RazorEngine\GlobalSuppressions.cs" />
+    <Compile Include="RazorEngine\Language.cs" />
+    <Compile Include="RazorEngine\Razor.cs" />
+    <Compile Include="RazorEngine\Spans\ModelSpan.cs" />
+    <Compile Include="RazorEngine\Templating\CachedTemplateItem.cs" />
+    <Compile Include="RazorEngine\Templating\DefaultActivator.cs" />
+    <Compile Include="RazorEngine\Templating\DefaultAppDomainFactory.cs" />
+    <Compile Include="RazorEngine\Templating\DelegateActivator.cs" />
+    <Compile Include="RazorEngine\Templating\DelegateAppDomainFactory.cs" />
+    <Compile Include="RazorEngine\Templating\DelegateTemplateResolver.cs" />
+    <Compile Include="RazorEngine\Templating\ExecuteContext.cs" />
+    <Compile Include="RazorEngine\Templating\IActivator.cs" />
+    <Compile Include="RazorEngine\Templating\IAppDomainFactory.cs" />
+    <Compile Include="RazorEngine\Templating\InstanceContext.cs" />
+    <Compile Include="RazorEngine\Templating\IsolatedTemplateService.cs" />
+    <Compile Include="RazorEngine\Templating\ITemplate.cs" />
+    <Compile Include="RazorEngine\Templating\ITemplateOfT.cs" />
+    <Compile Include="RazorEngine\Templating\ITemplateResolver.cs" />
+    <Compile Include="RazorEngine\Templating\ITemplateService.cs" />
+    <Compile Include="RazorEngine\Templating\Parallel\DefaultParallelQueryPlan.cs" />
+    <Compile Include="RazorEngine\Templating\Parallel\IParallelQueryPlan.cs" />
+    <Compile Include="RazorEngine\Templating\RequireNamespacesAttribute.cs" />
+    <Compile Include="RazorEngine\Templating\TemplateBase.cs" />
+    <Compile Include="RazorEngine\Templating\TemplateBaseOfT.cs" />
+    <Compile Include="RazorEngine\Templating\TemplateCompilationException.cs" />
+    <Compile Include="RazorEngine\Templating\TemplateParsingException.cs" />
+    <Compile Include="RazorEngine\Templating\TemplateService.cs" />
+    <Compile Include="RazorEngine\Templating\TemplateServiceFactory.cs" />
+    <Compile Include="RazorEngine\Templating\TemplateWriter.cs" />
+    <Compile Include="RazorEngine\Templating\TypeLoader.cs" />
+    <Compile Include="RazorEngine\Text\HtmlEncodedString.cs" />
+    <Compile Include="RazorEngine\Text\HtmlEncodedStringFactory.cs" />
+    <Compile Include="RazorEngine\Text\IEncodedString.cs" />
+    <Compile Include="RazorEngine\Text\IEncodedStringFactory.cs" />
+    <Compile Include="RazorEngine\Text\RawString.cs" />
+    <Compile Include="RazorEngine\Text\RawStringFactory.cs" />
+    <Compile Include="XmlRpc\src\DateTime8601.cs" />
+    <Compile Include="XmlRpc\src\GuidEx.cs" />
+    <Compile Include="XmlRpc\src\IXmlRpcProxy.cs" />
+    <Compile Include="XmlRpc\src\MappingActions.cs" />
+    <Compile Include="XmlRpc\src\MappingStack.cs" />
+    <Compile Include="XmlRpc\src\RequestResponseLogger.cs" />
+    <Compile Include="XmlRpc\src\Tracer.cs" />
+    <Compile Include="XmlRpc\src\util.cs" />
+    <Compile Include="XmlRpc\src\WebSettings.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcAsyncResult.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcBeginAttribute.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcClientFormatterSink.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcClientFormatterSinkProvider.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcClientProtocol.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XmlRpc\src\XmlRpcDebugLogger.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcDeserializer.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcEndAttribute.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcEnumMapping.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcException.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcFaultException.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcFormatSettings.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcLogger.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcMemberAttribute.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcMethodAttribute.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcMethodInfo.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcMissingMappingAttribute.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcNonStandard.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcNullMappingAttribute.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcParameterAttribute.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcParameterInfo.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcParser.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcProxyCodeGen.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcProxyGen.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcRequest.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcRequestEventArgs.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcRequestSerializer.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcResponse.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcResponseDeserializer.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcResponseEventArgs.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcReturnValueAttribute.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcSerializer.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcStruct.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcTypeInfo.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcUrlAttribute.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcXmlReader.cs" />
+    <Compile Include="XmlRpc\src\XmlRpcXmlWriter.cs" />
+    <Compile Include="XmlRpc\xmlrpcserver\IHttpRequest.cs" />
+    <Compile Include="XmlRpc\xmlrpcserver\IHttpRequestHandler.cs" />
+    <Compile Include="XmlRpc\xmlrpcserver\IHttpResponse.cs" />
+    <Compile Include="XmlRpc\xmlrpcserver\SystemMethodsBase.cs" />
+    <Compile Include="XmlRpc\xmlrpcserver\XmlRpcDocWriter.cs" />
+    <Compile Include="XmlRpc\xmlrpcserver\XmlRpcHttpRequest.cs" />
+    <Compile Include="XmlRpc\xmlrpcserver\XmlRpcHttpResponse.cs" />
+    <Compile Include="XmlRpc\xmlrpcserver\XmlRpcHttpServerProtocol.cs" />
+    <Compile Include="XmlRpc\xmlrpcserver\XmlRpcListenerRequest.cs" />
+    <Compile Include="XmlRpc\xmlrpcserver\XmlRpcListenerResponse.cs" />
+    <Compile Include="XmlRpc\xmlrpcserver\XmlRpcListenerService.cs" />
+    <Compile Include="XmlRpc\xmlrpcserver\XmlRpcRequestDeserializer.cs" />
+    <Compile Include="XmlRpc\xmlrpcserver\XmlRpcResponseSerializer.cs" />
+    <Compile Include="XmlRpc\xmlrpcserver\XmlRpcServerFormatterSink.cs" />
+    <Compile Include="XmlRpc\xmlrpcserver\XmlRpcServerFormatterSinkProvider.cs" />
+    <Compile Include="XmlRpc\xmlrpcserver\XmlRpcServerProtocol.cs" />
+    <Compile Include="XmlRpc\xmlrpcserver\XmlRpcService.cs" />
+    <Compile Include="XmlRpc\xmlrpcserver\XmlRpcServiceAttribute.cs" />
+    <Compile Include="XmlRpc\xmlrpcserver\XmlRpcServiceInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Kayak\HttpMachine\recompilemachine" />
+    <None Include="Kayak\HttpMachine\rl\http.rl" />
+    <None Include="Kayak\HttpMachine\rl\HttpParser.cs.rl" />
+    <None Include="Kayak\HttpMachine\rl\uri.rl" />
+    <None Include="packages.config" />
+    <EmbeddedResource Include="Templates\Servers.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
