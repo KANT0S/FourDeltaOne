@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C633AC16-DDAB-446A-9A16-C27E700C83DE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DBNUpdater</RootNamespace>
+    <AssemblyName>DBNUpdater</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Normal\Updater\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Normal\Updater\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="7zip\Common\CommandLineParser.cs" />
+    <Compile Include="7zip\Common\CRC.cs" />
+    <Compile Include="7zip\Common\InBuffer.cs" />
+    <Compile Include="7zip\Common\OutBuffer.cs" />
+    <Compile Include="7zip\Compress\LZMA\LzmaBase.cs" />
+    <Compile Include="7zip\Compress\LZMA\LzmaDecoder.cs" />
+    <Compile Include="7zip\Compress\LZMA\LzmaEncoder.cs" />
+    <Compile Include="7zip\Compress\LZ\IMatchFinder.cs" />
+    <Compile Include="7zip\Compress\LZ\LzBinTree.cs" />
+    <Compile Include="7zip\Compress\LZ\LzInWindow.cs" />
+    <Compile Include="7zip\Compress\LZ\LzOutWindow.cs" />
+    <Compile Include="7zip\Compress\RangeCoder\RangeCoder.cs" />
+    <Compile Include="7zip\Compress\RangeCoder\RangeCoderBit.cs" />
+    <Compile Include="7zip\Compress\RangeCoder\RangeCoderBitTree.cs" />
+    <Compile Include="7zip\FileStreamCoder.cs" />
+    <Compile Include="7zip\ICoder.cs" />
+    <Compile Include="Cache.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="Main.cs">
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>copy /y "$(TargetPath)" "D:\aiw3-updater\DBNUpdater.dll"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

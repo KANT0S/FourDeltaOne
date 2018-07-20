@@ -1,0 +1,5 @@
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\updater\bin\Debug\interOps.exe
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\updater\bin\Debug\interOps.pdb
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\updater\bin\Debug\DBNetwork.IndigoSxS.dll
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\updater\obj\x86\Debug\interOps.exe
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\updater\obj\x86\Debug\interOps.pdb
