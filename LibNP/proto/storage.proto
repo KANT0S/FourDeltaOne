@@ -1,0 +1,46 @@
+option optimize_for = LITE_RUNTIME;
+
+message StorageGetPublisherFileMessage
+{
+	required string fileName = 1;
+}
+
+message StoragePublisherFileMessage
+{
+	required int32 result = 1;
+	required string fileName = 2;
+	required bytes fileData = 3;
+}
+
+message StorageGetUserFileMessage
+{
+	required string fileName = 1;
+	required fixed64 npid = 2;
+}
+
+message StorageUserFileMessage
+{
+	required int32 result = 1;
+	required string fileName = 2;
+	required fixed64 npid = 3;
+	required bytes fileData = 4;
+}
+
+message StorageWriteUserFileMessage
+{
+	required string fileName = 1;
+	required fixed64 npid = 2;
+	required bytes fileData = 3;
+}
+
+message StorageWriteUserFileResultMessage
+{
+	required int32 result = 1;
+	required string fileName = 2;
+	required fixed64 npid = 3;
+}
+
+message StorageSendRandomStringMessage
+{
+	required string randomString = 1;
+}

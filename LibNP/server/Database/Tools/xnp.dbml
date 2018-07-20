@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="xnp" Class="XNP" BaseType="DbLinq.Data.Linq.DataContext" Provider="MySql" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="xnp.external_platforms" Member="ExternalPlatforms">
+    <Type Name="ExternalPlatforms">
+      <Column Name="platform_authenticated" Member="PlatformAuthenticated" Storage="_platformAuthenticated" Type="System.SByte" DbType="tinyint(1)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="platform_id" Member="PlatformID" Storage="_platformID" Type="System.Int64" DbType="bigint(20) unsigned" IsPrimaryKey="true" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="platform_type" Member="PlatformType" Storage="_platformType" Type="System.String" DbType="varchar(20)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="user_id" Member="UserID" Storage="_userID" Type="System.Int32" DbType="int" IsPrimaryKey="true" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="xnp.friends" Member="Friends">
+    <Type Name="Friends">
+      <Column Name="friend" Member="Friend" Storage="_friend" Type="System.SByte" DbType="tinyint(1)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="friend_id" Member="FriendID" Storage="_friendID" Type="System.Int32" DbType="int(10)" IsPrimaryKey="true" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="is_external" Member="IsExternal" Storage="_isExternal" Type="System.SByte" DbType="tinyint(1)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="user_id" Member="UserID" Storage="_userID" Type="System.Int32" DbType="int(10)" IsPrimaryKey="true" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="xnp.iw4_profiles" Member="IW4Profiles">
+    <Type Name="IW4Profiles">
+      <Column Name="cardicon" Member="CardIcon" Storage="_cardIcon" Type="System.String" DbType="varchar(60)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="cardtitle" Member="CardTitle" Storage="_cardTitle" Type="System.String" DbType="varchar(60)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="experience" Member="Experience" Storage="_experience" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="prestige" Member="Prestige" Storage="_prestige" Type="System.SByte" DbType="tinyint(4)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="user_id" Member="UserID" Storage="_userID" Type="System.Int32" DbType="int" IsPrimaryKey="true" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="xnp.licensekeys" Member="LicenseKeys">
+    <Type Name="LicenseKeys">
+      <Column Name="id" Member="ID" Storage="_id" Type="System.UInt32" DbType="int unsigned" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="key" Member="Key" Storage="_key" Type="System.String" DbType="varchar(24)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+      <Column Name="type" Member="Type" Storage="_type" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="xnp.matches" Member="Matches">
+    <Type Name="Matches">
+      <Column Name="match_filename" Member="MatchFilename" Storage="_matchFilename" Type="System.String" DbType="varchar(255)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="match_gametype" Member="MatchGameType" Storage="_matchGameType" Type="System.String" DbType="char(10)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="match_guid" Member="MatchGuiD" Storage="_matchGuiD" Type="System.String" DbType="char(40)" IsPrimaryKey="true" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="match_map" Member="MatchMap" Storage="_matchMap" Type="System.String" DbType="varchar(40)" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="match_time" Member="MatchTime" Storage="_matchTime" Type="System.Int32" DbType="int" IsPrimaryKey="false" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="xnp.match_users" Member="MatchUsers">
+    <Type Name="MatchUsers">
+      <Column Name="match_id" Member="MatchID" Storage="_matchID" Type="System.String" DbType="char(40)" IsPrimaryKey="true" IsDbGenerated="false" CanBeNull="false" />
+      <Column Name="match_user" Member="MatchUser" Storage="_matchUser" Type="System.Int32" DbType="int" IsPrimaryKey="true" IsDbGenerated="false" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

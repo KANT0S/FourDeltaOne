@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NPx/Terminal</title>
+</head>
+<body>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io.connect('http://192.168.178.83:3035');
+  socket.on('message', function (data) {
+    console.log(data);
+    
+	document.write('<pre>' + JSON.stringify(data, null, ' ') + '</pre>');
+  });
+  
+  socket.emit('message', 
+  {
+    id: 32,
+	t: 1001,
+	d:
+	{
+		licenseKey: 'EONP-MQOJ-B5OA-R226-BUOA'
+	}
+  });
+</script>
+
+</body>
+</html>	

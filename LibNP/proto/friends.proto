@@ -1,0 +1,65 @@
+option optimize_for = LITE_RUNTIME;
+
+message FriendsSetSteamIDMessage
+{
+	required fixed64 steamID = 1;
+}
+
+message FriendsGetProfileDataMessage
+{
+	repeated fixed64 npids = 1;
+	optional string profileType = 2;
+}
+
+message ProfileDataResult
+{
+	optional fixed64 npid = 1;
+	optional bytes profile = 2;
+}
+
+message FriendsGetProfileDataResultMessage
+{
+	repeated ProfileDataResult results = 1;
+}
+
+message FriendDetails
+{
+	optional fixed64 npid = 1;
+	optional string name = 2;
+}
+
+message FriendsRosterMessage
+{
+	repeated FriendDetails friends = 1;
+}
+
+message FriendsPresence
+{
+	required string key = 1;
+	required string value = 2;
+}
+
+message FriendsPresenceMessage
+{
+	required fixed64 friend = 1;
+	required int32 presenceState = 2;
+	optional fixed64 currentServer = 3;
+	repeated FriendsPresence presence = 4;
+}
+
+message FriendsSetPresenceMessage
+{
+	repeated FriendsPresence presence = 1;
+}
+
+message FriendsGetUserAvatarMessage
+{
+	required int32 guid = 2;
+}
+
+message FriendsGetUserAvatarResultMessage
+{
+	required int32 result = 1;
+	required int32 guid = 2;
+	required bytes fileData = 3;
+}

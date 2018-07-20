@@ -1,0 +1,25 @@
+{
+  "name": "layer1",
+  "description": "Terminal/NPx Layer 1 server",
+  "version": "0.1.0",
+  "author": "NTAuthority",
+  "dependencies": {
+    "protobuf": "~0.8.6",
+    "nano": "~4.1.1",
+    "log4js": "~0.6.7",
+    "hexy": "~0.2.5",
+    "node-int64": "~0.3.0",
+    "agentkeepalive": "~0.1.5",
+    "buffer-crc32": "~0.2.1",
+    "nconf": "~0.6.7",
+    "mysql": "~2.0.0-alpha8",
+    "codify": "~0.3.0",
+    "request": "~2.16.2",
+    "redisq": "~0.1.13",
+    "socket.io": "~0.9.16",
+    "express": "~3.3.5",
+    "redis": "~0.8.4",
+    "nodetime": "~0.8.15"
+  },
+  "devDependencies": {}
+}

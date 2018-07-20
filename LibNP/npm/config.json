@@ -1,0 +1,14 @@
+{
+  "mysql": {
+    "host": "178.33.234.202",
+    "port": 3306,
+    "user": "fourdeltaone",
+    "password": "n:/|h:=~V/%<85,|6L&<_2@t88Bx,$u",
+    "database": "xnp"
+  },
+  "forumDB": "phpbb3_4d1",
+  "couch": {
+    "host": "localhost",
+    "port": 5984
+  }
+}

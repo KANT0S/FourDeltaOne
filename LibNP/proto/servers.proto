@@ -1,0 +1,60 @@
+option optimize_for = LITE_RUNTIME;
+
+message SessionData
+{
+	required string key = 1;
+	required string value = 2;
+}
+
+message SessionInfo
+{
+	optional uint32 address = 1;
+	optional int32 port = 2;
+	optional fixed64 npid = 3;
+	optional int32 players = 4;
+	optional int32 maxplayers = 5;
+	repeated SessionData data = 6;
+	optional uint64 sid = 7;
+}
+
+message ServersCreateSessionMessage
+{
+	optional SessionInfo info = 1;
+}
+
+message ServersCreateSessionResultMessage
+{
+	optional int32 result = 1;
+	optional fixed64 sessionid = 2;
+}
+
+message ServersGetSessionsMessage
+{
+	repeated SessionData infos = 1;
+}
+
+message ServersGetSessionsResultMessage
+{
+	repeated SessionInfo servers = 1;
+}
+
+message ServersUpdateSessionMessage
+{
+	optional fixed64 sessionid = 1;
+	optional SessionInfo info = 2;
+}
+
+message ServersUpdateSessionResultMessage
+{
+	optional int32 result = 1;
+}
+
+message ServersDeleteSessionMessage
+{
+	optional fixed64 sessionid = 1;
+}
+
+message ServersDeleteSessionResultMessage
+{
+	optional int32 result = 1;
+}

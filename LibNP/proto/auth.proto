@@ -1,0 +1,67 @@
+option optimize_for = LITE_RUNTIME;
+
+message AuthenticateWithKeyMessage
+{
+	required string licenseKey = 1;
+}
+
+message AuthenticateWithDetailsMessage
+{
+	required string username = 1;
+	required string password = 2;
+}
+
+message AuthenticateWithTokenMessage
+{
+	required bytes token = 1;
+}
+
+message AuthenticateResultMessage
+{
+	required int32 result = 1;
+	required fixed64 npid = 2;
+	required bytes sessionToken = 3;
+}
+
+message AuthenticateUserGroupMessage
+{
+	required int32 groupID = 1;
+}
+
+message AuthenticateValidateTicketMessage
+{
+	required fixed32 clientIP = 1;
+	required fixed64 npid = 2;
+	required bytes ticket = 3;
+}
+
+message AuthenticateValidateTicketResultMessage
+{
+	required int32 result = 1;
+	required fixed64 npid = 2;
+	required int32 groupID = 3;
+}
+
+message AuthenticateKickUserMessage
+{
+	required fixed64 npid = 1;
+	required int32 reason = 2;
+	required string reasonString = 3;
+}
+
+message AuthenticateExternalStatusMessage
+{
+	required int32 status = 1;
+}
+
+message AuthenticateRegisterServerMessage
+{
+	optional string configPath = 1;
+}
+
+message AuthenticateRegisterServerResultMessage
+{
+	required int32 result = 1;
+	required string licenseKey = 2;
+	required int32 serverID = 3;
+}
