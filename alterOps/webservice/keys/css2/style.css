@@ -1,0 +1,263 @@
+html, body {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	background-color: #000;
+	background-image: url("../images/bg-grad.png");
+	background-position: center top;
+	background-repeat: repeat-y;
+	color: #FFFFFF;
+	margin: 0 auto;
+}
+
+* {
+	outline: none;
+}
+table, td, tr {
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 11px;
+}
+.topBar {
+	background-image: url("../images/top_bar.png");
+	top: 0;
+	height: 26px; 
+	width: 100%;
+	background-position: center;
+	position: relative;
+}
+
+.logo {
+	margin: 0 auto;
+	text-align: center;
+}
+
+img {
+	border-style: none;
+}
+
+#wrap {
+	min-width: 800px;
+    margin: 10px auto;
+    padding: 9px;
+    text-align: center;
+    width: 960px;
+    padding: 0;
+}
+
+hr {
+	/* Also see tweaks.css */
+	border: 0 none #FFFFFF;
+	border-top: 1px solid #CCCCCC;
+	height: 1px;
+	margin: 5px 0;
+	display: block;
+	clear: both;
+}
+
+hr.dashed {
+	border-top: 1px dashed #CCCCCC;
+	margin: 10px 0;
+}
+
+hr.divider {
+	display: none;
+}
+
+hr.hr1 {
+	border-style: none;
+	border-top: 1px dotted #505050;
+	color: #505050;
+	height: 1px;
+	margin-top: 5px;
+	margin-bottom: 0;
+	display: block;
+	clear: both;
+}
+
+#content {
+	text-align: left;
+	position: relative;
+	top: -12px;
+	margin: 4px 7px;
+	clear: both;
+}
+
+#footer {
+	clear: both;
+	font-size: 10px;
+	text-align: center;
+}
+
+#footer a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#footer a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#footer a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.wrapbg {
+	background: #080707 none repeat-x 0 0;
+	margin-bottom: 4px;
+	padding: 0 5px;
+	clear: both;
+	border: 1px solid #353E45;
+	margin-top: 20px;
+}
+
+.wrapbg a:link {
+	color: #e19b00;
+	text-decoration: none;
+}
+
+.wrapbg a:active {
+	color: #e19b00;
+	text-decoration: none;
+}
+
+.wrapbg a:visited {
+	color: #e19b00;
+	text-decoration: none;
+}
+
+.wrapbg a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+span.corners-top {
+	background-image: url("../images/corners_left.png");
+	position: relative;
+	top: -1px;
+	left: -1px;
+	background-position: 0 0;
+	margin: 0 -5px;
+}
+
+span.corners-top span {
+	background-image: url("../images/corners_right.png");
+	position: relative;
+	left: 2px;
+	background-position: 100% 0;
+}
+
+span.corners-bottom {
+	background-image: url("../images/corners_left.png");
+	padding: 0;
+	position: relative;
+	bottom: -1px;
+	left: -1px;
+	background-position: 0 100%;
+	margin: 0 -5px;
+	clear: both;
+}
+
+span.corners-bottom span {
+	background-image: url("../images/corners_right.png");
+	padding: 0;
+	position: relative;
+	left: 2px;
+	background-position: 100% 100%;
+}
+
+span.corners-top, span.corners-bottom, span.corners-top span, span.corners-bottom span {
+	font-size: 1px;
+	line-height: 1px;
+	display: block;
+	height: 19px;
+	background-repeat: no-repeat;
+}
+
+#twitter_div li {
+	text-align: left;
+}
+
+td.lTxt {
+	font-size: 11px;
+}
+
+#errorBox {
+	background-color: #0F1518;
+	border: 1px dotted #505050;
+	color: #999;
+	padding: 6px;
+}
+
+p.pnote {
+	color: #999;
+	margin: 0;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+input.lgnbtn {
+	width: 91px;
+	height: 20px;
+	border: 0px solid #FFFFFF;
+	background-image: url("../images/btn-login.png");
+}
+
+#keytable th, #keytable td {
+	border-style: none;
+	border: 1px dotted #505050;
+	text-align: center;
+}
+
+#keytable td {
+	height: 30px;
+}
+
+#keytable {
+	width: 580px;
+	margin-bottom: 5px;
+}
+
+#keytable td.desc {
+	width: 160px;
+}
+
+#keycont {
+	color: #FFF;
+}
+
+a.ltitle {
+	margin: 4px;
+	display: block;
+}
+
+#ekeytable th, #ekeytable td {
+	border-style: none;
+	border: 1px dotted #505050;
+	text-align: center;
+}
+
+#ekeytable td {
+	height: 30px;
+}
+
+#ekeytable {
+	width: 380px;
+	margin-bottom: 5px;
+}
+
+#ekeytable td.typeholder {
+	width: 120px;
+}
+
+p.backbtn {
+	margin: 0;
+	display: inline;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+}

@@ -1,0 +1,17 @@
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\np\bin\Debug\NPServer.exe.config
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\np\obj\Debug\NPx.Properties.Resources.resources
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\np\obj\Debug\NPServer.csproj.GenerateResource.Cache
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\np\obj\Debug\NPServer.csprojResolveAssemblyReference.cache
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\np\bin\Debug\NPServer.exe
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\np\bin\Debug\NPServer.pdb
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\np\bin\Debug\MySql.Data.dll
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\np\bin\Debug\DbLinq.pdb
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\np\bin\Debug\DbLinq.MySql.pdb
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\np\bin\Debug\MongoDB.Bson.pdb
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\np\bin\Debug\MongoDB.Bson.xml
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\np\bin\Debug\MongoDB.Driver.pdb
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\np\bin\Debug\MongoDB.Driver.xml
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\np\bin\Debug\protobuf-net.pdb
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\np\bin\Debug\protobuf-net.xml
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\np\obj\Debug\NPServer.exe
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\np\obj\Debug\NPServer.pdb

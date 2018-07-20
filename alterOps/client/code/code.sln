@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clientdll", "clientdll\clientdll.vcproj", "{17F0C96D-58ED-4039-8352-6CDBDC915B71}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "loader", "loader\loader.vcproj", "{69879633-CC56-486E-A071-DA9C89A82BDB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "steam_api", "steam_api\steam_api.vcproj", "{A0B3BF69-40BF-4A77-84F7-36008AC8912D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17F0C96D-58ED-4039-8352-6CDBDC915B71}.Debug|Win32.ActiveCfg = Debug|Win32
+		{17F0C96D-58ED-4039-8352-6CDBDC915B71}.Debug|Win32.Build.0 = Debug|Win32
+		{17F0C96D-58ED-4039-8352-6CDBDC915B71}.Release|Win32.ActiveCfg = Debug|Win32
+		{17F0C96D-58ED-4039-8352-6CDBDC915B71}.Release|Win32.Build.0 = Debug|Win32
+		{69879633-CC56-486E-A071-DA9C89A82BDB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{69879633-CC56-486E-A071-DA9C89A82BDB}.Debug|Win32.Build.0 = Debug|Win32
+		{69879633-CC56-486E-A071-DA9C89A82BDB}.Release|Win32.ActiveCfg = Debug|Win32
+		{69879633-CC56-486E-A071-DA9C89A82BDB}.Release|Win32.Build.0 = Debug|Win32
+		{A0B3BF69-40BF-4A77-84F7-36008AC8912D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A0B3BF69-40BF-4A77-84F7-36008AC8912D}.Debug|Win32.Build.0 = Debug|Win32
+		{A0B3BF69-40BF-4A77-84F7-36008AC8912D}.Release|Win32.ActiveCfg = Release|Win32
+		{A0B3BF69-40BF-4A77-84F7-36008AC8912D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

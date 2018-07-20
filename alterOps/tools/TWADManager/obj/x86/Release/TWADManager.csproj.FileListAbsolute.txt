@@ -1,0 +1,6 @@
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\t5\tools\TWADManager\bin\Release\TWADManager.exe.config
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\t5\tools\TWADManager\bin\Release\TWADManager.exe
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\t5\tools\TWADManager\bin\Release\TWADManager.pdb
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\t5\tools\TWADManager\obj\x86\Release\TWADManager.exe
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\t5\tools\TWADManager\obj\x86\Release\TWADManager.pdb
+C:\Users\Bruno\Downloads\Nexus\Call of Duty BO & MW3 Source Code\t5\tools\TWADManager\obj\x86\Release\TWADManager.csprojResolveAssemblyReference.cache
